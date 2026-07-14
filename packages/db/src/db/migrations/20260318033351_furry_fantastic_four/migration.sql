@@ -1,0 +1,1 @@
+ALTER TABLE "ai_chat_streams" ADD COLUMN "canceled_at" timestamp with time zone;

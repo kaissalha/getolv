@@ -1,0 +1,1434 @@
+{
+	"lang": {
+		"en": "English",
+		"es": "Español",
+		"fr": "Français",
+		"pt": "Português",
+		"ja": "日本語",
+		"switch_to": "Switch to {lang}"
+	},
+
+	"common": {
+		"loading": "Loading...",
+		"cancel": "Cancel",
+		"save": "Save",
+		"edit": "Edit",
+		"delete": "Delete",
+		"add": "Add",
+		"view": "View",
+		"search": "Search",
+		"close": "Close",
+		"next": "Next",
+		"previous": "Previous",
+		"ok": "OK",
+		"yes": "Yes",
+		"no": "No",
+		"done": "Done",
+		"actions": {
+			"back": "Back",
+			"creating": "Creating...",
+			"cancel": "Cancel"
+		},
+		"validation": {
+			"required": "This field is required",
+			"invalidEmail": "Please enter a valid email address"
+		},
+		"errors": {
+			"somethingWentWrong": "Something went wrong. Please try again."
+		},
+		"fields": {
+			"name": "Name",
+			"firstName": "First name",
+			"lastName": "Last name",
+			"email": "Email",
+			"phoneNumber": "Phone",
+			"dateOfBirth": "Date of birth",
+			"gender": "Gender",
+			"allergies": "Allergies",
+			"currentMedications": "Current medications",
+			"pastMedicalHistory": "Personal medical history",
+			"familyMedicalHistory": "Family medical history",
+			"additionalContext": "Additional patient context",
+			"dateAdded": "Date added",
+			"date": "Date",
+			"author": "Author",
+			"latestMessage": "Latest message",
+			"patient": "Patient",
+			"startedAt": "Started"
+		},
+		"today": "Today",
+		"yesterday": "Yesterday",
+		"deleted": "Deleted",
+		"deleteFailed": "Failed to delete",
+		"failed": "Failed",
+		"saved": "Saved",
+		"saving": "Saving...",
+		"saveError": "Didn't save!",
+		"sent": "Sent!",
+		"sending": "Sending...",
+		"sentFailed": "Didn't send",
+		"retry": "Retry",
+		"upgrade": "Upgrade",
+		"download": "Download",
+		"downloaded": "Downloaded",
+		"downloadFailed": "Download failed",
+		"beta": "Beta",
+		"prompt": "Prompt",
+		"select": "Select",
+		"back": "Back",
+		"copyToClipboard": "Copy to clipboard",
+		"copiedToClipboard": "Copied to clipboard"
+	},
+	"breadcrumbs": {
+		"home": "Home",
+		"settings": "Settings",
+		"help": "Help",
+		"patients": "Patients",
+		"chat": "Chat",
+		"template": "Template",
+		"newPatient": "New patient",
+		"create": "Create",
+		"mail": "Mail",
+		"notes": "Notes",
+		"calendar": "Calendar",
+		"diet": "Diet",
+		"workout": "Workout"
+	},
+	"chats": {
+		"general": "General",
+		"marketing": "Marketing",
+		"finance": "Finance",
+		"sales": "Sales",
+		"customerService": "Customer service",
+		"research": "Research",
+		"global": "General",
+		"studio": "Studio",
+		"newChat": "New chat",
+		"startConversation": "Start a conversation",
+		"askAnything": "Ask me anything about your business and I'll help you out.",
+		"suggestions": {
+			"patient": {
+				"overview": "Give me an overview",
+				"nextVisit": "Next visit priorities",
+				"treatmentPlan": "Review treatment plan",
+				"labTrends": "Lab result trends"
+			},
+			"mail": {
+				"summarize": "Summarize inbox",
+				"draft": "Draft a reply"
+			},
+			"dashboard": {
+				"today": "What's on today?",
+				"overview": "Practice overview"
+			}
+		},
+		"generalDescription": "Start a conversation with your AI assistant about general topics related to your business.",
+		"marketingDescription": "Get help with marketing strategies, campaigns, and promotional content for your business.",
+		"financeDescription": "Discuss financial planning, budgeting, and money management for your business.",
+		"salesDescription": "Get assistance with sales strategies, customer acquisition, and revenue growth.",
+		"customerServiceDescription": "Improve your customer service approach and handle customer inquiries effectively.",
+		"customerDescription": "Improve your customer service approach and handle customer inquiries effectively.",
+		"researchDescription": "Conduct research, analyze market trends, and gather insights for your business decisions.",
+		"globalDescription": "Start a conversation with your AI assistant about general topics related to your business.",
+		"studioDescription": "Generate images for your business.",
+		"placeholder": "How can Starter help you?",
+		"collectBusinessInfoTool": {
+			"message": "To give you answers relevant to your business, can you describe your business and any products or services you offer?",
+			"inputPlaceholder": "Collect business info",
+			"success": "You can update your business details anytime in Settings.",
+			"openSettings": "Open settings",
+			"getAnswer": "Get answer",
+			"descriptionExists": "Your business information has been updated. Click below to continue with your personalized answer."
+		},
+		"error": "Looks like there was an error",
+		"rateLimit": {
+			"title": "You’ve hit your limit for messages sent.",
+			"description": "Please try again tomorrow at {date}"
+		},
+		"emailVerification": {
+			"title": "You need to verify your email",
+			"description": "Before using more of Starter, you need to verify your email address",
+			"cta": "Verify email",
+			"sent": {
+				"title": "Verification email sent!",
+				"description": "Check your email for a verification link"
+			}
+		},
+		"viewReasoning": "View reasoning",
+		"businessDescriptionInput": {
+			"title": "To create better visuals for your business, can you <strong>describe your business</strong> and any products or services do you offer?",
+			"placeholder": "What’s your business about? What products or services do you offer?"
+		}
+	},
+	"notFound": {
+		"title": "Not Found"
+	},
+	"ai": {
+		"tools": {}
+	},
+	"dashboard": {
+		"title": "Dashboard",
+		"template": {
+			"logo": {
+				"title": "Practice logo",
+				"alt": "Practice logo",
+				"upload": "Upload logo",
+				"replace": "Replace logo",
+				"uploading": "Uploading logo...",
+				"errors": {
+					"forbidden": "You do not have permission to update this practice.",
+					"invalidType": "Please choose an image file.",
+					"tooLarge": "Please choose a file smaller than {size} MB.",
+					"uploadFailed": "We couldn't upload your logo.",
+					"autoAdjustFailed": "We couldn't process your logo. Try another image or confirm the Vercel AI Gateway is configured (AI_GATEWAY_API_KEY or Vercel OIDC)."
+				}
+			},
+			"gallery": {
+				"heading": "Templates",
+				"subheading": "Ready-made PDF templates branded with your practice logo.",
+				"pdf": "PDF",
+				"download": "Download",
+				"openPreview": "Open preview",
+				"treatmentPlan": "Treatment plan",
+				"treatmentPlanDescription": "Goals, lifestyle, nutrition, supplements and habits in one protocol.",
+				"errors": {
+					"previewFailed": "Couldn't load PDF preview",
+					"previewFailedGeneric": "Something went wrong. Please try again."
+				},
+				"preview": {
+					"kicker": "Wellness protocol",
+					"titleLine1": "Treatment",
+					"titleLine2": "Plan",
+					"patient": "Patient",
+					"patientValue": "Sample patient",
+					"date": "Date",
+					"dateValue": "Today",
+					"practitioner": "Practitioner",
+					"practitionerFallback": "Your practice"
+				}
+			}
+		},
+		"home": {
+			"greeting": {
+				"morning": "Good morning",
+				"afternoon": "Good afternoon",
+				"evening": "Good evening"
+			},
+			"weather": {
+				"summaryAriaLabel": "{description}, {temperature} degrees {unit}",
+				"units": {
+					"celsius": "Celsius",
+					"fahrenheit": "Fahrenheit"
+				}
+			},
+			"subtitle": "Here's a quick look at how things are going."
+		},
+		"widgets": {
+			"dailySummary": {
+				"title": "Daily summary",
+				"today": "Today",
+				"weekFallback": "This week",
+				"connectRequired": "Connect Google Calendar and Gmail to generate your daily summary.",
+				"generating": "Generating your daily summary...",
+				"error": "We couldn’t build your summary right now."
+			},
+			"patients": {
+				"title": "Patients",
+				"total": "{count, plural, =0 {No patients} one {# patient} other {# patients}}",
+				"empty": "No patients yet",
+				"addFirst": "Add your first patient",
+				"viewAll": "View all patients"
+			},
+			"notes": {
+				"title": "Notes",
+				"total": "{count, plural, =0 {No notes} one {# note} other {# notes}}",
+				"empty": "No notes yet",
+				"addFirst": "Write your first note",
+				"viewAll": "View all notes"
+			},
+			"mail": {
+				"title": "Mail",
+				"unreadTotal": "{count, plural, =0 {No unread} one {# unread} other {# unread}}",
+				"empty": "No messages in your inbox",
+				"notConnected": "Gmail isn’t connected yet",
+				"viewAll": "View all mail",
+				"goToMail": "Go to mail"
+			},
+			"calendar": {
+				"title": "Calendar",
+				"eventsToday": "{count, plural, =0 {Nothing on your calendar today} one {# event today} other {# events today}}",
+				"empty": "No events scheduled for today",
+				"notConnected": "Google Calendar isn’t connected yet",
+				"viewAll": "View full calendar",
+				"goToCalendar": "Open calendar",
+				"allDay": "All day"
+			}
+		},
+		"settings": {
+			"title": "Settings",
+			"description": "Manage your account settings and set e-mail preferences.",
+			"organization": {
+				"title": "Practice Settings",
+				"description": "Manage your practice information including name, patient details, and social media profiles.",
+				"errors": {
+					"no_active_organization": "No active practice found",
+					"update_failed": "Failed to update practice information"
+				},
+				"form": {
+					"fields": {
+						"name": {
+							"label": "Practice Name",
+							"labelWithColon": "Practice Name:",
+							"placeholder": "Enter your practice name",
+							"description": "The official name of your practice.",
+							"errors": {
+								"required": "Practice name is required"
+							}
+						},
+						"slug": {
+							"label": "Slug",
+							"labelWithColon": "Slug:",
+							"placeholder": "Enter practice slug",
+							"description": "The URL-friendly version of your practice name.",
+							"errors": {
+								"required": "Slug is required"
+							}
+						},
+						"logo": {
+							"label": "Logo",
+							"labelWithColon": "Logo:",
+							"placeholder": "Upload practice logo",
+							"description": "Your practice's logo."
+						}
+					},
+					"submit": {
+						"updating": "Updating...",
+						"update": "Update Practice Information",
+						"success": "Practice information updated successfully"
+					},
+					"errors": {
+						"validation": "Validation error",
+						"server": "An error occurred"
+					}
+				}
+			},
+			"business": {
+				"title": "Business Settings",
+				"description": "Manage your business information including name, patient details, and social media profiles.",
+				"form": {
+					"fields": {
+						"name": {
+							"label": "Business Name",
+							"labelWithColon": "Business Name:",
+							"placeholder": "Enter your business name",
+							"description": "The official name of your business.",
+							"errors": {
+								"required": "Business name is required"
+							}
+						}
+					},
+					"submit": {
+						"updating": "Updating...",
+						"update": "Update Business Information",
+						"success": "Business information updated successfully"
+					},
+					"errors": {
+						"validation": "Validation error",
+						"server": "An error occurred"
+					}
+				}
+			},
+			"appearance": {
+				"title": "Appearance",
+				"description": "Customize the appearance of the app. Automatically switch between day and night themes.",
+				"form": {
+					"font": {
+						"label": "Font",
+						"description": "Set the font you want to use in the dashboard.",
+						"options": {
+							"inter": "Inter",
+							"manrope": "Manrope",
+							"system": "System"
+						}
+					},
+					"theme": {
+						"label": "Theme",
+						"description": "Select the theme for the dashboard.",
+						"options": {
+							"light": "Light",
+							"dark": "Dark"
+						}
+					},
+					"submit": "Update preferences"
+				}
+			}
+		},
+
+		"patients": {
+			"title": "Patients",
+			"search": "Search patients…",
+			"newPatient": "New patient",
+			"tabs": {
+				"overview": "Overview",
+				"labs": "Labs",
+				"diet": "Diet",
+				"workout": "Workout",
+				"notes": "Notes",
+				"mail": "Mail",
+				"messages": "Messages"
+			},
+			"overview": {
+				"emptyTitle": "No activity yet",
+				"emptyDescription": "Sessions, emails, notes, and generated reports will appear here as you work with this patient.",
+				"patientSummaryTitle": "Patient summary",
+				"patientSummaryDescription": "This overview refreshes after completed sessions and blends chart details with recent activity.",
+				"patientSummaryPlaceholder": "No patient summary yet. Complete a session to generate one.",
+				"patientDetailsTitle": "Patient details",
+				"detailsEmpty": "No additional patient context has been added yet.",
+				"editDetails": "Edit details",
+				"editMedicalProfile": "Edit medical profile",
+				"saveChanges": "Save changes",
+				"cancelEdit": "Cancel",
+				"updateSuccess": "Patient details updated",
+				"updateError": "Couldn't update patient details.",
+				"medicalProfileTitle": "Medical profile",
+				"medicalProfileEmpty": "No allergies, medications, or medical history added yet.",
+				"diagnosisTitle": "Diagnosis",
+				"diagnosisEmpty": "No carry-forward diagnosis has been added yet.",
+				"editDiagnosis": "Edit diagnosis",
+				"workingDiagnosisTitle": "Working diagnosis",
+				"workingDiagnosisBadge": "Wdx",
+				"differentialDiagnosisTitle": "Differential diagnosis",
+				"differentialDiagnosisBadge": "Ddx",
+				"addWorkingDiagnosis": "Add working",
+				"addDifferentialDiagnosis": "Add differential",
+				"diagnosisEntryLabel": "Diagnosis {number}",
+				"removeDiagnosisEntryAria": "Remove diagnosis {number}",
+				"diagnosisNameLabel": "Name",
+				"diagnosisNamePlaceholder": "e.g. Iron deficiency",
+				"diagnosisReasoningLabel": "Reasoning",
+				"diagnosisReasoningPlaceholder": "Why this remains on the list",
+				"diagnosisEvidenceLabel": "Evidence",
+				"diagnosisEvidencePlaceholder": "Key findings or chart evidence",
+				"diagnosisMissingLabel": "Missing",
+				"diagnosisMissingPlaceholder": "What still needs clarification",
+				"diagnosisVerifyNextLabel": "Verify next",
+				"diagnosisVerifyNextPlaceholder": "Next question, test, or follow-up",
+				"diagnosisSectionEmpty": "No entries yet. Add the diagnoses you want to carry into the next session.",
+				"todosTitle": "Todos",
+				"todosEmpty": "No active carry-forward todos.",
+				"editTodos": "Edit todos",
+				"activeTodosLabel": "Active carry-forward items",
+				"addTodo": "Add todo",
+				"todoEntryLabel": "Todo {number}",
+				"todoTextLabel": "Todo",
+				"todoTextPlaceholder": "e.g. Review ferritin and CBC",
+				"todoCategoryLabel": "Category",
+				"todoCategoryPlaceholder": "e.g. labs, follow-up",
+				"completeTodoItemAria": "Complete todo: {text}",
+				"removeTodoItemAria": "Remove todo: {text}",
+				"clinicalStateUpdateSuccess": "Patient diagnosis and todos updated",
+				"clinicalStateUpdateError": "Couldn't update patient diagnosis and todos.",
+				"sessionLabel": "Session",
+				"emailLabel": "Email",
+				"noteLabel": "Note",
+				"labReportLabel": "Lab report",
+				"workoutPlanLabel": "Workout plan",
+				"noteTitle": "Note",
+				"labReportTitle": "Lab report",
+				"previewTreatmentPlan": "Preview treatment plan",
+				"treatmentPlanPreviewError": "Couldn't load treatment plan preview.",
+				"treatmentPlanTitle": "Treatment plan",
+				"untitledSession": "Untitled session",
+				"untitledEmail": "Untitled email",
+				"untitledWorkoutPlan": "Untitled workout plan",
+				"reportDate": "Report date: {date}"
+			},
+			"labs": {
+				"preview": "Preview",
+				"download": "Download",
+				"generating": "Generating…",
+				"labResults": "Lab Results",
+				"latestResults": "Latest",
+				"viewingResultsFrom": "Viewing results from:",
+				"unassigned": "Unassigned",
+				"uncategorized": "Other",
+				"untitledSession": "Untitled session",
+				"emptyTitle": "No lab results yet",
+				"emptyDescription": "Lab results will appear here after analyzing patient data in a session or adding a lab note.",
+				"critical": "{count} critical",
+				"suboptimal": "{count} suboptimal",
+				"optimal": "{count} optimal",
+				"statusOptimal": "Optimal",
+				"statusSuboptimal": "Suboptimal",
+				"statusCritical": "Critical",
+				"optimalRange": "Optimal range:",
+				"summaryTitle": "Summary",
+				"summaryPlaceholder": "Summary not available yet.",
+				"resultsOverview": "Results:",
+				"addLabNote": "Add lab note",
+				"addLabNoteTitle": "Add lab note",
+				"addLabNoteDescription": "Enter lab results text and AI will analyze them to extract structured data.",
+				"addLabNotePlaceholder": "Paste or type lab results here...",
+				"cancel": "Cancel",
+				"analyzing": "Analyzing…",
+				"analyze": "Analyze",
+				"customRanges": "Custom Ranges",
+				"customRangesTitle": "Custom Reference Ranges",
+				"customRangesDescription": "Set patient-specific reference ranges for lab tests. These will override the default ranges when evaluating this patient's results.",
+				"existingOverrides": "Existing Overrides",
+				"rangesDefined": "ranges defined",
+				"edit": "Edit",
+				"editRanges": "Edit Ranges",
+				"selectLabTest": "Lab Test",
+				"selectLabTestPlaceholder": "Select a lab test...",
+				"unit": "Unit",
+				"unitPlaceholder": "e.g., mg/dL",
+				"ranges": "Reference Ranges",
+				"addRange": "Add Range",
+				"min": "Min",
+				"max": "Max",
+				"saving": "Saving…",
+				"save": "Save",
+				"previousValue": "Previous value",
+				"readings": "readings"
+			},
+			"messages": {
+				"connectionExpired": "Your Gmail connection has expired. Please reconnect to view messages.",
+				"emptyState": {
+					"title": "No messages yet",
+					"description": "There are no email conversations with this patient. Messages will appear here once you start exchanging emails."
+				}
+			},
+			"workout": {
+				"preview": "Preview",
+				"download": "Download",
+				"generating": "Generating…",
+				"generatePlan": "Generate plan",
+				"generatePlanTitle": "Generate workout plan",
+				"generatePlanDescription": "Describe any specific goals, limitations, or context for this patient. The AI will also reference their personal details and past sessions.",
+				"generatePlanPlaceholder": "e.g. Focus on shoulder rehab, avoid high-impact exercises, patient runs twice a week...",
+				"cancel": "Cancel",
+				"generating2": "Generating…",
+				"generate": "Generate",
+				"editPlanWithAi": "Edit with AI",
+				"editPlanTitle": "Edit workout plan with AI",
+				"editPlanDescription": "Describe how you want to change this plan. AI will revise the full plan using your instructions, patient context, past sessions, and the exercise catalog. The same plan is updated in place.",
+				"editPlanPlaceholder": "e.g. Add a fourth day focused on core, lower volume on shoulders, swap high-impact moves for low-impact options…",
+				"revisingPlan": "Revising…",
+				"applyEdits": "Apply changes",
+				"planTitle": "Workout plan",
+				"latestPlan": "Latest plan",
+				"summaryPlaceholder": "No overview yet. Click to add one.",
+				"removeExercise": "Remove exercise",
+				"removeExerciseConfirm": "Remove this exercise from the plan?",
+				"swapExercise": "Swap exercise",
+				"addExercise": "Add exercise",
+				"searchExercises": "Search exercises…",
+				"noExercisesFound": "No exercises found",
+				"selectExercise": "Select an exercise",
+				"sets": "Sets",
+				"reps": "Reps",
+				"rest": "Rest (s)",
+				"notes": "Notes",
+				"dragHandleLabel": "Drag to reorder exercise",
+				"bodyPartGeneral": "General",
+				"dayLabel": "Day {dayNumber}",
+				"warmUp": "Warm-up",
+				"coolDown": "Cool-down",
+				"weeksCount": "{count} weeks",
+				"daysPerWeekCount": "{count} days/week",
+				"exercisesCount": "{count} exercises",
+				"restSecondsLabel": "{seconds}s rest",
+				"noExercisesInDay": "No exercises in this day yet."
+			},
+			"details": {
+				"title": "Details",
+				"note": "{count, plural, one {Note} other {Notes}}",
+				"message": "{count, plural, one {Message} other {Messages}}",
+				"invoice": "{count, plural, one {Invoice} other {Invoices}}",
+				"dateAdded": "Date added"
+			},
+			"actions": {
+				"call": "Call",
+				"createPatient": "Add patient",
+				"newSession": "New Session",
+				"endPreviousSession": "End previous session",
+				"activeSessionTitle": "There is already an active session",
+				"activeSessionDescription": "Another session is already in progress. Open it to continue there, or end it before starting a different one.",
+				"goToActiveSession": "Go to active session"
+			},
+			"emptyStates": {
+				"noPatients": "You don't have any patients, yet."
+			},
+			"placeholders": {
+				"addFirstName": "Enter first name",
+				"addLastName": "Enter last name",
+				"addEmail": "Enter email",
+				"addPhoneNumber": "Enter a phone number",
+				"addNote": "Add a note",
+				"addDateOfBirth": "DD/MM/YYYY",
+				"selectGender": "Select gender",
+				"addAllergies": "Enter allergies",
+				"addCurrentMedications": "Enter current medications",
+				"addPastMedicalHistory": "Enter personal medical history",
+				"addFamilyMedicalHistory": "Enter family medical history",
+				"addAdditionalContext": "Add any additional context about this patient that may be relevant for your reference..."
+			},
+			"gender": {
+				"male": "Male",
+				"female": "Female",
+				"other": "Other",
+				"preferNotToSay": "Prefer not to say"
+			},
+			"create": {
+				"title": "New patient",
+				"subtitle": "Add patient details to create their profile.",
+				"medicalSubtitle": "Optional for now — add any medical details you already have.",
+				"additionalSubtitle": "Any other details you'd like to track.",
+				"sections": {
+					"personalInfo": "Personal information",
+					"medicalInfo": "Medical information",
+					"additionalInfo": "Additional information"
+				},
+				"card": {
+					"title": "Patient preview",
+					"noName": "Patient name",
+					"contact": "Contact",
+					"medical": "Medical",
+					"noInfo": "Not provided"
+				},
+				"contextHint": "This information will not be shared with the patient and is for your reference only.",
+				"contextCount": "{count}/1000"
+			},
+			"table": {
+				"actions": "Actions",
+				"status": "Status",
+				"view": "View",
+				"filtersTitle": "Filters",
+				"toggleColumns": "Toggle columns",
+				"delete": "Delete",
+				"deleteConfirmation": {
+					"title": "Are you absolutely sure?",
+					"description": "This action cannot be undone. This will permanently delete {count} selected {count, plural, one {row} other {rows}}.",
+					"cancel": "Cancel",
+					"confirm": "Delete"
+				},
+				"addUser": "Add user",
+				"noResults": "No results.",
+				"rowsPerPage": "Rows per page",
+				"of": "of",
+				"dash": "-",
+				"filters": {
+					"searchPlaceholder": "Filter by name or email..."
+				},
+				"rowActions": {
+					"edit": "Edit",
+					"editShortcut": "⌘E",
+					"duplicate": "Duplicate",
+					"duplicateShortcut": "⌘D",
+					"archive": "Archive",
+					"archiveShortcut": "⌘A",
+					"more": "More",
+					"moveToProject": "Move to project",
+					"moveToFolder": "Move to folder",
+					"advancedOptions": "Advanced options",
+					"share": "Share",
+					"addToFavorites": "Add to favorites",
+					"delete": "Delete",
+					"deleteShortcut": "⌘⌫"
+				},
+				"loading": "Loading patients...",
+				"error": "Failed to load patients. Please try again."
+			}
+		}
+	},
+	"account": {
+		"settings": "Settings",
+		"logout": "Logout",
+		"billing": "Billing",
+		"notifications": "Notifications",
+		"login": {
+			"pageTitle": "Sign in | Starter",
+			"title": "Continue to Starter",
+			"description": "Log in or register with the options below",
+			"heroTitle": "Welcome to Starter",
+			"heroSubtitle": "Sign in or create an account",
+			"emailCta": "Continue with Email",
+			"backFromEmailStep": "Back",
+			"orDivider": "or",
+			"moreOptionsShow": "Show other options",
+			"moreOptionsHide": "Hide other options",
+			"emailContinue": "Continue",
+			"titleOtp": "Check your email",
+			"otpDescription": "Enter the verification code we sent to your email",
+			"otpRequestedRelative": "Code requested {relativeTime}",
+			"withEmail": "Sign in with email",
+			"withGoogle": "Continue with Google",
+			"signingIn": "Signing in...",
+			"verifying": "Verifying...",
+			"verify": "Verify",
+			"orContinueWith": "Or continue with",
+			"noAccount": "Don't have an account? Sign up",
+			"backToEmail": "Back to email",
+			"otpSent": "Verification code sent to your email",
+			"loginSuccess": "Successfully logged in",
+			"legal": {
+				"prefix": "By signing in you agree to our",
+				"acknowledge": "By continuing, you acknowledge that you understand and agree to the",
+				"betweenClauses": " and ",
+				"ending": ".",
+				"terms": "Terms of service",
+				"termsPath": "Terms & Conditions",
+				"privacy": "Privacy policy",
+				"privacyPath": "Privacy Policy"
+			},
+			"testimonials": {
+				"slide0": {
+					"lead": "We finally have one place for clinical notes, billing, and follow-ups,",
+					"punct": " ",
+					"highlight": "and the team onboards new staff in a day instead of a week\"",
+					"name": "Jordan Lee",
+					"role": "Clinic lead • United States"
+				},
+				"slide1": {
+					"lead": "The biggest win is knowing nothing slips through the cracks",
+					"punct": ",",
+					"highlight": " from intake to the next visit.\"",
+					"name": "Samira Khan",
+					"role": "Operations • United Kingdom"
+				},
+				"slide2": {
+					"lead": "We replaced three tools with a single workflow",
+					"punct": " ",
+					"highlight": "and patients get clearer, faster answers.\"",
+					"name": "Elena Rossi",
+					"role": "Private practice • Italy"
+				},
+				"slide3": {
+					"lead": "I needed software that my whole team would actually use",
+					"punct": ",",
+					"highlight": " not another clunky back office app.\"",
+					"name": "Alex Nguyen",
+					"role": "Allied health • Canada"
+				}
+			},
+			"errors": {
+				"invalidCredentials": "Invalid email or password",
+				"invalidOtp": "Invalid verification code. Please try again."
+			},
+			"fields": {
+				"email": {
+					"placeholder": "Email address",
+					"placeholderAlt": "Enter email address",
+					"label": "Email address",
+					"errors": {
+						"required": "Email is required",
+						"invalid": "Invalid email address"
+					}
+				},
+				"password": {
+					"placeholder": "Password",
+					"label": "Password",
+					"errors": {
+						"required": "Password is required"
+					}
+				},
+				"otp": {
+					"label": "Enter verification code"
+				}
+			}
+		},
+		"signup": {
+			"title": "Create your account",
+			"withEmail": "Sign up with email",
+			"withGoogle": "Continue with Google",
+			"creatingAccount": "Creating account...",
+			"orContinueWith": "Or continue with",
+			"haveAccount": "Already have an account? Sign in",
+			"errors": {
+				"failedToCreate": "Failed to create account. Please try again."
+			},
+			"fields": {
+				"name": {
+					"placeholder": "Full name",
+					"label": "Full name",
+					"errors": {
+						"required": "Full name is required",
+						"tooShort": "Full name must be at least 2 characters"
+					}
+				},
+				"business": {
+					"placeholder": "Business name",
+					"label": "Business name",
+					"errors": {
+						"required": "Business name is required",
+						"tooShort": "Business name must be at least 2 characters"
+					}
+				},
+				"email": {
+					"placeholder": "Email address",
+					"label": "Email address",
+					"errors": {
+						"required": "Email is required",
+						"invalid": "Please enter a valid email address"
+					}
+				},
+				"password": {
+					"placeholder": "Password",
+					"label": "Password",
+					"errors": {
+						"required": "Password is required",
+						"tooShort": "Password must be at least 8 characters"
+					}
+				}
+			}
+		}
+	},
+	"organization": {
+		"organizations": "MyOlv",
+		"addOrganization": "Add practice",
+		"switchOrganization": "Switch practice",
+		"createOrganization": "Create practice",
+		"errors": {
+			"failedToSwitch": "Failed to switch practice",
+			"failedToCreate": "Failed to create practice"
+		}
+	},
+	"onboarding": {
+		"eyebrow": "Workspace setup",
+		"title": "Set up your practice",
+		"description": "Accept an invite or create a workspace to continue.",
+		"restoringTitle": "Restoring your workspace",
+		"restoringDescription": "We found an existing practice and are reconnecting your session now.",
+		"restoreErrorTitle": "We couldn't restore your workspace",
+		"restoreErrorDescription": "Try again to continue into your existing practice.",
+		"restoreAction": "Try again",
+		"loadingInvitations": "Checking for pending invitations...",
+		"inviteTitle": "Join your team",
+		"inviteDescription": "We found invitations for {email}. Accept one to continue.",
+		"inviteEmpty": "No invitation found for this account.",
+		"inviteAction": "Accept invitation",
+		"inviteActionPending": "Joining...",
+		"inviteExpires": "Expires {date}",
+		"createTitle": "Create your practice",
+		"createDescription": "No invitation is associated with {email}, so let's create your workspace first.",
+		"createHelper": "You can invite your team and finish setup once you're inside.",
+		"createAction": "Create practice",
+		"createActionPending": "Creating practice...",
+		"sideTitle": "What happens next",
+		"sideDescription": "We’ll take you straight into your workspace once this step is done.",
+		"sideItems": {
+			"invite": {
+				"title": "Join with one tap",
+				"description": "Pending invites appear automatically here so people land in the right workspace."
+			},
+			"create": {
+				"title": "Start with a clean workspace",
+				"description": "If there’s no invite, you can create a practice without leaving onboarding."
+			},
+			"team": {
+				"title": "Add the rest later",
+				"description": "Workspace creation stays lightweight so you can invite teammates after setup."
+			}
+		},
+		"errors": {
+			"loadInvitations": "We couldn't load your invitations.",
+			"acceptInvitation": "We couldn't accept that invitation.",
+			"createOrganization": "We couldn't create your practice.",
+			"restoreOrganization": "We couldn't restore your practice.",
+			"uploadLogo": "We created your practice, but couldn't upload the logo. You can add it from settings.",
+			"invalidOrganizationName": "Enter a practice name to continue."
+		},
+		"fields": {
+			"organizationName": {
+				"label": "Practice name",
+				"placeholder": "Acme Clinic"
+			}
+		}
+	},
+	"organizationLogo": {
+		"fieldLabel": "Logo",
+		"optional": "optional",
+		"altFallback": "Practice logo",
+		"actions": {
+			"upload": "Upload logo",
+			"replace": "Replace logo",
+			"remove": "Remove"
+		},
+		"errors": {
+			"upload": "We couldn't upload that image. Please try again.",
+			"tooLarge": "Image is too large. Maximum size is {size}MB."
+		}
+	},
+	"acceptInvitation": {
+		"eyebrow": "Team invitation",
+		"title": "You're invited",
+		"titleWithOrganization": "Join {organizationName}",
+		"description": "You've been invited to join this workspace as a {role}. This invitation was sent to {email}.",
+		"descriptionFallback": "Accept this invitation to join the workspace.",
+		"defaultRole": "Member",
+		"accept": "Accept invitation",
+		"decline": "Decline",
+		"signInAsOther": "Sign in with a different account",
+		"success": "Welcome aboard!",
+		"rejected": "Invitation declined",
+		"signedInAs": "Signed in as {email}",
+		"mismatch": {
+			"title": "This invitation was sent to a different email",
+			"description": "The invitation is for {invitationEmail}, but you're signed in as {userEmail}. Sign out and sign back in with the invited email to accept."
+		},
+		"errors": {
+			"accept": "We couldn't accept that invitation.",
+			"reject": "We couldn't decline that invitation."
+		}
+	},
+	"globalError": {
+		"globalTitle": "Oops! Something went wrong.",
+		"globalDescription": "We apologize for the inconvenience. An unexpected error has occurred.",
+		"tryAgain": "Try again"
+	},
+	"subscription": {
+		"dialog": {
+			"title": "Choose your plan",
+			"description": "Select a plan to unlock all features and take your business to the next level.",
+			"perMonth": "month",
+			"getStarted": "Get Started",
+			"selectPlan": "Select Plan",
+			"footer": "All plans include a 14-day free trial. Cancel anytime.",
+			"badges": {
+				"popular": "Most Popular"
+			},
+			"plans": {
+				"starter": {
+					"description": "Perfect for small teams getting started"
+				},
+				"pro": {
+					"description": "For growing teams that need more power"
+				}
+			},
+			"features": {
+				"upTo5Users": "Up to 5 team members",
+				"basicAnalytics": "Basic analytics",
+				"emailSupport": "Email support",
+				"5gbStorage": "5 GB storage",
+				"unlimitedUsers": "Unlimited team members",
+				"advancedAnalytics": "Advanced analytics & reports",
+				"prioritySupport": "Priority support",
+				"unlimitedStorage": "Unlimited storage",
+				"apiAccess": "API access",
+				"customIntegrations": "Custom integrations"
+			}
+		},
+		"upgrade": {
+			"title": "Upgrade your plan",
+			"description": "Choose a plan that best fits your needs and unlock more features."
+		}
+	},
+	"components": {
+		"chat": {
+			"input": {
+				"stop": "Stop",
+				"send": "Send",
+				"attachFiles": "Attach files",
+				"chooseFiles": "Choose files",
+				"dropzone": "Chat file dropzone",
+				"dropActive": "Drop files to attach",
+				"fileReadFailed": "Could not read one of those files. Try again.",
+				"fileTooLarge": "Files must be {size} or smaller.",
+				"fileUploadFailed": "Could not upload one of those files.",
+				"removeFile": "Remove {filename}",
+				"tooManyFiles": "You can attach up to {count} files.",
+				"unsupportedFileType": "Only text-like files can be uploaded to knowledge right now.",
+				"uploaded": "Uploaded",
+				"uploadFailed": "Upload failed",
+				"uploading": "Uploading...",
+				"processing": "Indexing..."
+			},
+			"message": {
+				"copyToClipboard": "Copy to clipboard",
+				"copiedToClipboard": "Copied to clipboard",
+				"tool": {
+					"inputStreaming": "Preparing...",
+					"processing": "Processing...",
+					"completed": "completed",
+					"noResults": "No results found",
+					"error": "An error occurred",
+					"emailDraft": {
+						"to": "To",
+						"subject": "Subject",
+						"message": "Message",
+						"addressPlaceholder": "name@example.com",
+						"subjectPlaceholder": "Add a subject",
+						"contentPlaceholder": "Write your message",
+						"copyMessage": "Copy message",
+						"copiedMessage": "Message copied",
+						"openInMailApp": "Open in mail app"
+					},
+					"labResults": {
+						"title": "Lab Results Analysis",
+						"analyzing": "Analyzing lab results...",
+						"noResults": "No lab results found",
+						"resultsCount": "{count, plural, one {result} other {results}}",
+						"uncategorized": "Other"
+					},
+					"workoutPlan": {
+						"generating": "Generating workout plan...",
+						"failed": "Could not generate a workout plan",
+						"fallbackTitle": "Workout Plan",
+						"daysCount": "{count, plural, one {# day} other {# days}}"
+					}
+				},
+				"file": {
+					"file": "File",
+					"attachment": "Attachment"
+				},
+				"linkPreview": {
+					"faviconAlt": "{siteName} favicon"
+				}
+			}
+		},
+		"table": {
+			"rowsPerPage": "Rows per page",
+			"selectResults": "Select number of results",
+			"dash": "-",
+			"of": "of",
+			"firstPage": "Go to first page",
+			"previousPage": "Go to previous page",
+			"nextPage": "Go to next page",
+			"lastPage": "Go to last page",
+			"filters": {
+				"ui": {
+					"searchPlaceholder": "Search...",
+					"clear": "Clear search",
+					"title": "Filters"
+				},
+				"values": {
+					"status": "Status",
+					"leadScore": "Lead Score"
+				}
+			},
+			"view": {
+				"title": "View",
+				"toggleColumns": "Toggle columns"
+			},
+			"delete": {
+				"button": "Delete",
+				"title": "Delete {count} items",
+				"description": "Are you sure you want to delete {count} items? You cannot undo this action.",
+				"cancel": "Cancel",
+				"confirm": "Delete"
+			},
+			"download": {
+				"button": "Download"
+			},
+			"selection": {
+				"selectAll": "Select all",
+				"selectNone": "Select none",
+				"selectAllNumber": "Select all {count}",
+				"selected": "{count} of {total} selected"
+			}
+		}
+	},
+	"errorPage": {
+		"title": "Something went wrong",
+		"description": "It looks like there was an error, try reloading the page",
+		"reload": "Reload page"
+	},
+	"scribe": {
+		"connecting": "Connecting...",
+		"startRecording": "Start Scribe",
+		"stopRecording": "Stop Scribe",
+		"listening": "Listening...",
+		"transcribing": "Transcribing...",
+		"practitioner": "Practitioner",
+		"patient": "Patient",
+		"unknown": "Speaker",
+		"error": "An error occurred while transcribing",
+		"recordingStopped": "Recording stopped",
+		"finalizingTranscript": "Generating final transcript...",
+		"finalized": "Session finalized",
+		"emptyTranscript": "No transcript yet. Start recording to begin.",
+		"liveTranscript": "Live Transcript",
+		"pause": "Pause",
+		"resume": "Resume",
+		"resumeSession": "Resume Session",
+		"resumingSession": "Resuming session...",
+		"endSession": "End Session",
+		"endPreviousSession": "End previous session",
+		"endingSession": "Ending session...",
+		"sessionEnded": "Session completed",
+		"sessionResumed": "Session resumed",
+		"activeSessionBannerLabel": "Active session",
+		"sessionTimerLabel": "Elapsed session time",
+		"sessionTimerValue": "Elapsed session time: {time}",
+		"endSessionConfirm": "Are you sure you want to end this session? The final transcript will be generated.",
+		"activeSessionTitle": "There is already an active session",
+		"activeSessionDescription": "Another session is already in progress. Open it to continue there, or end it before resuming this one.",
+		"goToActiveSession": "Go to active session",
+		"resumeSessionError": "Failed to resume session",
+		"uploading": "Uploading audio..."
+	},
+	"sessionIntelligence": {
+		"patientSnapshot": "Patient",
+		"visitReason": "Visit reason",
+		"concerns": "Active concerns",
+		"riskFlags": "Flags",
+		"lastVisit": "Last visit",
+		"lastLabs": "Last labs",
+		"noPriorVisits": "No prior visits",
+		"noLabsAvailable": "No labs available",
+		"liveNote": "Live intelligence",
+		"liveNotePlaceholder": "Live guidance will appear here as you talk, like a note from your clinical copilot.",
+		"updatedJustNow": "Updated just now",
+		"todos": "Todos",
+		"toggleTodoItemAria": "Toggle todo: {text}",
+		"noTodos": "Action items will appear as the conversation progresses.",
+		"diagnosis": "Diagnosis",
+		"workingDx": "Wdx",
+		"differentialDx": "Ddx",
+		"noDiagnoses": "Diagnostic reasoning will appear as clinical details emerge.",
+		"reasoning": "Reasoning",
+		"evidence": "Evidence",
+		"missing": "Missing / Conflicting",
+		"verifyNext": "Verify next",
+		"history": "History",
+		"priorSessions": "Prior Sessions",
+		"recentLabs": "Recent Labs",
+		"noHistory": "No prior session history for this patient.",
+		"notes": "Notes",
+		"noNotes": "No notes linked to this patient yet.",
+		"analyzing": "Analyzing conversation...",
+		"waitingForTranscript": "Waiting for conversation to begin...",
+		"promptPlaceholder": "Ask about this patient or session…",
+		"promptAriaLabel": "Question for live intelligence",
+		"promptSend": "Send question"
+	},
+	"mail": {
+		"connect": {
+			"title": "Connect your Gmail",
+			"description": "Connect your Gmail account to view and manage your emails directly from the dashboard.",
+			"button": "Connect Gmail"
+		},
+		"reconnect": {
+			"title": "Gmail connection expired",
+			"descriptionWithEmail": "Your connection to <strong>{email}</strong> has expired. Please reconnect to continue accessing your emails.",
+			"description": "Your Gmail connection has expired. Please reconnect to continue accessing your emails.",
+			"button": "Reconnect Gmail"
+		},
+		"folders": {
+			"inbox": "Inbox",
+			"sent": "Sent",
+			"drafts": "Drafts",
+			"starred": "Starred",
+			"trash": "Trash"
+		},
+		"empty": {
+			"title": "No messages",
+			"description": "Your inbox is empty. Compose a new message to get started."
+		},
+		"compose": "Compose",
+		"newMessage": "New message",
+		"reply": "Reply",
+		"send": "Send",
+		"sending": "Sending...",
+		"sent": "Message sent",
+		"discard": "Discard",
+		"to": "To",
+		"cc": "Cc",
+		"bcc": "Bcc",
+		"subject": "Subject",
+		"writeMessage": "Write your message...",
+		"addRecipient": "Add recipient",
+		"noSubject": "(no subject)",
+		"messageCount": "{count, plural, one {# message} other {# messages}}",
+		"loadMore": "Load more",
+		"archive": "Archive",
+		"archived": "Archived",
+		"moveToTrash": "Move to trash",
+		"trashed": "Moved to trash",
+		"star": "Star",
+		"unstar": "Unstar",
+		"markUnread": "Mark as unread",
+		"markedUnread": "Marked as unread",
+		"markRead": "Mark as read",
+		"markedRead": "Marked as read",
+		"search": "Search Gmail...",
+		"selected": "{count, plural, one {# selected} other {# selected}}",
+		"selectAll": "Select all",
+		"selectThread": "Select thread",
+		"deselectAll": "Deselect all",
+		"bulkArchived": "{count, plural, one {# thread archived} other {# threads archived}}",
+		"bulkTrashed": "{count, plural, one {# thread trashed} other {# threads trashed}}",
+		"bulkStarred": "{count, plural, one {# thread starred} other {# threads starred}}",
+		"bulkUnstarred": "{count, plural, one {# thread unstarred} other {# threads unstarred}}",
+		"bulkMarkedRead": "{count, plural, one {# thread marked read} other {# threads marked read}}",
+		"bulkMarkedUnread": "{count, plural, one {# thread marked unread} other {# threads marked unread}}",
+		"download": "Download",
+		"sections": {
+			"today": "Today",
+			"yesterday": "Yesterday",
+			"last7Days": "Last 7 days",
+			"older": "Older"
+		},
+		"patientPanel": {
+			"title": "Patient details",
+			"subtitle": "From this email's sender",
+			"viewPatient": "View patient: {name}",
+			"openProfile": "Open profile",
+			"notFound": "We couldn't load this patient.",
+			"tabs": {
+				"details": "Details",
+				"diagnosis": "Diagnosis",
+				"sessions": "Sessions",
+				"labs": "Labs"
+			},
+			"noSessions": "No sessions yet for this patient.",
+			"noLabs": "No lab reports yet for this patient."
+		}
+	},
+	"notes": {
+		"title": "Notes",
+		"search": "Search notes…",
+		"newNote": "New note",
+		"editNote": "Edit note",
+		"untitled": "Untitled",
+		"created": "Note created",
+		"noSearchResults": "No notes match your search",
+		"placeholder": {
+			"title": "Title",
+			"body": "Take a note...",
+			"bodyWithMention": "Take a note... Use @ to mention patients or labs"
+		},
+		"mentions": {
+			"patient": "Patient",
+			"lab": "Lab Result"
+		},
+		"emptyState": {
+			"title": "No notes yet",
+			"description": "Create your first note to start organizing your thoughts. Use @ to mention patients or labs."
+		}
+	},
+	"calendar": {
+		"connectTitle": "Connect Google Calendar",
+		"connectDescription": "View and manage your Google Calendar events directly from your dashboard.",
+		"connectButton": "Connect with Google",
+		"connectSuccess": "Google Calendar connected successfully.",
+		"connectFailed": "Failed to connect Google Calendar. Please try again.",
+		"today": "Today",
+		"noEvents": "No upcoming events.",
+		"eventDetail": {
+			"noTitle": "No title",
+			"when": "When",
+			"allDay": "All day",
+			"location": "Location",
+			"description": "Description",
+			"organizer": "Organizer",
+			"creator": "Creator",
+			"attendees": "Attendees",
+			"status": "Status",
+			"conference": "Conference",
+			"recurring": "Recurrence",
+			"recurringHint": "This event is part of a series.",
+			"joinVideo": "Join video call",
+			"openInGoogle": "Open in Google Calendar",
+			"created": "Created",
+			"updated": "Updated",
+			"response": {
+				"needsAction": "Awaiting response",
+				"declined": "Declined",
+				"tentative": "Tentative",
+				"accepted": "Accepted"
+			},
+			"eventStatus": {
+				"confirmed": "Confirmed",
+				"tentative": "Tentative",
+				"cancelled": "Cancelled"
+			}
+		}
+	},
+	"settings": {
+		"tabs": {
+			"profile": "General",
+			"organization": "Practice",
+			"team": "Team",
+			"subscription": "Subscription",
+			"security": "Security"
+		},
+		"profile": {
+			"title": "Profile",
+			"description": "Manage your personal information and account details.",
+			"avatar": {
+				"title": "Avatar",
+				"description": "This is your avatar. Click on the avatar to upload a custom one from your files.",
+				"hint": "An avatar is optional but strongly recommended."
+			},
+			"displayName": {
+				"title": "Display Name",
+				"description": "Please enter your full name, or a display name you are comfortable with.",
+				"hint": "Please use 32 characters at maximum."
+			},
+			"email": {
+				"title": "Email",
+				"description": "Change your email address.",
+				"hint": "This is your primary email address for notifications and more."
+			},
+			"fields": {
+				"name": "Name",
+				"namePlaceholder": "Enter your full name",
+				"email": "Email",
+				"emailHint": "Email cannot be changed. Contact support if you need to update it."
+			}
+		},
+		"organization": {
+			"name": {
+				"title": "Practice name",
+				"description": "The name shown for your workspace in the app and in shared contexts.",
+				"hint": "Use the name patients and teammates recognize.",
+				"placeholder": "Acme Physiotherapy"
+			},
+			"logo": {
+				"title": "Logo",
+				"description": "Upload an image that represents your practice.",
+				"hint": "PNG, JPG, WEBP or SVG up to 4MB. A square image works best."
+			},
+			"empty": "No active practice is selected. Switch or create a practice to edit these settings.",
+			"readOnly": "Only practice owners and admins can edit workspace details.",
+			"errors": {
+				"forbidden": "You do not have permission to update this practice."
+			}
+		},
+		"team": {
+			"title": "Team",
+			"description": "Invite teammates and manage who has access to this workspace.",
+			"empty": {
+				"noOrganization": "No active practice is selected. Switch or create a practice to manage your team.",
+				"noMembers": "No teammates yet. Invite someone to get started."
+			},
+			"labels": {
+				"you": "(you)"
+			},
+			"roles": {
+				"owner": "Owner",
+				"admin": "Admin",
+				"member": "Member"
+			},
+			"status": {
+				"pending": "Invited"
+			},
+			"actions": {
+				"more": "More actions",
+				"resend": "Resend invitation",
+				"cancelInvitation": "Cancel invitation",
+				"remove": "Remove from team"
+			},
+			"invite": {
+				"cta": "Invite member",
+				"success": "Invitation sent to {email}",
+				"title": "Invite a teammate",
+				"description": "They'll receive an email with a link to join this workspace.",
+				"submit": "Send invitation",
+				"fields": {
+					"email": {
+						"label": "Email address",
+						"placeholder": "teammate@example.com"
+					},
+					"role": {
+						"label": "Role",
+						"placeholder": "Select a role",
+						"options": {
+							"member": "Member",
+							"admin": "Admin"
+						}
+					}
+				},
+				"errors": {
+					"required": "Email is required",
+					"invalidEmail": "Enter a valid email address"
+				}
+			},
+			"errors": {
+				"invite": "We couldn't send that invitation.",
+				"cancelInvitation": "We couldn't cancel that invitation.",
+				"resend": "We couldn't resend that invitation.",
+				"remove": "We couldn't remove that member."
+			},
+			"manage": {
+				"invitation": {
+					"title": "Manage invitation",
+					"description": "Resend or cancel the invitation sent to {email}.",
+					"resend": "Resend",
+					"cancel": "Cancel invitation",
+					"success": "Invitation canceled",
+					"resent": "Invitation resent to {email}"
+				},
+				"member": {
+					"title": "Remove teammate",
+					"description": "Are you sure you want to remove {name} from this team? They will immediately lose access.",
+					"remove": "Remove",
+					"success": "{name} has been removed"
+				}
+			}
+		},
+		"subscription": {
+			"currentPlan": "Current Plan",
+			"description": "Manage your subscription and billing settings.",
+			"freePlan": "Free Plan",
+			"freePlanDescription": "You're currently on the free plan. Upgrade to unlock more features.",
+			"manageBilling": "Manage Billing",
+			"upgradeComingSoon": "Upgrade options coming soon!",
+			"renewsOn": "Renews on {date}",
+			"status": {
+				"active": "Active",
+				"canceled": "Canceled",
+				"trialing": "Trial"
+			},
+			"features": {
+				"title": "Plan Features",
+				"description": "What's included in your current plan.",
+				"feature1": "Unlimited patients",
+				"feature2": "AI-powered insights",
+				"feature3": "Email integrations",
+				"feature4": "Priority support"
+			}
+		},
+		"security": {
+			"mfa": {
+				"title": "Multi-factor authentication",
+				"description": "Add an additional layer of security to your account by requiring more than just a password to sign in.",
+				"addDevice": "Add new device",
+				"remove": "Remove",
+				"socialAccountNotice": "Two-factor authentication is not available for social login accounts.",
+				"addedOn": "Added on {date}",
+				"verified": "Verified",
+				"unverified": "Unverified",
+				"errors": {
+					"enableFailed": "Failed to enable two-factor authentication",
+					"disableFailed": "Failed to disable two-factor authentication",
+					"invalidCode": "Invalid verification code. Please try again."
+				},
+				"success": {
+					"enabled": "Two-factor authentication enabled successfully",
+					"disabled": "Two-factor authentication disabled"
+				},
+				"setup": {
+					"passwordTitle": "Verify your identity",
+					"passwordDescription": "Enter your password to enable two-factor authentication.",
+					"passwordLabel": "Password",
+					"passwordPlaceholder": "Enter your password",
+					"scanTitle": "Scan QR code",
+					"scanDescription": "Scan this QR code with your authenticator app (Google Authenticator, Authy, etc.)",
+					"backupCodesTitle": "Backup codes",
+					"backupCodesDescription": "Save these backup codes in a secure place. You can use them to access your account if you lose your device.",
+					"verifyTitle": "Verify setup",
+					"verifyDescription": "Enter the 6-digit code from your authenticator app to complete setup.",
+					"verify": "Verify"
+				},
+				"disable": {
+					"title": "Remove two-factor authentication",
+					"description": "Enter your password to remove two-factor authentication from your account."
+				}
+			}
+		}
+	}
+}

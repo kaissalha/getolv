@@ -1,0 +1,1 @@
+ALTER TABLE "patient_sessions" ADD COLUMN "summary" text;

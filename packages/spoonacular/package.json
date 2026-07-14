@@ -1,0 +1,38 @@
+{
+	"name": "@starter/spoonacular",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Vendored Spoonacular API client built from ddsky/spoonacular-api-clients/typescript",
+	"keywords": [
+		"fetch",
+		"generated",
+		"openapi-client",
+		"spoonacular",
+		"typescript"
+	],
+	"license": "Unlicense",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ddsky/spoonacular-api-clients.git",
+		"directory": "typescript"
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"type": "commonjs",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"dependencies": {
+		"whatwg-fetch": "^3.6.20"
+	}
+}

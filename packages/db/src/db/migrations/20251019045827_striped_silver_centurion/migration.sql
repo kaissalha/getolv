@@ -1,0 +1,1 @@
+ALTER TABLE "patient_sessions" DROP COLUMN "status";

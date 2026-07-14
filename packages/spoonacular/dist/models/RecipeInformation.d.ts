@@ -1,0 +1,57 @@
+import { RecipeInformationExtendedIngredientsInner } from '../models/RecipeInformationExtendedIngredientsInner';
+import { RecipeInformationWinePairing } from '../models/RecipeInformationWinePairing';
+import { TasteInformation } from '../models/TasteInformation';
+export declare class RecipeInformation {
+    'id': number;
+    'title': string;
+    'image': string | null;
+    'imageType'?: string;
+    'servings': number;
+    'readyInMinutes': number;
+    'preparationMinutes'?: number | null;
+    'cookingMinutes'?: number | null;
+    'license'?: string;
+    'sourceName': string;
+    'sourceUrl': string;
+    'spoonacularSourceUrl': string;
+    'aggregateLikes': number;
+    'healthScore': number;
+    'spoonacularScore': number;
+    'pricePerServing': number;
+    'analyzedInstructions': Array<any>;
+    'cheap': boolean;
+    'creditsText': string;
+    'cuisines': Array<string>;
+    'dairyFree': boolean;
+    'diets': Array<string>;
+    'gaps': string;
+    'glutenFree': boolean;
+    'instructions': string | null;
+    'lowFodmap': boolean;
+    'occasions': Array<string>;
+    'sustainable': boolean;
+    'vegan': boolean;
+    'vegetarian': boolean;
+    'veryHealthy': boolean;
+    'veryPopular': boolean;
+    'weightWatcherSmartPoints': number;
+    'dishTypes': Array<string>;
+    'extendedIngredients': Set<RecipeInformationExtendedIngredientsInner>;
+    'summary': string;
+    'winePairing'?: RecipeInformationWinePairing;
+    'taste'?: TasteInformation;
+    static readonly discriminator: string | undefined;
+    static readonly attributeTypeMap: Array<{
+        name: string;
+        baseName: string;
+        type: string;
+        format: string;
+    }>;
+    static getAttributeTypeMap(): {
+        name: string;
+        baseName: string;
+        type: string;
+        format: string;
+    }[];
+    constructor();
+}

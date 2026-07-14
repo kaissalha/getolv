@@ -1,0 +1,1 @@
+ALTER TABLE "patients" ADD COLUMN "family_medical_history" text;

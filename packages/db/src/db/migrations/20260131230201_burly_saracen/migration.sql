@@ -1,0 +1,3 @@
+ALTER TABLE "patient_lab_results" RENAME CONSTRAINT "patient_lab_results_patient_session_id_patient_sessions_id_fk" TO "patient_lab_results_patient_session_id_patient_sessions_id_fkey";--> statement-breakpoint
+ALTER TABLE "patient_lab_results" ALTER COLUMN "patient_session_id" DROP NOT NULL;--> statement-breakpoint
+ALTER TABLE "patient_lab_results" DROP CONSTRAINT "patient_lab_results_patient_session_id_patient_sessions_id_fkey", ADD CONSTRAINT "patient_lab_results_patient_session_id_patient_sessions_id_fkey" FOREIGN KEY ("patient_session_id") REFERENCES "patient_sessions"("id") ON DELETE SET NULL;
