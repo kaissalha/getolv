@@ -5,8 +5,8 @@ import { useTranslations } from "next-intl";
 
 import { CopyCardButton } from "@/app/[locale]/dashboard/patients/[id]/components/copy-card-button";
 import { formatCopyCard } from "@/app/[locale]/dashboard/patients/[id]/components/patient-card-copy";
-import type { RouterOutput } from "@starter/server";
-import { Skeleton } from "@starter/ui/components/skeleton";
+import type { RouterOutput } from "@getolv/server";
+import { Skeleton } from "@getolv/ui/components/skeleton";
 
 type PatientDetails = NonNullable<RouterOutput["patients"]["get"]>;
 

@@ -1,5 +1,5 @@
 {
-	"name": "@starter/ai",
+	"name": "@getolv/ai",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
@@ -31,7 +31,7 @@
 		"zod": "^4.4.3"
 	},
 	"devDependencies": {
-		"@starter/tsconfig": "workspace:*",
+		"@getolv/tsconfig": "workspace:*",
 		"@types/node": "^26.1.1",
 		"@typescript/native-preview": "^7.0.0-dev.20260707.2"
 	}

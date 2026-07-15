@@ -1,8 +1,8 @@
 import { generateText } from "ai";
 import { createScorer, evalite } from "evalite";
 
-import { models } from "@starter/ai/models";
-import { buildDailySummarySummaryPrompt, type DailySummaryPromptInput } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { buildDailySummarySummaryPrompt, type DailySummaryPromptInput } from "@getolv/ai/prompts";
 
 import { countWords, hasMarkdownishFormatting, scoreKeywordGroups } from "./utils";
 

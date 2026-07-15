@@ -8,9 +8,9 @@ import { useTranslations } from "next-intl";
 import { parseAsString, useQueryState } from "nuqs";
 
 import { useTRPC } from "@/lib/trpc";
-import type { RouterOutput } from "@starter/server";
-import { toast } from "@starter/ui/components/sonner";
-import { useIsMobile } from "@starter/ui/hooks/use-mobile";
+import type { RouterOutput } from "@getolv/server";
+import { toast } from "@getolv/ui/components/sonner";
+import { useIsMobile } from "@getolv/ui/hooks/use-mobile";
 
 import { patchThreadClassificationInQueryData } from "./mail-thread-classification";
 import { patchMailThreadStarState } from "./mail-thread-star-state";

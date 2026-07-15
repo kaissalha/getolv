@@ -17,8 +17,8 @@ import {
 } from "@tanstack/react-table";
 import { ArrowDownIcon, ArrowUpDownIcon, ArrowUpIcon } from "lucide-react";
 
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@starter/ui/components/table";
-import { cn } from "@starter/ui/lib/utils";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@getolv/ui/components/table";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { DataTablePagination } from "./data-table-pagination";
 import { DataTableSelectionToolbar } from "./data-table-selection-toolbar";

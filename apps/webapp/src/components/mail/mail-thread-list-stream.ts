@@ -1,5 +1,5 @@
 import type { MailFolder } from "@/hooks/use-mail-state";
-import type { MailLabelSummary } from "@starter/app-store";
+import type { MailLabelSummary } from "@getolv/app-store";
 
 import type { ThreadItemData } from "./mail-thread-item";
 

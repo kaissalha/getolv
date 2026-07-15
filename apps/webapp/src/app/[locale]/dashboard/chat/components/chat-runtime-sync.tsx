@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from "uuid";
 
 import { useChatSession, useChatSessionStoreApi } from "@/components/chat/stores/chat-session-store";
 import { useAutoResume } from "@/hooks/chat/use-auto-resume";
-import type { BaseChatUIMessage } from "@starter/server";
+import type { BaseChatUIMessage } from "@getolv/server";
 
 import { useStreamingMessageSnapshot } from "./use-streaming-message-snapshot";
 

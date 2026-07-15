@@ -7,7 +7,7 @@ import { FileText } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useTRPC } from "@/lib/trpc";
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@starter/ui/components/empty";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@getolv/ui/components/empty";
 
 import { LabsOverviewSkeleton } from "./labs-overview-skeleton";
 import { LabsWithReports } from "./labs-with-reports";

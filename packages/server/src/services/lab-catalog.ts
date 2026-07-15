@@ -10,7 +10,7 @@ import {
 	labTestReferenceRanges,
 	labTests,
 	type ReferenceRanges,
-} from "@starter/db";
+} from "@getolv/db";
 
 import { getLocationFromHeaders } from "./location";
 

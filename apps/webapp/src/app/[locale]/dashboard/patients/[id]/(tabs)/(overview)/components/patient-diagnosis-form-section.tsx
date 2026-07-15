@@ -4,9 +4,9 @@ import { CirclePlusIcon, Trash2Icon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useFormContext } from "react-hook-form";
 
-import { Button } from "@starter/ui/components/button";
-import { Field, FieldControl, FieldLabel } from "@starter/ui/components/field";
-import { Textarea } from "@starter/ui/components/textarea";
+import { Button } from "@getolv/ui/components/button";
+import { Field, FieldControl, FieldLabel } from "@getolv/ui/components/field";
+import { Textarea } from "@getolv/ui/components/textarea";
 
 import { SectionLabel } from "./overview-sidebar-card";
 import type { PatientClinicalStateFormValues } from "./patient-clinical-state-form";

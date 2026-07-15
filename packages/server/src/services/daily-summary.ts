@@ -1,7 +1,7 @@
 import { Output, generateText } from "ai";
 import { and, desc, eq, gte, lt } from "drizzle-orm";
 
-import { models } from "@starter/ai/models";
+import { models } from "@getolv/ai/models";
 import {
 	buildDailySummaryActionsPrompt,
 	buildDailySummaryStoryPrompt,
@@ -9,10 +9,10 @@ import {
 	buildDailySummaryTitlePrompt,
 	dailySummaryActionsOutputSchema,
 	type DailySummaryPromptInput,
-} from "@starter/ai/prompts";
-import { db, notes } from "@starter/db";
-import { dailySummaries } from "@starter/db/schema";
-import { logger } from "@starter/logger/server";
+} from "@getolv/ai/prompts";
+import { db, notes } from "@getolv/db";
+import { dailySummaries } from "@getolv/db/schema";
+import { logger } from "@getolv/logger/server";
 
 import { getCalendarConnection, listAllCalendarEvents } from "./google-calendar";
 import { getMailConnection, listMailThreads, readInitialMailThreadListPage, type MailThreadListPage } from "./mail";

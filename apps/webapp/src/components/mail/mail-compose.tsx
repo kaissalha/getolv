@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import { parseAsString, useQueryState } from "nuqs";
 
 import { useTRPC } from "@/lib/trpc";
-import { Button, buttonVariants } from "@starter/ui/components/button";
+import { Button, buttonVariants } from "@getolv/ui/components/button";
 import {
 	Credenza,
 	CredenzaBody,
@@ -17,9 +17,9 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { toast } from "@starter/ui/components/sonner";
-import { cn } from "@starter/ui/lib/utils";
+} from "@getolv/ui/components/credenza";
+import { toast } from "@getolv/ui/components/sonner";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { MAIL_COMPOSE_NEW, MAIL_COMPOSE_PARAM } from "./mail-url-state";
 import { type ComposeState, useComposeDraft } from "./use-compose-draft";

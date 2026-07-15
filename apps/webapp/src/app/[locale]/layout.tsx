@@ -6,7 +6,7 @@ import { getMessages } from "next-intl/server";
 
 import { BaseLayout } from "@/components/layout/base-layout";
 import { generateLocalizedStaticParams, routing } from "@/i18n/routing";
-import "@starter/ui/globals.css";
+import "@getolv/ui/globals.css";
 
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
@@ -15,10 +15,10 @@ export const generateStaticParams = generateLocalizedStaticParams;
 
 export const metadata: Metadata = {
 	title: {
-		default: "Starter",
-		template: "%s | Starter",
+		default: "getolv",
+		template: "%s | getolv",
 	},
-	description: "Starter is a platform",
+	description: "getolv is a platform",
 };
 
 type LocaleLayoutProps = {

@@ -6,13 +6,13 @@ import ReactDOM from "react-dom/client";
 import Mention from "@tiptap/extension-mention";
 import Placeholder from "@tiptap/extension-placeholder";
 import { EditorContent, useEditor } from "@tiptap/react";
-import StarterKit from "@tiptap/starter-kit";
+import getolvKit from "@tiptap/starter-kit";
 import type { SuggestionOptions, SuggestionProps } from "@tiptap/suggestion";
 import { UserIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import type { NoteMentionResourceType } from "@starter/db";
-import { cn } from "@starter/ui/lib/utils";
+import type { NoteMentionResourceType } from "@getolv/db";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { htmlToMentionMarkup, mentionMarkupToHtml } from "./mention-utils";
 import type { MentionOption } from "./types";
@@ -235,7 +235,7 @@ export const MentionTextarea = ({
 
 	const editor = useEditor({
 		extensions: [
-			StarterKit.configure({
+			getolvKit.configure({
 				heading: false,
 				bulletList: false,
 				orderedList: false,

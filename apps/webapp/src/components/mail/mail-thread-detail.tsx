@@ -10,8 +10,8 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { cn } from "@starter/ui/lib/utils";
+} from "@getolv/ui/components/credenza";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { MailThreadDetailBody } from "./mail-thread-detail-body";
 import { MailThreadDetailHeader } from "./mail-thread-detail-header";

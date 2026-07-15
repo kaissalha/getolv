@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import type { OAuthConnection } from "@starter/db";
+import type { OAuthConnection } from "@getolv/db";
 
 const { mockSelect, mockFrom, mockWhere, mockLimit, mockUpdate, mockSet, mockUpdateWhere } = vi.hoisted(() => ({
 	mockSelect: vi.fn(),
@@ -12,7 +12,7 @@ const { mockSelect, mockFrom, mockWhere, mockLimit, mockUpdate, mockSet, mockUpd
 	mockUpdateWhere: vi.fn(),
 }));
 
-vi.mock("@starter/db", () => ({
+vi.mock("@getolv/db", () => ({
 	db: {
 		select: mockSelect,
 		update: mockUpdate,
@@ -72,7 +72,7 @@ const { generateText } = vi.hoisted(() => ({
 	generateText: vi.fn(),
 }));
 
-vi.mock("@starter/app-store", () => ({
+vi.mock("@getolv/app-store", () => ({
 	createGmailDriver,
 	getMailClassificationLabelName: (value: string | null | undefined) => {
 		if (!value) {
@@ -109,7 +109,7 @@ vi.mock("ai", () => ({
 	},
 	generateText,
 }));
-vi.mock("@starter/ai/models", () => ({
+vi.mock("@getolv/ai/models", () => ({
 	models: {
 		fast: {
 			model: "fast-model",

@@ -1,5 +1,5 @@
 {
-	"name": "@starter/server",
+	"name": "@getolv/server",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
@@ -12,9 +12,9 @@
 			"default": "./src/index.ts"
 		},
 		"./trpc": {
-			"types": "./src/trpc/create-starter-trpc.ts",
-			"import": "./src/trpc/create-starter-trpc.ts",
-			"default": "./src/trpc/create-starter-trpc.ts"
+			"types": "./src/trpc/create-getolv-trpc.ts",
+			"import": "./src/trpc/create-getolv-trpc.ts",
+			"default": "./src/trpc/create-getolv-trpc.ts"
 		},
 		"./auth": {
 			"types": "./src/lib/auth.ts",
@@ -36,15 +36,15 @@
 		"@better-auth/redis-storage": "^1.6.23",
 		"@better-auth/stripe": "^1.6.23",
 		"@better-fetch/fetch": "^1.3.1",
+		"@getolv/ai": "workspace:*",
+		"@getolv/app-store": "workspace:*",
+		"@getolv/cache": "workspace:*",
+		"@getolv/db": "workspace:*",
+		"@getolv/email": "workspace:*",
+		"@getolv/logger": "workspace:*",
+		"@getolv/pdf": "workspace:*",
+		"@getolv/utils": "workspace:*",
 		"@googleapis/gmail": "^17.0.0",
-		"@starter/ai": "workspace:*",
-		"@starter/app-store": "workspace:*",
-		"@starter/cache": "workspace:*",
-		"@starter/db": "workspace:*",
-		"@starter/email": "workspace:*",
-		"@starter/logger": "workspace:*",
-		"@starter/pdf": "workspace:*",
-		"@starter/utils": "workspace:*",
 		"@trpc/server": "^11.18.0",
 		"@types/pg": "^8.20.0",
 		"@vercel/functions": "^3.7.5",
@@ -64,7 +64,7 @@
 		"zod": "^4.4.3"
 	},
 	"devDependencies": {
-		"@starter/tsconfig": "workspace:*",
+		"@getolv/tsconfig": "workspace:*",
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@types/google.maps": "^3.65.2",
 		"@types/node": "^26.1.1",

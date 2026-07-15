@@ -5,11 +5,11 @@ import { useCallback, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import { authClient } from "@/lib/auth-client";
-import { Avatar, AvatarFallback, AvatarImage } from "@starter/ui/components/avatar";
-import { Button } from "@starter/ui/components/button";
-import { Input } from "@starter/ui/components/input";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { toast } from "@starter/ui/components/sonner";
+import { Avatar, AvatarFallback, AvatarImage } from "@getolv/ui/components/avatar";
+import { Button } from "@getolv/ui/components/button";
+import { Input } from "@getolv/ui/components/input";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { toast } from "@getolv/ui/components/sonner";
 
 import { SettingsCard } from "./settings-card";
 

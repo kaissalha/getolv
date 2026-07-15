@@ -1,7 +1,7 @@
 import { initTRPC } from "@trpc/server";
 import superjson from "superjson";
 
-export type StarterSession = {
+export type getolvSession = {
 	session: {
 		activeOrganizationId?: string | null;
 	};
@@ -12,11 +12,11 @@ export type StarterSession = {
 	};
 } | null;
 
-type StarterTRPCContext = {
-	session: StarterSession;
+type getolvTRPCContext = {
+	session: getolvSession;
 };
 
-const t = initTRPC.context<StarterTRPCContext>().create({
+const t = initTRPC.context<getolvTRPCContext>().create({
 	transformer: superjson,
 });
 
@@ -48,8 +48,8 @@ const organizationProcedure = protectedProcedure.use(({ ctx, next }) => {
 	});
 });
 
-export type CreateStarterTRPCOptions = {
-	getSession: () => Promise<StarterSession>;
+export type CreategetolvTRPCOptions = {
+	getSession: () => Promise<getolvSession>;
 	queueSessionTranscriptPostProcessing: (input: {
 		audioUrl: string;
 		organizationId: string;
@@ -61,13 +61,13 @@ export type CreateStarterTRPCOptions = {
 	}>;
 };
 
-export type StarterTRPCRouterFactory = typeof t.router;
-export type StarterProtectedProcedure = typeof protectedProcedure;
-export type StarterOrganizationProcedure = typeof organizationProcedure;
+export type getolvTRPCRouterFactory = typeof t.router;
+export type getolvProtectedProcedure = typeof protectedProcedure;
+export type getolvOrganizationProcedure = typeof organizationProcedure;
 
-export type StarterRouterFactoryOptions = {
-	createTRPCRouter: StarterTRPCRouterFactory;
-	organizationProcedure: StarterOrganizationProcedure;
-	protectedProcedure: StarterProtectedProcedure;
-	queueSessionTranscriptPostProcessing: CreateStarterTRPCOptions["queueSessionTranscriptPostProcessing"];
+export type getolvRouterFactoryOptions = {
+	createTRPCRouter: getolvTRPCRouterFactory;
+	organizationProcedure: getolvOrganizationProcedure;
+	protectedProcedure: getolvProtectedProcedure;
+	queueSessionTranscriptPostProcessing: CreategetolvTRPCOptions["queueSessionTranscriptPostProcessing"];
 };

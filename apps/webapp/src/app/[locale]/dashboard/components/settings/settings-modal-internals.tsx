@@ -8,8 +8,8 @@ import { useTranslations } from "next-intl";
 import { type Settings, useSettings } from "@/hooks/use-settings";
 import { useRouter } from "@/i18n/navigation";
 import { authClient } from "@/lib/auth-client";
-import { ScrollArea } from "@starter/ui/components/scroll-area";
-import { cn } from "@starter/ui/lib/utils";
+import { ScrollArea } from "@getolv/ui/components/scroll-area";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { OrganizationTab } from "./organization-tab";
 import { ProfileTab } from "./profile-tab";

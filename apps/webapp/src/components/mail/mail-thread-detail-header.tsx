@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-import type { MailLabelSummary } from "@starter/app-store";
+import type { MailLabelSummary } from "@getolv/app-store";
 
 import { MailLabelBadge } from "./mail-label-badge";
 import { MailThreadPatientBadge } from "./mail-thread-patient-badge";

@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form";
 import { Header } from "@/app/[locale]/dashboard/components/layout/header/header";
 import { useRouter } from "@/i18n/navigation";
 import { useTRPC } from "@/lib/trpc";
-import { toast } from "@starter/ui/components/sonner";
+import { toast } from "@getolv/ui/components/sonner";
 
 import {
 	getEmptyPatientFormValues,

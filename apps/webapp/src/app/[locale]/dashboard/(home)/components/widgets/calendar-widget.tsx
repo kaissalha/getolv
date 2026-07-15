@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { buildCalendarEventHref } from "@/lib/calendar-url-state";
 import { useTRPC } from "@/lib/trpc";
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 import { BaseWidget } from "./base-widget";
 

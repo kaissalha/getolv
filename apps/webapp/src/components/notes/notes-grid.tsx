@@ -6,8 +6,8 @@ import { useTranslations } from "next-intl";
 import { parseAsString, useQueryState } from "nuqs";
 
 import { useTRPC } from "@/lib/trpc";
-import type { NoteMentionResourceType } from "@starter/db";
-import { Empty, EmptyHeader, EmptyTitle } from "@starter/ui/components/empty";
+import type { NoteMentionResourceType } from "@getolv/db";
+import { Empty, EmptyHeader, EmptyTitle } from "@getolv/ui/components/empty";
 
 import { NoteCard } from "./note-card";
 import { NoteEditor } from "./note-editor";

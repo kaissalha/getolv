@@ -5,8 +5,8 @@ import Link from "next/link";
 
 import { ArrowRight } from "lucide-react";
 
-import { Button } from "@starter/ui/components/button";
-import { cn } from "@starter/ui/lib/utils";
+import { Button } from "@getolv/ui/components/button";
+import { cn } from "@getolv/ui/lib/utils";
 
 export const PricingCta = ({ className, ...props }: ComponentProps<"section">) => {
 	return (

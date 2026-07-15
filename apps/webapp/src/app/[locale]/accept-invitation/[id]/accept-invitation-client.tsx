@@ -8,11 +8,11 @@ import { Logo } from "@/components/logo";
 import { Link, useRouter } from "@/i18n/navigation";
 import { authClient } from "@/lib/auth-client";
 import { resolveAuthClientResult } from "@/lib/auth-client-request";
-import { Alert, AlertDescription, AlertTitle } from "@starter/ui/components/alert";
-import { Badge } from "@starter/ui/components/badge";
-import { Button } from "@starter/ui/components/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@starter/ui/components/card";
-import { toast } from "@starter/ui/components/sonner";
+import { Alert, AlertDescription, AlertTitle } from "@getolv/ui/components/alert";
+import { Badge } from "@getolv/ui/components/badge";
+import { Button } from "@getolv/ui/components/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@getolv/ui/components/card";
+import { toast } from "@getolv/ui/components/sonner";
 
 type AcceptInvitationClientProps = {
 	invitationEmail?: string;

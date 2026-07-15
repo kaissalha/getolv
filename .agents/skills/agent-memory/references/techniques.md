@@ -1,6 +1,6 @@
 # Memory techniques (detailed reference)
 
-Source: cohort exercises `06-memory-project-work` (`06.01` semantic recall, `06.02` working memory, `06.03` episodic), adapted to the starter stack (Drizzle + pgvector instead of JSON files).
+Source: cohort exercises `06-memory-project-work` (`06.01` semantic recall, `06.02` working memory, `06.03` episodic), adapted to the getolv stack (Drizzle + pgvector instead of JSON files).
 
 ## Semantic memory (06.01)
 
@@ -47,7 +47,7 @@ const olderMessages  = all.slice(0, -MESSAGE_WINDOW);
 const messageHistoryForLLM = [...oldMessagesToUse, ...recentMessages];
 ```
 
-Starter difference: per-message embeddings live in a nullable `embedding` column on `ai_chat_messages`, embedded in `after()`; search is a pgvector query scoped to `chatId` excluding the recent window.
+getolv difference: per-message embeddings live in a nullable `embedding` column on `ai_chat_messages`, embedded in `after()`; search is a pgvector query scoped to `chatId` excluding the recent window.
 
 ## Episodic memory (06.03)
 
@@ -62,7 +62,7 @@ z.object({
 })
 ```
 
-`reflectOnChat(chatId)`: load chat + messages, `generateObject` (cheap model) with the reflection prompt over `chatToText(chat)`, store the result. Starter: embed the summary and upsert a `chat_episodes` row keyed by `chatId`.
+`reflectOnChat(chatId)`: load chat + messages, `generateObject` (cheap model) with the reflection prompt over `chatToText(chat)`, store the result. getolv: embed the summary and upsert a `chat_episodes` row keyed by `chatId`.
 
 `searchForRelatedChats` / `searchRelatedChats(currentChatId, messages)`: embed `messageHistoryToQuery(messages)`, vector search over other chats' episodes (exclude current), take top ~3.
 

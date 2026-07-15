@@ -4,10 +4,10 @@ import type { Table } from "@tanstack/react-table";
 import { ChevronFirst, ChevronLast, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
-import { Label } from "@starter/ui/components/label";
-import { Pagination, PaginationContent, PaginationItem } from "@starter/ui/components/pagination";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@starter/ui/components/select";
+import { Button } from "@getolv/ui/components/button";
+import { Label } from "@getolv/ui/components/label";
+import { Pagination, PaginationContent, PaginationItem } from "@getolv/ui/components/pagination";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@getolv/ui/components/select";
 
 type DataTablePaginationProps<TData> = {
 	id: string;

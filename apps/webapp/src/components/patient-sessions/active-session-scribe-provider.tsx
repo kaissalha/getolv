@@ -18,10 +18,10 @@ import { useTranslations } from "next-intl";
 
 import { type ScribeSpeaker, type ScribeStatus, useScribe } from "@/hooks/scribe/use-scribe";
 import { useTRPC } from "@/lib/trpc";
-import type { SessionTranscriptTurnMetadata } from "@starter/db";
-import type { RouterOutput } from "@starter/server";
-import { toast } from "@starter/ui/components/sonner";
-import { buildAssemblyAiMedicalKeytermsFromPatient } from "@starter/utils";
+import type { SessionTranscriptTurnMetadata } from "@getolv/db";
+import type { RouterOutput } from "@getolv/server";
+import { toast } from "@getolv/ui/components/sonner";
+import { buildAssemblyAiMedicalKeytermsFromPatient } from "@getolv/utils";
 
 type ActiveSession = RouterOutput["patientSessions"]["getActiveSession"];
 type PatientSession = RouterOutput["patientSessions"]["getPatientSession"];

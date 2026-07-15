@@ -6,8 +6,8 @@ import { ChevronDownIcon, ChevronUpIcon, DownloadIcon, PaperclipIcon } from "luc
 import { useTranslations } from "next-intl";
 
 import { useTRPCClient } from "@/lib/trpc";
-import { Avatar, AvatarFallback } from "@starter/ui/components/avatar";
-import { cn } from "@starter/ui/lib/utils";
+import { Avatar, AvatarFallback } from "@getolv/ui/components/avatar";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { ShadowDomHtml } from "./shadow-dom-html";
 

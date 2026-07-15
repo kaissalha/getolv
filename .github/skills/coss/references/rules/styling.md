@@ -52,7 +52,7 @@ const interHeading = Inter({ variable: "--font-heading", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-mono", subsets: ["latin"] });
 ```
 
-**Common pitfall:** Next.js starters default to `--font-geist-sans` and `--font-geist-mono`, which do not match coss's `--font-sans` / `--font-mono`. Fonts will silently fall back to system UI. Always rename the variables or remap them.
+**Common pitfall:** Next.js getolvs default to `--font-geist-sans` and `--font-geist-mono`, which do not match coss's `--font-sans` / `--font-mono`. Fonts will silently fall back to system UI. Always rename the variables or remap them.
 
 ## Do / Don't
 

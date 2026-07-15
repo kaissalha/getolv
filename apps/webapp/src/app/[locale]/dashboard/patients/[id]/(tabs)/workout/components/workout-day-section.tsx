@@ -3,9 +3,9 @@
 import { CalendarDays, Flame, Plus, Snowflake } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Badge } from "@starter/ui/components/badge";
-import { Button } from "@starter/ui/components/button";
-import { Frame, FrameHeader, FrameHeading, FrameIcon, FramePanel } from "@starter/ui/components/frame";
+import { Badge } from "@getolv/ui/components/badge";
+import { Button } from "@getolv/ui/components/button";
+import { Frame, FrameHeader, FrameHeading, FrameIcon, FramePanel } from "@getolv/ui/components/frame";
 
 import { type PlanExerciseRow, WorkoutDaySortableExercises } from "./workout-day-sortable-exercises";
 

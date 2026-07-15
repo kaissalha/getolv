@@ -10,12 +10,12 @@ import { and, eq } from "drizzle-orm";
 import { render } from "react-email";
 import { v4 as uuidv4 } from "uuid";
 
-import { createTCPRedisClient } from "@starter/cache";
-import { db, members, organizations } from "@starter/db";
-import * as schema from "@starter/db/schema";
-import { InvitationEmail, OtpEmail } from "@starter/email";
-import { logger } from "@starter/logger/server";
-import { getBaseURL } from "@starter/utils";
+import { createTCPRedisClient } from "@getolv/cache";
+import { db, members, organizations } from "@getolv/db";
+import * as schema from "@getolv/db/schema";
+import { InvitationEmail, OtpEmail } from "@getolv/email";
+import { logger } from "@getolv/logger/server";
+import { getBaseURL } from "@getolv/utils";
 
 import { resend } from "./resend";
 import { stripeClient } from "./stripe";
@@ -35,10 +35,10 @@ if (!process.env.REDIS_URL) {
 const redis = createTCPRedisClient(process.env.REDIS_URL);
 
 export const auth = betterAuth({
-	appName: "Starter",
+	appName: "getolv",
 	debug: true,
 	baseURL: getBaseURL().toString(),
-	trustedOrigins: [getBaseURL().toString(), "starter-mobile://", "mobile://"],
+	trustedOrigins: [getBaseURL().toString(), "getolv-mobile://", "mobile://"],
 	database: drizzleAdapter(db, {
 		provider: "pg",
 		usePlural: true,

@@ -1,5 +1,5 @@
 {
-	"name": "@starter/logger",
+	"name": "@getolv/logger",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
@@ -30,7 +30,7 @@
 		"@posthog/next": "^0.8.1"
 	},
 	"devDependencies": {
-		"@starter/tsconfig": "workspace:*",
+		"@getolv/tsconfig": "workspace:*",
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@types/node": "^26.1.1",
 		"@types/react": "^19.2.17",

@@ -5,12 +5,12 @@ import { useTranslations } from "next-intl";
 import type { UseFormReturn } from "react-hook-form";
 import { useWatch } from "react-hook-form";
 
-import { Button } from "@starter/ui/components/button";
-import { Field, FieldControl, FieldError, FieldLabel } from "@starter/ui/components/field";
-import { Form } from "@starter/ui/components/form";
-import { Select, SelectItem, SelectPopup, SelectTrigger, SelectValue } from "@starter/ui/components/select";
-import { Textarea } from "@starter/ui/components/textarea";
-import { cn } from "@starter/ui/lib/utils";
+import { Button } from "@getolv/ui/components/button";
+import { Field, FieldControl, FieldError, FieldLabel } from "@getolv/ui/components/field";
+import { Form } from "@getolv/ui/components/form";
+import { Select, SelectItem, SelectPopup, SelectTrigger, SelectValue } from "@getolv/ui/components/select";
+import { Textarea } from "@getolv/ui/components/textarea";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { ADDITIONAL_CONTEXT_MAX, type PatientFormValues } from "../../patient-form-schema";
 

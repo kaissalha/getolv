@@ -1,8 +1,8 @@
 import { generateText } from "ai";
 import { createScorer, evalite } from "evalite";
 
-import { models } from "@starter/ai/models";
-import { buildPatientSummaryPrompt } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { buildPatientSummaryPrompt } from "@getolv/ai/prompts";
 
 import { countSentences, hasMarkdownishFormatting, scoreKeywordGroups } from "./utils";
 

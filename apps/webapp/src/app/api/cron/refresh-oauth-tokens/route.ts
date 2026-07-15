@@ -3,8 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { TRPCError } from "@trpc/server";
 
 import { withErrorHandler } from "@/utils/with-error-handler";
-import { logger } from "@starter/logger/server";
-import { runOAuthTokenRefreshJob } from "@starter/server";
+import { logger } from "@getolv/logger/server";
+import { runOAuthTokenRefreshJob } from "@getolv/server";
 
 export const GET = withErrorHandler(async (req: NextRequest) => {
 	const authHeader = req.headers.get("authorization");

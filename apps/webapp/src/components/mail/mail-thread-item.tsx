@@ -3,11 +3,11 @@
 import { ArchiveIcon, MailOpenIcon, StarIcon, Trash2Icon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import type { MailLabelSummary } from "@starter/app-store";
-import { Button } from "@starter/ui/components/button";
-import { Checkbox } from "@starter/ui/components/checkbox";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { cn } from "@starter/ui/lib/utils";
+import type { MailLabelSummary } from "@getolv/app-store";
+import { Button } from "@getolv/ui/components/button";
+import { Checkbox } from "@getolv/ui/components/checkbox";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { MailLabelBadge, MailLabelBadgeSkeleton } from "./mail-label-badge";
 

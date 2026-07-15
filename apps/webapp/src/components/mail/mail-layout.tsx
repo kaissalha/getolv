@@ -8,7 +8,7 @@ import { parseAsString, useQueryState } from "nuqs";
 import type { MailFolder } from "@/hooks/use-mail-state";
 import { useMailState } from "@/hooks/use-mail-state";
 import { useTRPC } from "@/lib/trpc";
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { MailCompose } from "./mail-compose";
 import { MailConnectPrompt } from "./mail-connect-prompt";

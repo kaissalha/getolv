@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 
 import { CopyCardButton } from "@/app/[locale]/dashboard/patients/[id]/components/copy-card-button";
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 type IntelligenceCardProps = {
 	title: string;

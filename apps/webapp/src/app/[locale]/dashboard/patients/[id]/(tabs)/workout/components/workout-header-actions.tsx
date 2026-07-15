@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { Download, Eye, Sparkles, Wand2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 import {
 	Credenza,
 	CredenzaBody,
@@ -15,9 +15,9 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { Textarea } from "@starter/ui/components/textarea";
+} from "@getolv/ui/components/credenza";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { Textarea } from "@getolv/ui/components/textarea";
 
 import { useWorkoutHeaderActionsController } from "./use-workout-header-actions-controller";
 

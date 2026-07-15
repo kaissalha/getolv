@@ -6,7 +6,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useTranslations } from "next-intl";
 
 import { useTRPC } from "@/lib/trpc";
-import { toast } from "@starter/ui/components/sonner";
+import { toast } from "@getolv/ui/components/sonner";
 
 import type { ThreadItemData } from "./mail-thread-item";
 import { patchMailThreadStarState } from "./mail-thread-star-state";

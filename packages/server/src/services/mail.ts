@@ -1,8 +1,8 @@
 import { Output, generateText } from "ai";
 import { and, eq } from "drizzle-orm";
 
-import { models } from "@starter/ai/models";
-import { buildMailSearchRewritePrompt, mailSearchRewriteSchema } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { buildMailSearchRewritePrompt, mailSearchRewriteSchema } from "@getolv/ai/prompts";
 import {
 	createGmailDriver,
 	type GmailDriver,
@@ -13,9 +13,9 @@ import {
 	type MailLabelSummary,
 	type ParsedMessage,
 	type ThreadPreview,
-} from "@starter/app-store";
-import { db, type OAuthConnection, oauthConnections } from "@starter/db";
-import { logger } from "@starter/logger/server";
+} from "@getolv/app-store";
+import { db, type OAuthConnection, oauthConnections } from "@getolv/db";
+import { logger } from "@getolv/logger/server";
 
 import { preprocessEmailHtml } from "./email-preprocessor";
 import {

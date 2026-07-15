@@ -1,9 +1,9 @@
 ---
 name: ai-evals
-description: 'Write and run evals for AI features on the starter stack using Evalite (packages/evals). Use whenever the user wants to test/measure/benchmark prompts, agents, tool selection, or LLM output quality - "is this prompt good?", "did the model pick the right tool?", "A/B test these models", "how do I know my memory extraction works?", "add an eval", "score the output", regression testing prompts, deterministic vs LLM-as-judge scorers. ALWAYS use this skill when introducing or materially changing a production prompt (the repo requires a matching eval), and whenever someone asks how to evaluate AI behavior.'
+description: 'Write and run evals for AI features on the getolv stack using Evalite (packages/evals). Use whenever the user wants to test/measure/benchmark prompts, agents, tool selection, or LLM output quality - "is this prompt good?", "did the model pick the right tool?", "A/B test these models", "how do I know my memory extraction works?", "add an eval", "score the output", regression testing prompts, deterministic vs LLM-as-judge scorers. ALWAYS use this skill when introducing or materially changing a production prompt (the repo requires a matching eval), and whenever someone asks how to evaluate AI behavior.'
 ---
 
-# AI Evals (Evalite, starter stack)
+# AI Evals (Evalite, getolv stack)
 
 Evals turn "looks fine" into a number you can track. This repo evaluates with **Evalite** in [packages/evals](../../../packages/evals). Read the existing evals before writing new ones - copy their shape:
 
@@ -11,7 +11,7 @@ Evals turn "looks fine" into a number you can track. This repo evaluates with **
 - [packages/evals/evals/rag-answer.eval.ts](../../../packages/evals/evals/rag-answer.eval.ts) - prompt-coverage scorer.
 - [packages/evals/evals/utils.ts](../../../packages/evals/evals/utils.ts) - shared scoring helpers.
 
-Run with `bun eval:dev` (watch) or `bun eval:ci` (once). Per AGENTS.md: keep prompts in `@starter/ai/prompts` and add/update an eval whenever a production prompt is introduced or materially changed.
+Run with `bun eval:dev` (watch) or `bun eval:ci` (once). Per AGENTS.md: keep prompts in `@getolv/ai/prompts` and add/update an eval whenever a production prompt is introduced or materially changed.
 
 ## Anatomy of an eval
 
@@ -26,7 +26,7 @@ evalite<Input, Output, Expected>("Name of what you're testing", {
 ```
 
 - `data` - the dataset: each row has `input` and (usually) `expected`.
-- `task` - runs the thing under test and returns the output to grade. Import the **real** production prompt/agent from `@starter/ai` / `@starter/server` so the eval tracks production, not a copy.
+- `task` - runs the thing under test and returns the output to grade. Import the **real** production prompt/agent from `@getolv/ai` / `@getolv/server` so the eval tracks production, not a copy.
 - `scorers` - graders returning a number in `[0, 1]` (1 = pass).
 
 Type the eval `evalite<Input, Output, Expected>` so scorers are type-safe.
@@ -85,7 +85,7 @@ The variant is the **second argument** to `task`.
 
 ## Make production code eval-testable
 
-Evals should call production logic, not reimplement it. If a function does AI + DB I/O, extract a pure "inner" function that takes the `model` and returns the structured result, so `task` can call it without side effects (e.g. `extractMemoriesInner({ messages, memories, model })`). Keep the prompt/schema in `@starter/ai/prompts` and import it in both production and the eval.
+Evals should call production logic, not reimplement it. If a function does AI + DB I/O, extract a pure "inner" function that takes the `model` and returns the structured result, so `task` can call it without side effects (e.g. `extractMemoriesInner({ messages, memories, model })`). Keep the prompt/schema in `@getolv/ai/prompts` and import it in both production and the eval.
 
 ## Clarifying-questions / "should it ask?" evals
 

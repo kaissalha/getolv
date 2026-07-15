@@ -3,8 +3,8 @@
 import { Check, Pencil, Sparkles, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Badge } from "@starter/ui/components/badge";
-import { Button } from "@starter/ui/components/button";
+import { Badge } from "@getolv/ui/components/badge";
+import { Button } from "@getolv/ui/components/button";
 import {
 	Frame,
 	FrameFooter,
@@ -13,8 +13,8 @@ import {
 	FrameIcon,
 	FramePanel,
 	FrameTitle,
-} from "@starter/ui/components/frame";
-import { Textarea } from "@starter/ui/components/textarea";
+} from "@getolv/ui/components/frame";
+import { Textarea } from "@getolv/ui/components/textarea";
 
 import { type LabReportListItem, LabsReportPicker } from "./labs-report-picker";
 

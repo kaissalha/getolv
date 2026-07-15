@@ -14,9 +14,9 @@ import {
 } from "@/components/patient-sessions/use-session-elapsed-time";
 import type { ScribeSpeaker } from "@/hooks/scribe/use-scribe";
 import { Link, usePathname } from "@/i18n/navigation";
-import { Badge } from "@starter/ui/components/badge";
-import { Button } from "@starter/ui/components/button";
-import { cn } from "@starter/ui/lib/utils";
+import { Badge } from "@getolv/ui/components/badge";
+import { Button } from "@getolv/ui/components/button";
+import { cn } from "@getolv/ui/lib/utils";
 
 const ACTIVE_SESSION_ROUTE_PATTERN = /\/dashboard\/patients\/[^/]+\/session\/[^/]+(?:\/.*)?$/;
 

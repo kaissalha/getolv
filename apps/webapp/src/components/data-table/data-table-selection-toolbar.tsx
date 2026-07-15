@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
 import { DeleteConfirmationAlert } from "@/components/data-table/delete-confirmation-alert";
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 type DataTableSelectionToolbarProps<TData> = {
 	table: Table<TData>;

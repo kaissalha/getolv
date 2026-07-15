@@ -11,13 +11,13 @@ import {
 	patientSessions,
 	patients,
 	sessionTranscriptTurns,
-} from "@starter/db";
+} from "@getolv/db";
 import type {
 	PatientSessionIntelligence,
 	PatientSessionTranscriptMetadata,
 	SessionTranscriptTurnMetadata,
-} from "@starter/db";
-import { logger } from "@starter/logger/server";
+} from "@getolv/db";
+import { logger } from "@getolv/logger/server";
 
 import { refreshPatientSummary } from "./patient-summary";
 import { syncSessionTreatmentPlan } from "./session-treatment-plan";

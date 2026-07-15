@@ -4,8 +4,8 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 
 import { withErrorHandler } from "@/utils/with-error-handler";
-import { getRagDocument } from "@starter/server";
-import { auth } from "@starter/server/auth";
+import { getRagDocument } from "@getolv/server";
+import { auth } from "@getolv/server/auth";
 
 const paramsSchema = z.object({
 	id: z.uuid(),

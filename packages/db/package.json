@@ -1,5 +1,5 @@
 {
-	"name": "@starter/db",
+	"name": "@getolv/db",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
@@ -30,7 +30,7 @@
 		"pg": "^8.22.0"
 	},
 	"devDependencies": {
-		"@starter/tsconfig": "workspace:*",
+		"@getolv/tsconfig": "workspace:*",
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@types/node": "^26.1.1",
 		"@types/pg": "^8.20.0",

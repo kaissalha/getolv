@@ -3,7 +3,7 @@
 import { Clock3Icon, StethoscopeIcon, UserIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
-import type { RouterOutput } from "@starter/server";
+import type { RouterOutput } from "@getolv/server";
 
 type ActiveSession = RouterOutput["patientSessions"]["getActiveSession"];
 

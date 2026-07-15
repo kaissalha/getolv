@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { logger } from "@starter/logger/server";
+import { logger } from "@getolv/logger/server";
 
 import "server-only";
 

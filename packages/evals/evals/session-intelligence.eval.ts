@@ -1,12 +1,12 @@
 import { Output, generateText } from "ai";
 import { createScorer, evalite } from "evalite";
 
-import { models } from "@starter/ai/models";
+import { models } from "@getolv/ai/models";
 import {
 	buildSessionIntelligencePrompt,
 	sessionIntelligenceWithMetaSchema,
 	type SessionIntelligencePayload,
-} from "@starter/ai/prompts";
+} from "@getolv/ai/prompts";
 
 import { scoreKeywordGroups } from "./utils";
 

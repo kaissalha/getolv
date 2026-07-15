@@ -14,7 +14,7 @@ import {
 	updatePatientSessionAudio,
 	updatePatientSessionCompletedTodoIds,
 } from "../../services/patient-sessions";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
 const sessionTranscriptTurnMetadataSchema = z.object({
 	confidence: z.number().nullable().optional(),
@@ -30,7 +30,7 @@ export const createPatientSessionsRouter = ({
 	createTRPCRouter,
 	organizationProcedure,
 	queueSessionTranscriptPostProcessing,
-}: StarterRouterFactoryOptions) =>
+}: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		createPatientSession: organizationProcedure
 			.input(

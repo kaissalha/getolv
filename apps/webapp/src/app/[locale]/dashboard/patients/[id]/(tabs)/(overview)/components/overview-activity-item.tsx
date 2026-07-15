@@ -8,8 +8,8 @@ import { MAIL_THREAD_ID_PARAM } from "@/components/mail/mail-url-state";
 import { NoteBody } from "@/components/notes/note-body";
 import { NOTE_ID_SEARCH_PARAM } from "@/components/notes/notes-url-state";
 import { useFormatRelativeDate } from "@/hooks/use-relative-date-formatter";
-import type { RouterOutput } from "@starter/server";
-import { Button } from "@starter/ui/components/button";
+import type { RouterOutput } from "@getolv/server";
+import { Button } from "@getolv/ui/components/button";
 import {
 	TimelineBadge,
 	TimelineContent,
@@ -18,7 +18,7 @@ import {
 	TimelineMarker,
 	TimelineTime,
 	TimelineTitle,
-} from "@starter/ui/components/timeline";
+} from "@getolv/ui/components/timeline";
 
 type PatientActivityItem = RouterOutput["patients"]["getActivityFeed"][number];
 

@@ -3,7 +3,7 @@
 import type { CSSProperties, ReactNode } from "react";
 
 import { Link } from "@/i18n/navigation";
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 type BaseWidgetProps = {
 	title: string;

@@ -2,8 +2,8 @@ import type { ReactNode } from "react";
 
 import { headers } from "next/headers";
 
-import { getPatientSession } from "@starter/server";
-import { auth } from "@starter/server/auth";
+import { getPatientSession } from "@getolv/server";
+import { auth } from "@getolv/server/auth";
 
 export default async function SessionLayout({
 	children,

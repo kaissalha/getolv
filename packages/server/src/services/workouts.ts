@@ -3,7 +3,7 @@ import { cache } from "react";
 import { TRPCError } from "@trpc/server";
 import { and, asc, desc, eq, sql } from "drizzle-orm";
 
-import { db, exercises, patientWorkoutPlanDays, patientWorkoutPlanExercises, patientWorkoutPlans } from "@starter/db";
+import { db, exercises, patientWorkoutPlanDays, patientWorkoutPlanExercises, patientWorkoutPlans } from "@getolv/db";
 
 type GetWorkoutPlanInput = {
 	id: string;

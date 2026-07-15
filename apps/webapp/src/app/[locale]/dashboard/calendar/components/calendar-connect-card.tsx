@@ -3,7 +3,7 @@
 import { CalendarIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 export const CalendarConnectCard = () => {
 	const t = useTranslations("calendar");

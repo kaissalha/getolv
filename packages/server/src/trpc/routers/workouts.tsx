@@ -1,7 +1,7 @@
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 
-import { WorkoutPlanPdf, renderToBuffer } from "@starter/pdf";
+import { WorkoutPlanPdf, renderToBuffer } from "@getolv/pdf";
 
 import { editWorkoutPlanCore, generateWorkoutPlanCore } from "../../ai/tools/generate-workout-plan";
 import { buildExerciseImageDataUriMap } from "../../lib/pdf-exercise-images";
@@ -21,7 +21,7 @@ import {
 	updateExerciseInPlan,
 	updateWorkoutPlanSummary,
 } from "../../services/workouts";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
 const buildPatientContext = ({
 	patient,
@@ -87,7 +87,7 @@ const serializeCurrentPlanForEdit = (plan: NonNullable<Awaited<ReturnType<typeof
 		2
 	);
 
-export const createWorkoutsRouter = ({ createTRPCRouter, organizationProcedure }: StarterRouterFactoryOptions) =>
+export const createWorkoutsRouter = ({ createTRPCRouter, organizationProcedure }: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		getWorkoutPlan: organizationProcedure
 			.input(z.object({ id: z.string() }))

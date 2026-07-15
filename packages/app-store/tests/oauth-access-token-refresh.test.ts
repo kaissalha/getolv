@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import type { OAuthProvider } from "@starter/db";
+import type { OAuthProvider } from "@getolv/db";
 
 const gmailRefreshAccessToken = vi.fn();
 const googleCalendarRefreshAccessToken = vi.fn();

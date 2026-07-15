@@ -3,10 +3,10 @@
 import { FlaskConical } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import type { PatientLabResultWithStatus } from "@starter/db";
-import { Badge } from "@starter/ui/components/badge";
-import { Frame, FrameHeader, FrameHeading, FrameIcon, FramePanel, FrameTitle } from "@starter/ui/components/frame";
-import { Masonry } from "@starter/ui/components/masonry";
+import type { PatientLabResultWithStatus } from "@getolv/db";
+import { Badge } from "@getolv/ui/components/badge";
+import { Frame, FrameHeader, FrameHeading, FrameIcon, FramePanel, FrameTitle } from "@getolv/ui/components/frame";
+import { Masonry } from "@getolv/ui/components/masonry";
 
 import { LabResultCard } from "./lab-result-card";
 

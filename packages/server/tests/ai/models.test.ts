@@ -30,7 +30,7 @@ describe("ai models", () => {
 	it("enables devtools middleware in development", async () => {
 		vi.stubEnv("NODE_ENV", "development");
 
-		await import("@starter/ai/models");
+		await import("@getolv/ai/models");
 
 		expect(devToolsMiddleware).toHaveBeenCalled();
 		expect(wrapLanguageModel).toHaveBeenCalled();
@@ -42,7 +42,7 @@ describe("ai models", () => {
 	it("disables devtools middleware outside development", async () => {
 		vi.stubEnv("NODE_ENV", "production");
 
-		await import("@starter/ai/models");
+		await import("@getolv/ai/models");
 
 		const firstCall = wrapLanguageModel.mock.calls[0]?.[0];
 		expect(firstCall.middleware).toEqual([]);

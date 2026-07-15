@@ -1,6 +1,6 @@
 # Retrieval techniques (detailed reference)
 
-Source: cohort exercises `01-retrieval-skill-building` through `04-retrieval-day-2-project-work`, adapted to the starter stack (AI SDK v6, Drizzle, pgvector, Postgres FTS).
+Source: cohort exercises `01-retrieval-skill-building` through `04-retrieval-day-2-project-work`, adapted to the getolv stack (AI SDK v6, Drizzle, pgvector, Postgres FTS).
 
 ## Table of contents
 
@@ -19,17 +19,17 @@ Source: cohort exercises `01-retrieval-skill-building` through `04-retrieval-day
 
 Cohort uses `okapibm25` over an in-memory corpus (`subject + body`, lowercased keywords). It scores by term frequency, inverse document frequency, and length normalization. Strong for exact terms, weak for synonyms.
 
-In the starter, prefer Postgres FTS (indexed, no memory load):
+In the getolv, prefer Postgres FTS (indexed, no memory load):
 
 ```ts
-const tsquery = buildSearchQuery(query); // from @starter/db -> "term:* & other:*"
+const tsquery = buildSearchQuery(query); // from @getolv/db -> "term:* & other:*"
 const rank = sql<number>`ts_rank(${ragDocumentChunks.fts}, to_tsquery('english', ${tsquery}))`;
 // WHERE ${ragDocumentChunks.fts} @@ to_tsquery('english', ${tsquery})
 ```
 
 ## 2. Embeddings semantic search
 
-Embed once, cache (cohort caches to JSON by content hash; the starter persists vectors in pgvector). Score with cosine similarity. Use one model for write + read.
+Embed once, cache (cohort caches to JSON by content hash; the getolv persists vectors in pgvector). Score with cosine similarity. Use one model for write + read.
 
 ```ts
 const similarity = sql<number>`1 - (${cosineDistance(ragDocumentChunks.embedding, queryEmbedding)})`;
@@ -67,11 +67,11 @@ Structural (cohort 03.03): `RecursiveCharacterTextSplitter` with separator prior
 
 Email/body chunking (cohort 04.01): `RecursiveCharacterTextSplitter({ chunkSize: 1000, chunkOverlap: 100, separators: ["\n\n","\n"," ",""] })`, storing `{ id, index, totalChunks, ... }` per chunk.
 
-The starter's `chunkRagText` is a hand-rolled structural splitter (separators, heading extraction, chunk-type detection) - reuse it.
+The getolv's `chunkRagText` is a hand-rolled structural splitter (separators, heading extraction, chunk-type detection) - reuse it.
 
 ## 7. Reranking
 
-Retrieve ~30, rerank with a cheap model (cohort: `gemini-2.5-flash-lite`; starter: `models.rerank`). Prompt includes the query and candidate chunks each prefixed with a numeric index; the model returns `resultIds: number[]` (kept indices, ordered). Constants: `NUMBER_PASSED_TO_RERANKER = 30`.
+Retrieve ~30, rerank with a cheap model (cohort: `gemini-2.5-flash-lite`; getolv: `models.rerank`). Prompt includes the query and candidate chunks each prefixed with a numeric index; the model returns `resultIds: number[]` (kept indices, ordered). Constants: `NUMBER_PASSED_TO_RERANKER = 30`.
 
 ```ts
 schema: z.object({ resultIds: z.array(z.number()) })
@@ -80,7 +80,7 @@ schema: z.object({ resultIds: z.array(z.number()) })
 
 ## 8. Conversation-aware reranking
 
-Pass `user`/`assistant` turns (no tool calls) as `messages` before the rerank instruction so follow-up questions resolve. Cohort made the search tool a factory `searchTool(messages)`; the starter threads history through `appContextSchema.conversationHistory`.
+Pass `user`/`assistant` turns (no tool calls) as `messages` before the rerank instruction so follow-up questions resolve. Cohort made the search tool a factory `searchTool(messages)`; the getolv threads history through `appContextSchema.conversationHistory`.
 
 ## 9. Search tool + context engineering
 

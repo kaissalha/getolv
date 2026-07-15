@@ -3,7 +3,7 @@
 import type { LucideIcon } from "lucide-react";
 
 import { Link, usePathname } from "@/i18n/navigation";
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 type Tab = {
 	href: string;

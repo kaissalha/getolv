@@ -1,5 +1,5 @@
 {
-	"name": "starter",
+	"name": "getolv",
 	"version": "1.0.0",
 	"private": true,
 	"workspaces": [
@@ -10,9 +10,9 @@
 	"scripts": {
 		"build": "turbo run build",
 		"dev": "turbo run dev dev:ai dev:stripe dev:blob",
-		"eval:ci": "turbo run eval:ci --filter=@starter/evals",
-		"eval:dev": "turbo run eval:dev --filter=@starter/evals",
-		"eval:export": "turbo run eval:export --filter=@starter/evals",
+		"eval:ci": "turbo run eval:ci --filter=@getolv/evals",
+		"eval:dev": "turbo run eval:dev --filter=@getolv/evals",
+		"eval:export": "turbo run eval:export --filter=@getolv/evals",
 		"test": "vitest run",
 		"lint": "oxlint . --quiet && oxfmt --check .",
 		"lint:fix": "oxlint --fix . && oxfmt .",
@@ -22,7 +22,7 @@
 		"prepare": "husky"
 	},
 	"devDependencies": {
-		"@starter/db": "workspace:*",
+		"@getolv/db": "workspace:*",
 		"@testcontainers/postgresql": "^12.0.4",
 		"@testcontainers/redis": "^12.0.4",
 		"@testing-library/jest-dom": "^6.9.1",

@@ -4,10 +4,10 @@ import { useState } from "react";
 
 import { Document, Page, pdfjs } from "react-pdf";
 
-import { useLogger } from "@starter/logger/client";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { toast } from "@starter/ui/components/sonner";
-import { cn } from "@starter/ui/lib/utils";
+import { useLogger } from "@getolv/logger/client";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { toast } from "@getolv/ui/components/sonner";
+import { cn } from "@getolv/ui/lib/utils";
 
 import "react-pdf/dist/Page/TextLayer.css";
 

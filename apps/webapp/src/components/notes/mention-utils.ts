@@ -1,4 +1,4 @@
-import type { NoteMentionResourceType } from "@starter/db";
+import type { NoteMentionResourceType } from "@getolv/db";
 
 /** Regex pattern for mention markers: [[type:id:label]] */
 export const MENTION_PATTERN = /\[\[(patient):([^:]+):([^\]]+)\]\]/g;

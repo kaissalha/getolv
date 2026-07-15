@@ -2,8 +2,8 @@
 
 import { type ComponentProps, useId } from "react";
 
-import { Badge } from "@starter/ui/components/badge";
-import { cn } from "@starter/ui/lib/utils";
+import { Badge } from "@getolv/ui/components/badge";
+import { cn } from "@getolv/ui/lib/utils";
 
 export const Stats = ({ className, ...props }: ComponentProps<"section">) => {
 	const pathId = useId();

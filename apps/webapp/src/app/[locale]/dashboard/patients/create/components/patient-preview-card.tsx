@@ -12,10 +12,10 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Avatar, AvatarFallback } from "@starter/ui/components/avatar";
-import { Badge } from "@starter/ui/components/badge";
-import { Separator } from "@starter/ui/components/separator";
-import { cn } from "@starter/ui/lib/utils";
+import { Avatar, AvatarFallback } from "@getolv/ui/components/avatar";
+import { Badge } from "@getolv/ui/components/badge";
+import { Separator } from "@getolv/ui/components/separator";
+import { cn } from "@getolv/ui/lib/utils";
 
 import type { PatientFormValues } from "../../patient-form-schema";
 

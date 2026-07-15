@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 const STAGGER_DELAY_MS = 60;
 

@@ -13,10 +13,10 @@ import { NoteEditor } from "@/components/notes/note-editor";
 import { NOTE_ID_SEARCH_PARAM } from "@/components/notes/notes-url-state";
 import { useRouter } from "@/i18n/navigation";
 import { useTRPC } from "@/lib/trpc";
-import type { RouterOutput } from "@starter/server";
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@starter/ui/components/empty";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { Timeline, TimelineContent, TimelineItem, TimelineMarker } from "@starter/ui/components/timeline";
+import type { RouterOutput } from "@getolv/server";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@getolv/ui/components/empty";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { Timeline, TimelineContent, TimelineItem, TimelineMarker } from "@getolv/ui/components/timeline";
 
 import { MedicalProfileCardSkeleton } from "./medical-profile-card";
 import { getActivityHref, OverviewActivityItem } from "./overview-activity-item";

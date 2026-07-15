@@ -14,8 +14,8 @@ import {
 	SidebarMenuButton,
 	SidebarMenuItem,
 	useSidebar,
-} from "@starter/ui/components/sidebar";
-import { useHydrated } from "@starter/ui/hooks/use-hydrated";
+} from "@getolv/ui/components/sidebar";
+import { useHydrated } from "@getolv/ui/hooks/use-hydrated";
 
 import { useIsMenuItemActive } from "./utils/use-is-menu-item-active";
 

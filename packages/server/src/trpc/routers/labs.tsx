@@ -2,15 +2,8 @@ import { TRPCError } from "@trpc/server";
 import { and, desc, eq, inArray } from "drizzle-orm";
 import { z } from "zod";
 
-import {
-	db,
-	type LabTest,
-	labTestRangeOverrides,
-	labTests,
-	patientLabResults,
-	type ReferenceRanges,
-} from "@starter/db";
-import { LabResultsPdf, renderToBuffer } from "@starter/pdf";
+import { db, type LabTest, labTestRangeOverrides, labTests, patientLabResults, type ReferenceRanges } from "@getolv/db";
+import { LabResultsPdf, renderToBuffer } from "@getolv/pdf";
 
 import { analyzeLabResultsCore } from "../../ai/tools/analyze-lab-results";
 import {
@@ -28,9 +21,9 @@ import {
 	updateLabReportSummary,
 } from "../../services/lab";
 import { getPatient } from "../../services/patients";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
-export const createLabsRouter = ({ createTRPCRouter, organizationProcedure }: StarterRouterFactoryOptions) =>
+export const createLabsRouter = ({ createTRPCRouter, organizationProcedure }: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		getPatientSessionLabResults: organizationProcedure
 			.input(

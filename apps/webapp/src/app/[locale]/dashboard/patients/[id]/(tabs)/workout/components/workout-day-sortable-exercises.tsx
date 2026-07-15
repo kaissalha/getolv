@@ -24,8 +24,8 @@ import { ArrowLeftRight, Dumbbell, GripVertical, Trash2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useTRPC } from "@/lib/trpc";
-import { Button } from "@starter/ui/components/button";
-import { cn } from "@starter/ui/lib/utils";
+import { Button } from "@getolv/ui/components/button";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { formatBodyPart } from "./format-body-part";
 

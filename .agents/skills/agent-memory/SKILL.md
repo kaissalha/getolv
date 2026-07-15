@@ -1,9 +1,9 @@
 ---
 name: agent-memory
-description: 'Give AI agents long-term memory on the starter stack (AI SDK v6, Drizzle + pgvector, ToolLoopAgent, Next.js chat route). Use whenever the user wants the assistant to "remember" things across turns or chats - user facts/preferences, infinite-length conversations, learning from past chats, personalization, "the bot forgets what I told it", working memory, semantic memory, episodic memory, memory extraction, or recalling past conversations. Also use when onboarding or other flows need to seed durable memories.'
+description: 'Give AI agents long-term memory on the getolv stack (AI SDK v6, Drizzle + pgvector, ToolLoopAgent, Next.js chat route). Use whenever the user wants the assistant to "remember" things across turns or chats - user facts/preferences, infinite-length conversations, learning from past chats, personalization, "the bot forgets what I told it", working memory, semantic memory, episodic memory, memory extraction, or recalling past conversations. Also use when onboarding or other flows need to seed durable memories.'
 ---
 
-# Agent Memory (starter stack)
+# Agent Memory (getolv stack)
 
 Three complementary memory types, each solving a different problem. The canonical implementation already exists in this repo - read it before writing new code:
 

@@ -4,8 +4,8 @@ import { useEffect } from "react";
 
 import { parseAsString, useQueryState } from "nuqs";
 
-import { useLogger } from "@starter/logger/client";
-import { toast } from "@starter/ui/components/sonner";
+import { useLogger } from "@getolv/logger/client";
+import { toast } from "@getolv/ui/components/sonner";
 
 export const ErrorToaster = () => {
 	const [error, setError] = useQueryState("error", parseAsString);

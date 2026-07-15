@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactNode } from "react";
 
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 const html = String.raw;
 

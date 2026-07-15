@@ -15,9 +15,9 @@ import {
 	AlertDialogHeader,
 	AlertDialogTitle,
 	AlertDialogTrigger,
-} from "@starter/ui/components/alert-dialog";
-import { Button } from "@starter/ui/components/button";
-import { Checkbox } from "@starter/ui/components/checkbox";
+} from "@getolv/ui/components/alert-dialog";
+import { Button } from "@getolv/ui/components/button";
+import { Checkbox } from "@getolv/ui/components/checkbox";
 import {
 	DropdownMenu,
 	DropdownMenuCheckboxItem,
@@ -25,10 +25,10 @@ import {
 	DropdownMenuLabel,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "@starter/ui/components/dropdown-menu";
-import { Input } from "@starter/ui/components/input";
-import { Label } from "@starter/ui/components/label";
-import { cn } from "@starter/ui/lib/utils";
+} from "@getolv/ui/components/dropdown-menu";
+import { Input } from "@getolv/ui/components/input";
+import { Label } from "@getolv/ui/components/label";
+import { cn } from "@getolv/ui/lib/utils";
 
 type DataTableToolbarProps<TData> = {
 	table: Table<TData>;

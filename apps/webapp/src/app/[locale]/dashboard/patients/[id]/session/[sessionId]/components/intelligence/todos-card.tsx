@@ -8,7 +8,7 @@ import {
 	formatCopyList,
 	formatCopyText,
 } from "@/app/[locale]/dashboard/patients/[id]/components/patient-card-copy";
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { IntelligenceCard } from "./intelligence-card";
 import type { TodoItem } from "./types";

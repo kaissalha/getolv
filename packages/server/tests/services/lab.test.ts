@@ -2,7 +2,7 @@ import { eq } from "drizzle-orm";
 import { v4 as uuidv4 } from "uuid";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { db, labTests } from "@starter/db";
+import { db, labTests } from "@getolv/db";
 
 const { getLabCountry, getRangesForTest, determineLabStatus } = vi.hoisted(() => ({
 	getLabCountry: vi.fn(),

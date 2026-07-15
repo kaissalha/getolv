@@ -2,12 +2,12 @@ import { cache } from "react";
 
 import { betterFetch } from "@better-fetch/fetch";
 
-import type { PatientSessionTranscriptMetadata, SessionTranscriptTurnMetadata } from "@starter/db";
+import type { PatientSessionTranscriptMetadata, SessionTranscriptTurnMetadata } from "@getolv/db";
 import {
 	assemblyAiMedicalDomain,
 	assemblyAiPreRecordedSpeechModels,
 	buildAssemblyAiMedicalKeytermsFromPatient,
-} from "@starter/utils";
+} from "@getolv/utils";
 
 import { assembly } from "../lib/assemblyai";
 import {

@@ -2,8 +2,8 @@
 
 import { FormProvider } from "react-hook-form";
 
-import type { RouterOutput } from "@starter/server";
-import { Form } from "@starter/ui/components/form";
+import type { RouterOutput } from "@getolv/server";
+import { Form } from "@getolv/ui/components/form";
 
 import { MedicalProfileCard } from "./medical-profile-card";
 import { PatientClinicalStateSection } from "./patient-clinical-state-section";

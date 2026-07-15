@@ -1,11 +1,11 @@
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 
-import { TreatmentPlanPdf, renderToBuffer } from "@starter/pdf";
+import { TreatmentPlanPdf, renderToBuffer } from "@getolv/pdf";
 
 import { getPatient } from "../../services/patients";
 import { getSessionTreatmentPlan } from "../../services/treatment-plans";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
 const formatDate = ({ value }: { value: string | null | undefined }) => {
 	const fallbackDate = new Date();
@@ -18,7 +18,7 @@ const formatDate = ({ value }: { value: string | null | undefined }) => {
 	});
 };
 
-export const createTreatmentPlansRouter = ({ createTRPCRouter, organizationProcedure }: StarterRouterFactoryOptions) =>
+export const createTreatmentPlansRouter = ({ createTRPCRouter, organizationProcedure }: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		generateTreatmentPlanPdf: organizationProcedure
 			.input(

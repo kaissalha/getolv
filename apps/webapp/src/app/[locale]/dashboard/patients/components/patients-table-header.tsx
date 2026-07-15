@@ -6,7 +6,7 @@ import { parseAsString, useQueryState } from "nuqs";
 
 import { SearchableHeader } from "@/app/[locale]/dashboard/components/layout/searchable-header";
 import { Link } from "@/i18n/navigation";
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 export const PatientsTableHeader = () => {
 	const tBreadcrumbs = useTranslations("breadcrumbs");

@@ -6,7 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Dumbbell } from "lucide-react";
 
 import { useTRPC } from "@/lib/trpc";
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@starter/ui/components/empty";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@getolv/ui/components/empty";
 
 import { WorkoutOverviewSkeleton } from "./workout-overview-skeleton";
 import { WorkoutPlanShell } from "./workout-plan-shell";

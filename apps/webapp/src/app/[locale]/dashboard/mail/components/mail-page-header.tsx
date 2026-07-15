@@ -4,7 +4,7 @@ import { MailIcon, PenSquareIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { SearchableHeader } from "@/app/[locale]/dashboard/components/layout/searchable-header";
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 import { MailSearchFilterList } from "./mail-search-filter-list";
 import { useMailPageHeaderController } from "./use-mail-page-header-controller";

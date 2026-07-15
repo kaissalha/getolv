@@ -1,9 +1,9 @@
 import { generateText, Output } from "ai";
 import { z } from "zod";
 
-import { models } from "@starter/ai/models";
-import { buildGeneratedTreatmentPlanPrompt, generatedTreatmentPlanSchema } from "@starter/ai/prompts";
-import { db, normalizePatientSessionIntelligence, type PatientTreatmentPlanContent } from "@starter/db";
+import { models } from "@getolv/ai/models";
+import { buildGeneratedTreatmentPlanPrompt, generatedTreatmentPlanSchema } from "@getolv/ai/prompts";
+import { db, normalizePatientSessionIntelligence, type PatientTreatmentPlanContent } from "@getolv/db";
 
 import { getLatestLabReportSummary } from "./lab";
 import { listNotes } from "./notes";

@@ -3,9 +3,9 @@
 import { useTranslations } from "next-intl";
 
 import { authClient } from "@/lib/auth-client";
-import { Button } from "@starter/ui/components/button";
-import { Input } from "@starter/ui/components/input";
-import { Skeleton } from "@starter/ui/components/skeleton";
+import { Button } from "@getolv/ui/components/button";
+import { Input } from "@getolv/ui/components/input";
+import { Skeleton } from "@getolv/ui/components/skeleton";
 
 import { OrganizationLogoUpload } from "./organization-logo-upload";
 import { SettingsCard } from "./settings-card";

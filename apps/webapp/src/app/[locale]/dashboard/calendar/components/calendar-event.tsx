@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import type { PositionedEvent } from "../utils/calendar-utils";
 

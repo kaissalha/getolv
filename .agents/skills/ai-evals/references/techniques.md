@@ -1,6 +1,6 @@
 # Eval techniques (detailed reference)
 
-Source: cohort exercises `07-evals-skill-building` and `08-evals-project-work`. Cohort used `ai@5` + `evalite@1.0.0-beta`; the starter uses `ai@6` + `evalite` beta with `createScorer`. Built-in semantic scorers come from `evalite/scorers` (not `autoevals`).
+Source: cohort exercises `07-evals-skill-building` and `08-evals-project-work`. Cohort used `ai@5` + `evalite@1.0.0-beta`; the getolv uses `ai@6` + `evalite` beta with `createScorer`. Built-in semantic scorers come from `evalite/scorers` (not `autoevals`).
 
 ## 1. Evalite harness
 
@@ -19,7 +19,7 @@ evalite("Agent Tool Call Evaluation", {
 });
 ```
 
-Cohort run loop (`main.ts`): `runEvalite({ mode: "watch-for-file-changes", cwd: import.meta.dirname, storage: createInMemoryStorage() })`, UI at `localhost:3006`. Starter: `bun eval:dev` / `bun eval:ci`.
+Cohort run loop (`main.ts`): `runEvalite({ mode: "watch-for-file-changes", cwd: import.meta.dirname, storage: createInMemoryStorage() })`, UI at `localhost:3006`. getolv: `bun eval:dev` / `bun eval:ci`.
 
 Fixture helper (cohort `shared/create-ui-message-fixture.ts`): turns alternating strings into `UIMessage[]` (user/assistant by index).
 
@@ -132,9 +132,9 @@ import { answerSimilarity } from "evalite/scorers";
 
 Progression: deterministic counts -> `answerCorrectness` (judge + embeddings) -> `answerSimilarity` (embeddings only). Pick the cheapest that's sensitive enough.
 
-## Starter mapping
+## getolv mapping
 
 - Use `createScorer<Input, Output, Expected>({ name, scorer })` and `evalite<Input, Output, Expected>(...)` (see `chat-title.eval.ts`).
-- Models from `@starter/ai/models` (`models.fast`, `models.rerank`); embedding model from `embeddingModels.rag`.
-- Import production prompts/agents from `@starter/ai/prompts` and `@starter/server`.
+- Models from `@getolv/ai/models` (`models.fast`, `models.rerank`); embedding model from `embeddingModels.rag`.
+- Import production prompts/agents from `@getolv/ai/prompts` and `@getolv/server`.
 - Scorers return numbers in `[0,1]`; shared helpers live in `packages/evals/evals/utils.ts`.

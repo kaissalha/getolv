@@ -3,8 +3,8 @@
 import type { ReactNode } from "react";
 
 import { CopyCardButton } from "@/app/[locale]/dashboard/patients/[id]/components/copy-card-button";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { cn } from "@starter/ui/lib/utils";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { cn } from "@getolv/ui/lib/utils";
 
 type OverviewSidebarCardProps = {
 	actions?: ReactNode;

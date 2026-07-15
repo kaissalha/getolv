@@ -1,5 +1,4 @@
 import { attachDatabasePool } from "@vercel/functions";
-import { upstashCache } from "drizzle-orm/cache/upstash";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 
@@ -29,19 +28,6 @@ export const db = drizzle({
 	client: pool,
 	relations,
 	logger: false,
-	cache:
-		process.env.NODE_ENV === "test"
-			? await import("./db-test-redis-cache").then(({ createTestRedisCache }) =>
-					createTestRedisCache({
-						url: process.env.REDIS_URL!,
-						config: { ex: 60 },
-					})
-				)
-			: upstashCache({
-					url: process.env.UPSTASH_URL!,
-					token: process.env.UPSTASH_TOKEN!,
-					config: { ex: 60 },
-				}),
 });
 
 // Export relations for use elsewhere

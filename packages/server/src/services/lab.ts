@@ -3,8 +3,8 @@ import { cache } from "react";
 import { generateText } from "ai";
 import { and, desc, eq, isNull, ne } from "drizzle-orm";
 
-import { models } from "@starter/ai/models";
-import { labReportSummaryPrompt } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { labReportSummaryPrompt } from "@getolv/ai/prompts";
 import {
 	type Country,
 	db,
@@ -15,8 +15,8 @@ import {
 	patientLabResults,
 	patientSessions,
 	type ReferenceRanges,
-} from "@starter/db";
-import { logger } from "@starter/logger/server";
+} from "@getolv/db";
+import { logger } from "@getolv/logger/server";
 
 import {
 	determineLabStatus,

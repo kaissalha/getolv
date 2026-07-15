@@ -1,13 +1,13 @@
 ---
 name: human-in-the-loop
-description: 'Add human-in-the-loop (HITL) approval to AI agents on the starter stack (AI SDK v6 native needsApproval, ToolLoopAgent, useChat addToolApprovalResponse, Next.js chat route). Use whenever an agent should pause for human approval before a consequential action - sending email, deleting data, spending money, making external API calls, "require approval", "confirm before doing X", "let the user approve/reject the tool", "ask before sending", approve/reject UI, or gating risky tool calls. Also use when building the frontend approve/reject UI or wiring approval decisions back to the model.'
+description: 'Add human-in-the-loop (HITL) approval to AI agents on the getolv stack (AI SDK v6 native needsApproval, ToolLoopAgent, useChat addToolApprovalResponse, Next.js chat route). Use whenever an agent should pause for human approval before a consequential action - sending email, deleting data, spending money, making external API calls, "require approval", "confirm before doing X", "let the user approve/reject the tool", "ask before sending", approve/reject UI, or gating risky tool calls. Also use when building the frontend approve/reject UI or wiring approval decisions back to the model.'
 ---
 
-# Human-in-the-Loop Approval (starter stack)
+# Human-in-the-Loop Approval (getolv stack)
 
 Some tool calls are too consequential to run autonomously (sending email, deleting records, charging a card). HITL pauses the agent at the tool call, surfaces the proposed action to the user, and only executes after explicit approval.
 
-**On this repo (`ai@6`), use AI SDK v6 native `needsApproval`.** The starter already runs on `ToolLoopAgent` and has the client side of the native flow plumbed through `useChat`. Verify the exact API with the `ai-sdk` skill (check `node_modules/ai/docs/03-ai-sdk-core/15-tools-and-tool-calling.mdx` and `node_modules/ai/docs/04-ai-sdk-ui/03-chatbot-tool-usage.mdx`) before writing code.
+**On this repo (`ai@6`), use AI SDK v6 native `needsApproval`.** The getolv already runs on `ToolLoopAgent` and has the client side of the native flow plumbed through `useChat`. Verify the exact API with the `ai-sdk` skill (check `node_modules/ai/docs/03-ai-sdk-core/15-tools-and-tool-calling.mdx` and `node_modules/ai/docs/04-ai-sdk-ui/03-chatbot-tool-usage.mdx`) before writing code.
 
 The native flow gives you everything the cohort's hand-rolled version did - typed approval parts, rejection feedback (`reason`), and dynamic per-input gating - with far less plumbing. Only fall back to custom data parts when you need UX the native parts can't express (see the last section).
 

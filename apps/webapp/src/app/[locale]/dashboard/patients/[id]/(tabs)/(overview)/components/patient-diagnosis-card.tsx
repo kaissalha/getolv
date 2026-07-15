@@ -9,8 +9,8 @@ import {
 	formatDiagnosisEntryForCopy,
 	joinCopySections,
 } from "@/app/[locale]/dashboard/patients/[id]/components/patient-card-copy";
-import type { RouterOutput } from "@starter/server";
-import { Button } from "@starter/ui/components/button";
+import type { RouterOutput } from "@getolv/server";
+import { Button } from "@getolv/ui/components/button";
 
 import { OverviewSidebarCard } from "./overview-sidebar-card";
 import type { PatientClinicalStateFormValues } from "./patient-clinical-state-form";

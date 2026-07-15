@@ -8,7 +8,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { parseAsString, useQueryState } from "nuqs";
 
 import { useTRPC } from "@/lib/trpc";
-import { useLogger } from "@starter/logger/client";
+import { useLogger } from "@getolv/logger/client";
 
 import { usePdfBlobPreview } from "../../components/use-pdf-blob-preview";
 

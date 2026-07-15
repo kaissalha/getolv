@@ -10,7 +10,7 @@ import {
 	SidebarHeader,
 	SidebarInset,
 	SidebarProvider,
-} from "@starter/ui/components/sidebar";
+} from "@getolv/ui/components/sidebar";
 
 import { DashboardActiveSessionShell } from "./components/dashboard-active-session-shell";
 import { AppSidebar } from "./components/layout/sidebar/app-sidebar";

@@ -1,4 +1,4 @@
-import type { NoteMention, NoteMentionResourceType } from "@starter/db";
+import type { NoteMention, NoteMentionResourceType } from "@getolv/db";
 
 export type NoteWithMentions = {
 	id: string;

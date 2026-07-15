@@ -3,7 +3,7 @@
 import { Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 import {
 	Credenza,
 	CredenzaBody,
@@ -13,7 +13,7 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
+} from "@getolv/ui/components/credenza";
 
 import { LabRangeOverridesForm } from "./lab-range-overrides-form";
 import { LabRangeOverridesList } from "./lab-range-overrides-list";

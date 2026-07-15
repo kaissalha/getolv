@@ -1,7 +1,7 @@
 import { eq } from "drizzle-orm";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
-import { db, patients } from "@starter/db";
+import { db, patients } from "@getolv/db";
 
 import {
 	createPatientSession,

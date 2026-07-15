@@ -6,7 +6,7 @@ import { createPostHog } from "@posthog/next";
 import type { Adapter, Identify } from "flags";
 import { dedupe } from "flags/next";
 
-import { auth } from "@starter/server/auth";
+import { auth } from "@getolv/server/auth";
 
 export const { getPostHog } = createPostHog({
 	options: {

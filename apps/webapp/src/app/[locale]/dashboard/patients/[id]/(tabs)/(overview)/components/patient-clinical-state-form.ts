@@ -1,6 +1,6 @@
 "use client";
 
-import type { RouterOutput } from "@starter/server";
+import type { RouterOutput } from "@getolv/server";
 
 type PatientDetails = NonNullable<RouterOutput["patients"]["get"]>;
 

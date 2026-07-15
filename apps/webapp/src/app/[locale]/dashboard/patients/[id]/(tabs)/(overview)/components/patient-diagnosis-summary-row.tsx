@@ -1,5 +1,5 @@
-import type { RouterOutput } from "@starter/server";
-import { cn } from "@starter/ui/lib/utils";
+import type { RouterOutput } from "@getolv/server";
+import { cn } from "@getolv/ui/lib/utils";
 
 type PatientDetails = NonNullable<RouterOutput["patients"]["get"]>;
 

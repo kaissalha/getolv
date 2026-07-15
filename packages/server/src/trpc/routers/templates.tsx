@@ -1,7 +1,7 @@
-import { TreatmentPlanPdf, renderToBuffer } from "@starter/pdf";
-import type { TreatmentPlanMealPlan, TreatmentPlanRating, TreatmentPlanSupplement } from "@starter/pdf";
+import { TreatmentPlanPdf, renderToBuffer } from "@getolv/pdf";
+import type { TreatmentPlanMealPlan, TreatmentPlanRating, TreatmentPlanSupplement } from "@getolv/pdf";
 
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
 const formatDate = (date: Date) => date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
@@ -77,7 +77,7 @@ const sampleRatings: TreatmentPlanRating[] = [
 	{ key: "pain", label: "Pain", max: 10 },
 ];
 
-export const createTemplatesRouter = ({ createTRPCRouter, organizationProcedure }: StarterRouterFactoryOptions) =>
+export const createTemplatesRouter = ({ createTRPCRouter, organizationProcedure }: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		generateTreatmentPlanPreview: organizationProcedure.mutation(async () => {
 			const sessionDate = formatDate(new Date());

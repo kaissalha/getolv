@@ -4,13 +4,13 @@ import { type inferRouterInputs, type inferRouterOutputs, initTRPC } from "@trpc
 import superjson from "superjson";
 
 import { createAppRouter } from "./routers";
-import type { CreateStarterTRPCOptions } from "./shared";
+import type { CreategetolvTRPCOptions } from "./shared";
 
 export type AppRouter = ReturnType<typeof createAppRouter>;
 export type RouterInput = inferRouterInputs<AppRouter>;
 export type RouterOutput = inferRouterOutputs<AppRouter>;
 
-export const createStarterTRPC = ({ getSession, queueSessionTranscriptPostProcessing }: CreateStarterTRPCOptions) => {
+export const creategetolvTRPC = ({ getSession, queueSessionTranscriptPostProcessing }: CreategetolvTRPCOptions) => {
 	const createTRPCContext = cache(async () => {
 		return {
 			session: await getSession(),

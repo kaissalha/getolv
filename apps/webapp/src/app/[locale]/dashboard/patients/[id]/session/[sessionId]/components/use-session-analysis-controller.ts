@@ -11,7 +11,7 @@ import {
 } from "@/components/patient-sessions/active-session-scribe-provider";
 import type { SessionTimingSnapshot } from "@/components/patient-sessions/use-session-elapsed-time";
 import { useTRPC } from "@/lib/trpc";
-import { toast } from "@starter/ui/components/sonner";
+import { toast } from "@getolv/ui/components/sonner";
 
 import type { SessionIntelligence } from "./intelligence/types";
 

@@ -4,7 +4,7 @@ import { headers } from "next/headers";
 
 import { getTranslations } from "next-intl/server";
 
-import { auth } from "@starter/server/auth";
+import { auth } from "@getolv/server/auth";
 
 import { HomePageGreeting } from "./home-page-greeting";
 import { HomePageWeather } from "./home-page-weather";

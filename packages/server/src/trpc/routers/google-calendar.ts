@@ -11,7 +11,7 @@ import {
 	listGoogleCalendars,
 	updateGoogleCalendarEvent,
 } from "../../services/google-calendar";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
 const EventDateTimeSchema = z.object({
 	dateTime: z.string().optional(),
@@ -33,7 +33,7 @@ const CreateEventInputSchema = z.object({
 	attendees: z.array(AttendeeSchema).optional(),
 });
 
-export const createGoogleCalendarRouter = ({ createTRPCRouter, organizationProcedure }: StarterRouterFactoryOptions) =>
+export const createGoogleCalendarRouter = ({ createTRPCRouter, organizationProcedure }: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		getStatus: organizationProcedure.query(async ({ ctx }) => {
 			const connection = await getCalendarConnection({ organizationId: ctx.activeOrganizationId });

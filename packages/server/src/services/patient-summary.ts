@@ -1,10 +1,10 @@
 import { generateText, Output } from "ai";
 import { and, desc, eq } from "drizzle-orm";
 
-import { models } from "@starter/ai/models";
-import { buildPatientSummaryPrompt, patientSummaryOutputSchema } from "@starter/ai/prompts";
-import { db, normalizePatientSessionIntelligence, noteMentions, notes, patients } from "@starter/db";
-import { logger } from "@starter/logger/server";
+import { models } from "@getolv/ai/models";
+import { buildPatientSummaryPrompt, patientSummaryOutputSchema } from "@getolv/ai/prompts";
+import { db, normalizePatientSessionIntelligence, noteMentions, notes, patients } from "@getolv/db";
+import { logger } from "@getolv/logger/server";
 
 const PATIENT_SUMMARY_MAX_LENGTH = 900;
 const CONTEXT_TEXT_MAX_LENGTH = 360;

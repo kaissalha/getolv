@@ -8,9 +8,9 @@ import { useForm, useWatch } from "react-hook-form";
 import { z } from "zod";
 
 import { LogoPicker } from "@/components/organization/logo-picker";
-import { Button } from "@starter/ui/components/button";
-import { Field, FieldControl, FieldError, FieldLabel } from "@starter/ui/components/field";
-import { Form } from "@starter/ui/components/form";
+import { Button } from "@getolv/ui/components/button";
+import { Field, FieldControl, FieldError, FieldLabel } from "@getolv/ui/components/field";
+import { Form } from "@getolv/ui/components/form";
 
 const createOrganizationSchema = ({ invalidMessage }: { invalidMessage: string }) =>
 	z.object({

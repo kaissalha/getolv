@@ -25,9 +25,9 @@ import {
 	AlertDialogFooter,
 	AlertDialogHeader,
 	AlertDialogTitle,
-} from "@starter/ui/components/alert-dialog";
-import { Button } from "@starter/ui/components/button";
-import { toast } from "@starter/ui/components/sonner";
+} from "@getolv/ui/components/alert-dialog";
+import { Button } from "@getolv/ui/components/button";
+import { toast } from "@getolv/ui/components/sonner";
 
 import { LabsHeaderActions } from "../labs/components/labs-header-actions";
 import { WorkoutHeaderActions } from "../workout/components/workout-header-actions";

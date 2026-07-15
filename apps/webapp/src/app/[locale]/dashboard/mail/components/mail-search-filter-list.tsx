@@ -3,7 +3,7 @@
 import { XIcon } from "lucide-react";
 
 import type { MailSearchFilter } from "@/components/mail/mail-search-query";
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 type MailSearchFilterListProps = {
 	filters: MailSearchFilter[];

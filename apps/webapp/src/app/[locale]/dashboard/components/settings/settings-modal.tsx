@@ -9,8 +9,8 @@ import {
 	CredenzaDescription,
 	CredenzaHeader,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { useIsMobile } from "@starter/ui/hooks/use-mobile";
+} from "@getolv/ui/components/credenza";
+import { useIsMobile } from "@getolv/ui/hooks/use-mobile";
 
 import { DesktopSettings, MobileSettings, useSettingsTabs } from "./settings-modal-internals";
 

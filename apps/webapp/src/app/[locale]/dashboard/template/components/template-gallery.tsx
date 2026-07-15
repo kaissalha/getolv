@@ -8,8 +8,8 @@ import { Download } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useTRPC } from "@/lib/trpc";
-import { useLogger } from "@starter/logger/client";
-import { Button } from "@starter/ui/components/button";
+import { useLogger } from "@getolv/logger/client";
+import { Button } from "@getolv/ui/components/button";
 import {
 	Credenza,
 	CredenzaBody,
@@ -18,10 +18,10 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { toast } from "@starter/ui/components/sonner";
-import { Spinner } from "@starter/ui/components/spinner";
+} from "@getolv/ui/components/credenza";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { toast } from "@getolv/ui/components/sonner";
+import { Spinner } from "@getolv/ui/components/spinner";
 
 import { usePdfBlobPreview } from "../../patients/[id]/(tabs)/components/use-pdf-blob-preview";
 

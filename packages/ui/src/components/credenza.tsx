@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { useIsMobile } from "../hooks/use-mobile";
 import {

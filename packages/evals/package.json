@@ -1,5 +1,5 @@
 {
-	"name": "@starter/evals",
+	"name": "@getolv/evals",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
@@ -10,13 +10,13 @@
 		"typecheck": "tsgo --noEmit --skipLibCheck"
 	},
 	"dependencies": {
-		"@starter/ai": "workspace:*",
-		"@starter/server": "workspace:*",
+		"@getolv/ai": "workspace:*",
+		"@getolv/server": "workspace:*",
 		"ai": "^7.0.28",
 		"zod": "^4.4.3"
 	},
 	"devDependencies": {
-		"@starter/tsconfig": "workspace:*",
+		"@getolv/tsconfig": "workspace:*",
 		"@types/node": "^26.1.1",
 		"@typescript/native-preview": "^7.0.0-dev.20260707.2",
 		"better-sqlite3": "^12.11.1",

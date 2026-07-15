@@ -314,7 +314,7 @@ describe("ai tools", () => {
 				durationWeeks: 6,
 				id: "plan-1",
 				summary: "Strength focus",
-				title: "Starter Plan",
+				title: "getolv Plan",
 			},
 		]);
 

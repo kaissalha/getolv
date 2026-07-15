@@ -3,9 +3,9 @@
 import { CheckIcon, CopyIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
-import { toast } from "@starter/ui/components/sonner";
-import { useCopyToClipboard } from "@starter/ui/hooks/use-copy-to-clipboard";
+import { Button } from "@getolv/ui/components/button";
+import { toast } from "@getolv/ui/components/sonner";
+import { useCopyToClipboard } from "@getolv/ui/hooks/use-copy-to-clipboard";
 
 type CopyCardButtonProps = {
 	getValue: () => string;

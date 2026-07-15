@@ -2,8 +2,8 @@
 
 import { parseAsString, useQueryState } from "nuqs";
 
-import { Card } from "@starter/ui/components/card";
-import { Skeleton } from "@starter/ui/components/skeleton";
+import { Card } from "@getolv/ui/components/card";
+import { Skeleton } from "@getolv/ui/components/skeleton";
 
 import { NoteBody } from "./note-body";
 import { NOTE_ID_SEARCH_PARAM } from "./notes-url-state";

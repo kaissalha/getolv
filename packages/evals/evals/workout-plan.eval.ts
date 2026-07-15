@@ -1,8 +1,8 @@
 import { Output, generateText } from "ai";
 import { createScorer, evalite } from "evalite";
 
-import { models } from "@starter/ai/models";
-import { generateWorkoutPlanPrompt, generatedWorkoutPlanSchema } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { generateWorkoutPlanPrompt, generatedWorkoutPlanSchema } from "@getolv/ai/prompts";
 
 type WorkoutPlanInput = {
 	exerciseCatalog: Array<{

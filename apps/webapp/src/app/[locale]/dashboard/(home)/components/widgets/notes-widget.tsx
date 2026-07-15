@@ -8,7 +8,7 @@ import { NoteBody } from "@/components/notes/note-body";
 import { NEW_NOTE_ID, NOTE_ID_SEARCH_PARAM } from "@/components/notes/notes-url-state";
 import { Link } from "@/i18n/navigation";
 import { useTRPC } from "@/lib/trpc";
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 import { BaseWidget } from "./base-widget";
 

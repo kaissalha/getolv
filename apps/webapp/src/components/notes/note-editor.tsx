@@ -9,9 +9,9 @@ import { parseAsString, useQueryState } from "nuqs";
 
 import { Link } from "@/i18n/navigation";
 import { useTRPC } from "@/lib/trpc";
-import { Button } from "@starter/ui/components/button";
-import { Dialog, DialogPopup } from "@starter/ui/components/dialog";
-import { toast } from "@starter/ui/components/sonner";
+import { Button } from "@getolv/ui/components/button";
+import { Dialog, DialogPopup } from "@getolv/ui/components/dialog";
+import { toast } from "@getolv/ui/components/sonner";
 
 import { MentionTextarea } from "./mention-textarea";
 import { createMentionMarker, getMentionLabel, MENTION_PATTERN, parseMentions } from "./mention-utils";

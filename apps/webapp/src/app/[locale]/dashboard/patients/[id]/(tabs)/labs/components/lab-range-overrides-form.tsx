@@ -3,10 +3,10 @@
 import { Plus, Trash2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
-import { Input } from "@starter/ui/components/input";
-import { Label } from "@starter/ui/components/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@starter/ui/components/select";
+import { Button } from "@getolv/ui/components/button";
+import { Input } from "@getolv/ui/components/input";
+import { Label } from "@getolv/ui/components/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@getolv/ui/components/select";
 
 import type { LabTestCatalogItem, RangeChangeInput, RangeInput } from "./use-lab-range-overrides-controller";
 

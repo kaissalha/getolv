@@ -1,8 +1,8 @@
 import { generateText, Output, tool } from "ai";
 import { z } from "zod";
 
-import { models } from "@starter/ai/models";
-import { editWorkoutPlanPrompt, generateWorkoutPlanPrompt, generatedWorkoutPlanSchema } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { editWorkoutPlanPrompt, generateWorkoutPlanPrompt, generatedWorkoutPlanSchema } from "@getolv/ai/prompts";
 
 import { createWorkoutPlan, getExerciseCatalog } from "../../services/workouts";
 import { appContextSchema } from "../types";

@@ -1,4 +1,4 @@
-import type { GoogleCalendarEvent } from "@starter/app-store";
+import type { GoogleCalendarEvent } from "@getolv/app-store";
 
 export const CALENDAR_CONFIG = {
 	START_HOUR: 0,

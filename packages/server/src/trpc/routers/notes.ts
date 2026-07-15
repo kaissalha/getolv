@@ -2,14 +2,14 @@ import { z } from "zod";
 
 import { createNote, deleteNote, getNote, listNotes, updateNote } from "../../services/notes";
 import { PaginationSchema } from "../../types/pagination";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
 const MentionSchema = z.object({
 	resourceType: z.enum(["patient"]),
 	resourceId: z.string(),
 });
 
-export const createNotesRouter = ({ createTRPCRouter, organizationProcedure }: StarterRouterFactoryOptions) =>
+export const createNotesRouter = ({ createTRPCRouter, organizationProcedure }: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		get: organizationProcedure
 			.input(

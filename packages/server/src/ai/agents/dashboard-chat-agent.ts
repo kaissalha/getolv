@@ -1,8 +1,8 @@
 import { isStepCount, ToolLoopAgent } from "ai";
 import { z } from "zod";
 
-import { models } from "@starter/ai/models";
-import { dashboardChatSystemPrompt } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { dashboardChatSystemPrompt } from "@getolv/ai/prompts";
 
 import { dashboardChatTools } from "../tools";
 import { appContextSchema } from "../types";

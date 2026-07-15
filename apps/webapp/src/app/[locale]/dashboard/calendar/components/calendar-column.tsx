@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import type { CalendarEventWithMeta } from "../utils/calendar-utils";
 import { calculateEventPositions, CALENDAR_CONFIG, TOTAL_HEIGHT } from "../utils/calendar-utils";

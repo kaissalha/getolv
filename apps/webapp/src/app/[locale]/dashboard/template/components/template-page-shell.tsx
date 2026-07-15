@@ -5,8 +5,8 @@ import Image from "next/image";
 import { PlusIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { Spinner } from "@starter/ui/components/spinner";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { Spinner } from "@getolv/ui/components/spinner";
 
 import { TemplateGallery } from "./template-gallery";
 import { TemplatePageHeader } from "./template-page-header";

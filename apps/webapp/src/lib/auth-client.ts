@@ -7,8 +7,8 @@ import {
 } from "better-auth/client/plugins";
 import { createAuthClient } from "better-auth/react";
 
-import type { auth } from "@starter/server/auth";
-import { getBaseURL } from "@starter/utils";
+import type { auth } from "@getolv/server/auth";
+import { getBaseURL } from "@getolv/utils";
 
 export const authClient = createAuthClient({
 	baseURL: getBaseURL().toString(),

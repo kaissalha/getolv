@@ -8,7 +8,7 @@ const logger = {
 	warn: vi.fn(),
 };
 
-vi.mock("@starter/logger/server", () => {
+vi.mock("@getolv/logger/server", () => {
 	return {
 		createServerLogger: () => logger,
 		logger,

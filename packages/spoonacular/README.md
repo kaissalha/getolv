@@ -1,4 +1,4 @@
-# `@starter/spoonacular`
+# `@getolv/spoonacular`
 
 Vendored Spoonacular API client built from [`ddsky/spoonacular-api-clients`](https://github.com/ddsky/spoonacular-api-clients/tree/master/typescript).
 
@@ -10,7 +10,7 @@ Vendored Spoonacular API client built from [`ddsky/spoonacular-api-clients`](htt
 ## Usage
 
 ```ts
-import { RecipesApi, createConfiguration } from "@starter/spoonacular";
+import { RecipesApi, createConfiguration } from "@getolv/spoonacular";
 
 const configuration = createConfiguration({
 	authMethods: {

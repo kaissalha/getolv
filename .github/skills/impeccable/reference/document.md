@@ -341,7 +341,7 @@ For projects with no visual system to extract yet. Produces a minimal scaffold, 
 
 ### Step 1: Confirm seed mode
 
-Before interviewing: "There's no existing visual system to scan. I'll ask five quick questions to seed a starter DESIGN.md. You can re-run `$impeccable document` once there's code, to capture the real tokens and components. OK?"
+Before interviewing: "There's no existing visual system to scan. I'll ask five quick questions to seed a getolv DESIGN.md. You can re-run `$impeccable document` once there's code, to capture the real tokens and components. OK?"
 
 If the user prefers to skip, stop. No file.
 

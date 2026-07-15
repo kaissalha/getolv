@@ -1,8 +1,8 @@
 import { isStepCount, ToolLoopAgent } from "ai";
 import { z } from "zod";
 
-import { models } from "@starter/ai/models";
-import { naturopathicDoctorSystemPrompt } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { naturopathicDoctorSystemPrompt } from "@getolv/ai/prompts";
 
 import { chatTools } from "../tools";
 import { appContextSchema } from "../types";

@@ -1,7 +1,7 @@
 "use client";
 
-import { Frame, FrameFooter, FrameHeader, FramePanel } from "@starter/ui/components/frame";
-import { Skeleton } from "@starter/ui/components/skeleton";
+import { Frame, FrameFooter, FrameHeader, FramePanel } from "@getolv/ui/components/frame";
+import { Skeleton } from "@getolv/ui/components/skeleton";
 
 export const LabsOverviewSkeleton = () => (
 	<div className='flex flex-col gap-6 px-4 pb-52 pt-4'>

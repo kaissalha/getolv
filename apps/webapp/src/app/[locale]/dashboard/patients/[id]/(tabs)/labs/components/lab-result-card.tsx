@@ -7,8 +7,8 @@ import { Pencil } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useTRPC } from "@/lib/trpc";
-import type { PatientLabResultWithStatus } from "@starter/db";
-import { Badge } from "@starter/ui/components/badge";
+import type { PatientLabResultWithStatus } from "@getolv/db";
+import { Badge } from "@getolv/ui/components/badge";
 
 import { LabResultRangeIndicator } from "./lab-result-range-indicator";
 import { LabResultTrend } from "./lab-result-trend";

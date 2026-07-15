@@ -10,7 +10,7 @@ import { parseAsString, useQueryState } from "nuqs";
 
 import { CALENDAR_ID_SEARCH_PARAM, CALENDAR_EVENT_ID_SEARCH_PARAM } from "@/lib/calendar-url-state";
 import { useTRPC } from "@/lib/trpc";
-import { toast } from "@starter/ui/components/sonner";
+import { toast } from "@getolv/ui/components/sonner";
 
 import {
 	getAllDayColumnContentHeight,

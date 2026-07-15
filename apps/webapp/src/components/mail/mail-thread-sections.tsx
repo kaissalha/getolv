@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import InfiniteScroll from "react-infinite-scroller";
 
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { MailThreadItem } from "./mail-thread-item";
 import type { MailThreadSection } from "./mail-thread-section-data";

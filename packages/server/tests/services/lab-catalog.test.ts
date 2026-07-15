@@ -2,7 +2,7 @@ import { eq } from "drizzle-orm";
 import { v4 as uuidv4 } from "uuid";
 import { afterEach, describe, expect, it } from "vitest";
 
-import { db, labTestRangeOverrides, labTestReferenceRanges, labTests } from "@starter/db";
+import { db, labTestRangeOverrides, labTestReferenceRanges, labTests } from "@getolv/db";
 
 import { determineLabStatus, findLabTestByNameOrAlias, getRangesForTest } from "../../src/services/lab-catalog";
 import { cleanupOrganization, createTestOrganization, createTestPatient } from "../helpers/db";

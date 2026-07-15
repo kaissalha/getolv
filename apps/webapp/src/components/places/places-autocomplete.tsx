@@ -2,8 +2,8 @@ import { memo, useEffect, useRef, useState } from "react";
 
 import { APIProvider, useMapsLibrary } from "@vis.gl/react-google-maps";
 
-import { Input } from "@starter/ui/components/input";
-import { cn } from "@starter/ui/lib/utils";
+import { Input } from "@getolv/ui/components/input";
+import { cn } from "@getolv/ui/lib/utils";
 
 type PlaceAutocompleteProps = {
 	value?: string;

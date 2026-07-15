@@ -12,8 +12,8 @@ import { useFormatRelativeDate } from "@/hooks/use-relative-date-formatter";
 import { useRouter } from "@/i18n/navigation";
 import { useTRPC } from "@/lib/trpc";
 import { getFullName } from "@/utils/string";
-import type { Patient } from "@starter/db";
-import { Checkbox } from "@starter/ui/components/checkbox";
+import type { Patient } from "@getolv/db";
+import { Checkbox } from "@getolv/ui/components/checkbox";
 
 import { EmptyState } from "./empty-state";
 import { InfiniteDataTable } from "./infinite-data-table";

@@ -6,9 +6,9 @@ import { BadgeCheckIcon, CreditCardIcon, SparklesIcon, ZapIcon } from "lucide-re
 import { useTranslations } from "next-intl";
 
 import { authClient } from "@/lib/auth-client";
-import { Button } from "@starter/ui/components/button";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { toast } from "@starter/ui/components/sonner";
+import { Button } from "@getolv/ui/components/button";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { toast } from "@getolv/ui/components/sonner";
 
 import { UpgradePlanDialog } from "../subscription/upgrade-plan-dialog";
 import { useSubscription } from "../subscription/use-subscription";

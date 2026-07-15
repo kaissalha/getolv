@@ -1,6 +1,6 @@
 # Human-in-the-loop techniques (detailed reference)
 
-On the starter (`ai@6`), prefer the **native `needsApproval` flow** below. The custom data-parts pattern (from cohort exercises `09-human-in-the-loop-skill-building` `09.02`-`09.06`, originally on `ai@5`) is a fallback for UX native parts can't express.
+On the getolv (`ai@6`), prefer the **native `needsApproval` flow** below. The custom data-parts pattern (from cohort exercises `09-human-in-the-loop-skill-building` `09.02`-`09.06`, originally on `ai@5`) is a fallback for UX native parts can't express.
 
 ## Native `needsApproval` (recommended on `ai@6`)
 
@@ -34,7 +34,7 @@ if (part.type === "tool-sendEmail" && part.state === "approval-requested") {
 }
 ```
 
-In the starter, `addToolApprovalResponse` is already exposed via the chat store (`useChatSession((s) => s.addToolApprovalResponse)`).
+In the getolv, `addToolApprovalResponse` is already exposed via the chat store (`useChatSession((s) => s.addToolApprovalResponse)`).
 
 Core (non-`useChat`) - request appears as `tool-approval-request` in `result.content`; respond with a tool message:
 
@@ -166,7 +166,7 @@ if (part.type === "data-approval-result") return { type: "text", text: `The tool
 
 Then continue the agent with the annotated history including result parts.
 
-## Starter mapping
+## getolv mapping
 
 - Add the three data types to the chat message's custom data-types map (alongside `attachment`, `error`, `chat-created` in `BaseCustomUIDataTypes`).
 - Use the existing `createUIMessageStream` + `writer` in the chat route.

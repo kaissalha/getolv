@@ -13,7 +13,7 @@ import {
 	patients,
 	queryWithPagination,
 	withOrderBy,
-} from "@starter/db";
+} from "@getolv/db";
 
 import type { PaginationProps } from "../types/pagination";
 

@@ -3,8 +3,8 @@ import { FatalError } from "workflow";
 
 import { deleteBlob, downloadBlob } from "@/lib/server/storage";
 import { deleteStorageRecordByUrl } from "@/services/storage";
-import type { PatientSessionIntelligence } from "@starter/db";
-import { logger } from "@starter/logger/server";
+import type { PatientSessionIntelligence } from "@getolv/db";
+import { logger } from "@getolv/logger/server";
 import {
 	clearPatientSessionAudio,
 	generateSessionIntelligence,
@@ -12,7 +12,7 @@ import {
 	syncSessionTreatmentPlan,
 	syncPatientClinicalStateFromSessionIntelligence,
 	transcribeWithMedicalMode,
-} from "@starter/server";
+} from "@getolv/server";
 
 type SessionTranscriptPostProcessingInput = {
 	audioUrl: string;

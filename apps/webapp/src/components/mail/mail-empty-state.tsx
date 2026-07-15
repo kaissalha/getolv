@@ -4,8 +4,8 @@ import { InboxIcon, PenSquareIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { parseAsString, useQueryState } from "nuqs";
 
-import { Button } from "@starter/ui/components/button";
-import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@starter/ui/components/empty";
+import { Button } from "@getolv/ui/components/button";
+import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@getolv/ui/components/empty";
 
 import { MAIL_COMPOSE_NEW, MAIL_COMPOSE_PARAM } from "./mail-url-state";
 

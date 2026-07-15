@@ -16,8 +16,8 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { Input } from "@starter/ui/components/input";
+} from "@getolv/ui/components/credenza";
+import { Input } from "@getolv/ui/components/input";
 
 import { formatBodyPart } from "./format-body-part";
 

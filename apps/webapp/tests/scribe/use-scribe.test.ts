@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { assemblyAiMedicalDomain, assemblyAiStreamingSpeechModel } from "@starter/utils";
+import { assemblyAiMedicalDomain, assemblyAiStreamingSpeechModel } from "@getolv/utils";
 
 import {
 	buildAssemblyAiConnectionParams,

@@ -1,9 +1,9 @@
 ---
 name: rag-retrieval
-description: 'Build and improve retrieval / RAG over the starter stack (AI SDK v6, Drizzle + pgvector + Postgres full-text search, ToolLoopAgent tools). Use whenever the user wants to add document search, knowledge-base lookup, semantic search, hybrid search, "search my docs/emails/contacts", embeddings retrieval, chunking, rank fusion, reranking, query rewriting, or a metadata-first retrieval tool - even if they only say "make the chatbot answer from our documents" or "our RAG results are bad". Also use when debugging weak/irrelevant retrieval results.'
+description: 'Build and improve retrieval / RAG over the getolv stack (AI SDK v6, Drizzle + pgvector + Postgres full-text search, ToolLoopAgent tools). Use whenever the user wants to add document search, knowledge-base lookup, semantic search, hybrid search, "search my docs/emails/contacts", embeddings retrieval, chunking, rank fusion, reranking, query rewriting, or a metadata-first retrieval tool - even if they only say "make the chatbot answer from our documents" or "our RAG results are bad". Also use when debugging weak/irrelevant retrieval results.'
 ---
 
-# RAG Retrieval (starter stack)
+# RAG Retrieval (getolv stack)
 
 This skill captures the retrieval techniques used in this repo. The canonical, working implementation already exists - read it before writing new code:
 
@@ -44,7 +44,7 @@ fts: tsvector("fts")
 // index: .using("gin", table.fts.asc().nullsLast().op("tsvector_ops"))
 ```
 
-Query with `ts_rank` and the existing `buildSearchQuery` helper from `@starter/db` (it produces a prefix `to_tsquery` like `term:*`). See `searchRagChunksByKeyword` in `rag.ts`.
+Query with `ts_rank` and the existing `buildSearchQuery` helper from `@getolv/db` (it produces a prefix `to_tsquery` like `term:*`). See `searchRagChunksByKeyword` in `rag.ts`.
 
 ## Semantic search
 

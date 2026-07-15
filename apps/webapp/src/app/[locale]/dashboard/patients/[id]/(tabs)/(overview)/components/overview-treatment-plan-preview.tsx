@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { DownloadIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 import {
 	Credenza,
 	CredenzaBody,
@@ -14,8 +14,8 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { Skeleton } from "@starter/ui/components/skeleton";
+} from "@getolv/ui/components/credenza";
+import { Skeleton } from "@getolv/ui/components/skeleton";
 
 const PdfViewer = dynamic(() => import("@/components/pdf-viewer").then((mod) => mod.PdfViewer), {
 	ssr: false,

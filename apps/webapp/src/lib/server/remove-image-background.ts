@@ -1,6 +1,6 @@
 import { generateImage } from "ai";
 
-import { removeImageBackgroundPrompt } from "@starter/ai/prompts";
+import { removeImageBackgroundPrompt } from "@getolv/ai/prompts";
 
 type RemoveImageBackgroundParams = {
 	buffer: Buffer;

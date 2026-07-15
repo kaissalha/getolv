@@ -8,8 +8,8 @@ import { parseAsString, useQueryState } from "nuqs";
 import { Link } from "@/i18n/navigation";
 import { useTRPC } from "@/lib/trpc";
 import { getFullName, getInitials } from "@/utils/string";
-import { Avatar, AvatarFallback } from "@starter/ui/components/avatar";
-import { Button, buttonVariants } from "@starter/ui/components/button";
+import { Avatar, AvatarFallback } from "@getolv/ui/components/avatar";
+import { Button, buttonVariants } from "@getolv/ui/components/button";
 import {
 	Credenza,
 	CredenzaBody,
@@ -18,10 +18,10 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { Tabs, TabsList, TabsTrigger } from "@starter/ui/components/tabs";
-import { cn } from "@starter/ui/lib/utils";
+} from "@getolv/ui/components/credenza";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { Tabs, TabsList, TabsTrigger } from "@getolv/ui/components/tabs";
+import { cn } from "@getolv/ui/lib/utils";
 
 import {
 	MailPatientDetailsTab,

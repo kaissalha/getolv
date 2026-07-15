@@ -1,6 +1,6 @@
 "use client";
 
-import { Skeleton } from "@starter/ui/components/skeleton";
+import { Skeleton } from "@getolv/ui/components/skeleton";
 
 export const CalendarSkeleton = () => {
 	return (

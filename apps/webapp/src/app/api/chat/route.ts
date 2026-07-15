@@ -17,9 +17,9 @@ import { z } from "zod";
 
 import { convertDbMessagesForUI, streamContext } from "@/utils/chat-utils";
 import { withErrorHandler } from "@/utils/with-error-handler";
-import { models } from "@starter/ai/models";
-import { dashboardChatTitlePrompt, dashboardChatTitleSchema } from "@starter/ai/prompts";
-import { logger } from "@starter/logger/server";
+import { models } from "@getolv/ai/models";
+import { dashboardChatTitlePrompt, dashboardChatTitleSchema } from "@getolv/ai/prompts";
+import { logger } from "@getolv/logger/server";
 import {
 	createStreamId,
 	dashboardChatAgent,
@@ -31,8 +31,8 @@ import {
 	saveOrUpdateChatMessage,
 	updateChatTitle,
 	waitForRagDocumentsReady,
-} from "@starter/server";
-import { auth } from "@starter/server/auth";
+} from "@getolv/server";
+import { auth } from "@getolv/server/auth";
 
 const dashboardChatRequestSchema = z.object({
 	message: z.looseObject({}),

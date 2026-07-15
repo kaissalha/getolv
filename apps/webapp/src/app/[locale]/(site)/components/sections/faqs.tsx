@@ -2,8 +2,8 @@
 
 import type { ComponentProps } from "react";
 
-import { Accordion, AccordionItem, AccordionPanel, AccordionTrigger } from "@starter/ui/components/accordion";
-import { cn } from "@starter/ui/lib/utils";
+import { Accordion, AccordionItem, AccordionPanel, AccordionTrigger } from "@getolv/ui/components/accordion";
+import { cn } from "@getolv/ui/lib/utils";
 
 const faqs = [
 	{

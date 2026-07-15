@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { ExternalLinkIcon, VideoIcon, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button, buttonVariants } from "@starter/ui/components/button";
+import { Button, buttonVariants } from "@getolv/ui/components/button";
 import {
 	Credenza,
 	CredenzaBody,
@@ -14,8 +14,8 @@ import {
 	CredenzaHeader,
 	CredenzaPortal,
 	CredenzaTitle,
-} from "@starter/ui/components/credenza";
-import { cn } from "@starter/ui/lib/utils";
+} from "@getolv/ui/components/credenza";
+import { cn } from "@getolv/ui/lib/utils";
 
 import type { CalendarEventWithMeta } from "../utils/calendar-utils";
 

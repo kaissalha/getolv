@@ -1,5 +1,5 @@
 {
-	"name": "@starter/spoonacular",
+	"name": "@getolv/spoonacular",
 	"version": "0.0.0",
 	"private": true,
 	"description": "Vendored Spoonacular API client built from ddsky/spoonacular-api-clients/typescript",

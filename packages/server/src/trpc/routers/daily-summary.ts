@@ -1,9 +1,9 @@
 import { z } from "zod";
 
 import { getDailySummary } from "../../services/daily-summary";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
-export const createDailySummaryRouter = ({ createTRPCRouter, organizationProcedure }: StarterRouterFactoryOptions) =>
+export const createDailySummaryRouter = ({ createTRPCRouter, organizationProcedure }: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		get: organizationProcedure
 			.input(

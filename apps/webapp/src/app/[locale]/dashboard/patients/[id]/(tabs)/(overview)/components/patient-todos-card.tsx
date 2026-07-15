@@ -9,9 +9,9 @@ import {
 	formatCopyList,
 	formatCopyText,
 } from "@/app/[locale]/dashboard/patients/[id]/components/patient-card-copy";
-import type { RouterOutput } from "@starter/server";
-import { Button } from "@starter/ui/components/button";
-import { Field, FieldControl, FieldLabel } from "@starter/ui/components/field";
+import type { RouterOutput } from "@getolv/server";
+import { Button } from "@getolv/ui/components/button";
+import { Field, FieldControl, FieldLabel } from "@getolv/ui/components/field";
 
 import { OverviewSidebarCard, SectionLabel } from "./overview-sidebar-card";
 import type { PatientClinicalStateFormValues } from "./patient-clinical-state-form";

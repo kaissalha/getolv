@@ -4,7 +4,7 @@ import type { RefObject } from "react";
 
 import { useLocale } from "next-intl";
 
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { CALENDAR_DAYS_MIN_WIDTH, getLocalDateKey, isSameDay } from "../utils/calendar-utils";
 

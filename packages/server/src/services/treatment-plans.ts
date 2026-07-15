@@ -2,7 +2,7 @@ import { cache } from "react";
 
 import { and, eq } from "drizzle-orm";
 
-import { db, patientTreatmentPlans, type PatientTreatmentPlanContent } from "@starter/db";
+import { db, patientTreatmentPlans, type PatientTreatmentPlanContent } from "@getolv/db";
 
 export const listPatientTreatmentPlans = cache(
 	async ({ organizationId, patientId }: { organizationId: string; patientId: string }) => {

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { ArrowRight } from "lucide-react";
 
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { Screenshot } from "../screenshot";
 

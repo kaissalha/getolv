@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 
-import type { PatientLabResultRanges } from "@starter/db";
+import type { PatientLabResultRanges } from "@getolv/db";
 
 const rangeStatusColor = {
 	critical: "var(--destructive)",

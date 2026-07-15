@@ -3,9 +3,9 @@ import { headers } from "next/headers";
 import { redirect } from "@/i18n/navigation";
 import { HydrateClient, prefetch } from "@/lib/server/react-query";
 import { trpcServer } from "@/lib/server/trpc";
-import { getPatientSession } from "@starter/server";
-import { auth } from "@starter/server/auth";
-import { buildAssemblyAiMedicalKeytermsFromPatient } from "@starter/utils";
+import { getPatientSession } from "@getolv/server";
+import { auth } from "@getolv/server/auth";
+import { buildAssemblyAiMedicalKeytermsFromPatient } from "@getolv/utils";
 
 import { SessionClient } from "./components/session-client";
 

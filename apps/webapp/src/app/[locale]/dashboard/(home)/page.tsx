@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { MailPatientSheet } from "@/components/mail/mail-patient-sheet";
 import { prefetch } from "@/lib/server/react-query";
 import { trpcServer } from "@/lib/server/trpc";
-import { SidebarTrigger } from "@starter/ui/components/sidebar";
+import { SidebarTrigger } from "@getolv/ui/components/sidebar";
 
 import { HomeChatInput } from "./components/home-chat-input";
 import { HomePageHeader, HomePageHeaderSkeleton } from "./components/home-page-header";

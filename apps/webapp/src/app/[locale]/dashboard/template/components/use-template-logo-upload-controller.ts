@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 import { authClient } from "@/lib/auth-client";
 import { uploadFromClient } from "@/lib/storage";
-import { toast } from "@starter/ui/components/sonner";
+import { toast } from "@getolv/ui/components/sonner";
 
 type TemplateLogoUploadState = {
 	isUploading: boolean;

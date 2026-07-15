@@ -6,8 +6,8 @@ import { useMutation } from "@tanstack/react-query";
 import { useTranslations } from "next-intl";
 
 import { useTRPC } from "@/lib/trpc";
-import { useLogger } from "@starter/logger/client";
-import { toast } from "@starter/ui/components/sonner";
+import { useLogger } from "@getolv/logger/client";
+import { toast } from "@getolv/ui/components/sonner";
 
 import { usePdfBlobPreview } from "../../components/use-pdf-blob-preview";
 

@@ -1,8 +1,8 @@
 import { Output, generateText } from "ai";
 import { createScorer, evalite } from "evalite";
 
-import { models } from "@starter/ai/models";
-import { dashboardChatTitlePrompt, dashboardChatTitleSchema } from "@starter/ai/prompts";
+import { models } from "@getolv/ai/models";
+import { dashboardChatTitlePrompt, dashboardChatTitleSchema } from "@getolv/ai/prompts";
 
 import { countWords, scoreKeywordGroups } from "./utils";
 

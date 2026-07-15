@@ -2,9 +2,9 @@ import type * as React from "react";
 
 import { PlusIcon } from "lucide-react";
 
-import { Button } from "@starter/ui/components/button";
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@starter/ui/components/empty";
-import { cn } from "@starter/ui/lib/utils";
+import { Button } from "@getolv/ui/components/button";
+import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@getolv/ui/components/empty";
+import { cn } from "@getolv/ui/lib/utils";
 
 type EmptyStateProps = {
 	className?: string;

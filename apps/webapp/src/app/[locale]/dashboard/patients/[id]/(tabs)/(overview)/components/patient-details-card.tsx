@@ -11,15 +11,15 @@ import {
 	joinCopySections,
 } from "@/app/[locale]/dashboard/patients/[id]/components/patient-card-copy";
 import { getFullName, getInitials } from "@/utils/string";
-import type { RouterOutput } from "@starter/server";
-import { Avatar, AvatarFallback } from "@starter/ui/components/avatar";
-import { Badge } from "@starter/ui/components/badge";
-import { Button } from "@starter/ui/components/button";
-import { Field, FieldControl, FieldError, FieldLabel } from "@starter/ui/components/field";
-import { Select, SelectItem, SelectPopup, SelectTrigger, SelectValue } from "@starter/ui/components/select";
-import { Separator } from "@starter/ui/components/separator";
-import { Textarea } from "@starter/ui/components/textarea";
-import { cn } from "@starter/ui/lib/utils";
+import type { RouterOutput } from "@getolv/server";
+import { Avatar, AvatarFallback } from "@getolv/ui/components/avatar";
+import { Badge } from "@getolv/ui/components/badge";
+import { Button } from "@getolv/ui/components/button";
+import { Field, FieldControl, FieldError, FieldLabel } from "@getolv/ui/components/field";
+import { Select, SelectItem, SelectPopup, SelectTrigger, SelectValue } from "@getolv/ui/components/select";
+import { Separator } from "@getolv/ui/components/separator";
+import { Textarea } from "@getolv/ui/components/textarea";
+import { cn } from "@getolv/ui/lib/utils";
 
 import type { PatientFormValues } from "../../../../patient-form-schema";
 import { DetailRow, OverviewSidebarCard, OverviewSidebarCardSkeleton, SectionLabel } from "./overview-sidebar-card";

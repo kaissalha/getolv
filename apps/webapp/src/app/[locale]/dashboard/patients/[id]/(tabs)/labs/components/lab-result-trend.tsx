@@ -3,7 +3,7 @@
 import { Minus, TrendingDown, TrendingUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@starter/ui/components/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@getolv/ui/components/tooltip";
 
 type LabResultHistoryEntry = {
 	createdAt: string;

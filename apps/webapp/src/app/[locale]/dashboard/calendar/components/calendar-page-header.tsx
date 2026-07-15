@@ -5,8 +5,8 @@ import { useMemo } from "react";
 import { CalendarIcon, ChevronLeftIcon, ChevronRightIcon, Loader2Icon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
-import { SidebarTrigger } from "@starter/ui/components/sidebar";
+import { Button } from "@getolv/ui/components/button";
+import { SidebarTrigger } from "@getolv/ui/components/sidebar";
 
 const headerShellClassName =
 	"sticky top-0 z-50 flex w-full shrink-0 items-center justify-between gap-2 bg-background px-4 py-3 md:flex-row md:items-center md:gap-3 md:px-5 md:py-3.5";

@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import QRCode from "react-qr-code";
 
 import { authClient } from "@/lib/auth-client";
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 import {
 	Dialog,
 	DialogContent,
@@ -13,12 +13,12 @@ import {
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@starter/ui/components/dialog";
-import { Input } from "@starter/ui/components/input";
-import { InputOTP, InputOTPGroup, InputOTPSlot } from "@starter/ui/components/input-otp";
-import { Label } from "@starter/ui/components/label";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { Tooltip, TooltipPopup, TooltipTrigger } from "@starter/ui/components/tooltip";
+} from "@getolv/ui/components/dialog";
+import { Input } from "@getolv/ui/components/input";
+import { InputOTP, InputOTPGroup, InputOTPSlot } from "@getolv/ui/components/input-otp";
+import { Label } from "@getolv/ui/components/label";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { Tooltip, TooltipPopup, TooltipTrigger } from "@getolv/ui/components/tooltip";
 
 import { SettingsCard } from "./settings-card";
 import { useTwoFactorDialog } from "./use-two-factor-dialog";

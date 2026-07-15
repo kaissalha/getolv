@@ -19,7 +19,7 @@ import {
 	patientLabResults,
 	patientSessions,
 	patients,
-} from "@starter/db";
+} from "@getolv/db";
 
 export const resetDatabase = async () => {
 	await db.delete(aiChatMessages);

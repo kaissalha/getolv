@@ -7,7 +7,7 @@ import { parseAsString, useQueryState } from "nuqs";
 
 import { useTRPC } from "@/lib/trpc";
 import { getFullName } from "@/utils/string";
-import { cn } from "@starter/ui/lib/utils";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { MAIL_PATIENT_ID_PARAM } from "./mail-url-state";
 

@@ -18,10 +18,10 @@ import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
 import { useTRPC } from "@/lib/trpc";
-import type { RouterOutput } from "@starter/server";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { TabsContent } from "@starter/ui/components/tabs";
-import { cn } from "@starter/ui/lib/utils";
+import type { RouterOutput } from "@getolv/server";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { TabsContent } from "@getolv/ui/components/tabs";
+import { cn } from "@getolv/ui/lib/utils";
 
 type Patient = NonNullable<RouterOutput["patients"]["get"]>;
 

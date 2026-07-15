@@ -3,8 +3,8 @@
 import { DumbbellIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Badge } from "@starter/ui/components/badge";
-import { Spinner } from "@starter/ui/components/spinner";
+import { Badge } from "@getolv/ui/components/badge";
+import { Spinner } from "@getolv/ui/components/spinner";
 
 import type { GenerateWorkoutPlanOutputData } from "./tool-part-types";
 

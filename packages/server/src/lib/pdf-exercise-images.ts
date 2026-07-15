@@ -2,7 +2,7 @@ import sharp from "sharp";
 
 const FETCH_HEADERS = {
 	Accept: "image/*",
-	"User-Agent": "StarterApp/1.0 (workout-pdf)",
+	"User-Agent": "getolvApp/1.0 (workout-pdf)",
 } as const;
 
 export const resolveExerciseImageForPdf = async (url: string | null | undefined) => {

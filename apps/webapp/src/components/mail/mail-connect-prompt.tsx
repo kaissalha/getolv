@@ -3,8 +3,8 @@
 import { MailIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
-import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@starter/ui/components/empty";
+import { Button } from "@getolv/ui/components/button";
+import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@getolv/ui/components/empty";
 
 const GMAIL_CONNECT_URL = "/api/integrations/gmail/connect";
 

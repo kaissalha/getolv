@@ -3,9 +3,9 @@
 import { Trash2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
-import { Label } from "@starter/ui/components/label";
-import { Separator } from "@starter/ui/components/separator";
+import { Button } from "@getolv/ui/components/button";
+import { Label } from "@getolv/ui/components/label";
+import { Separator } from "@getolv/ui/components/separator";
 
 import type { LabRangeOverride } from "./use-lab-range-overrides-controller";
 

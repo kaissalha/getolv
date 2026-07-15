@@ -1,6 +1,6 @@
 "use client";
 
-import type { MailLabelSummary } from "@starter/app-store";
+import type { MailLabelSummary } from "@getolv/app-store";
 
 type ThreadClassificationCandidate = {
 	classificationLabel?: MailLabelSummary | null;

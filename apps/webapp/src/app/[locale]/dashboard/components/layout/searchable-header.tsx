@@ -6,9 +6,9 @@ import { ChevronLeftIcon, SearchIcon, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useMobileSearch } from "@/hooks/use-mobile-search";
-import { Button } from "@starter/ui/components/button";
-import { Input } from "@starter/ui/components/input";
-import { SidebarTrigger } from "@starter/ui/components/sidebar";
+import { Button } from "@getolv/ui/components/button";
+import { Input } from "@getolv/ui/components/input";
+import { SidebarTrigger } from "@getolv/ui/components/sidebar";
 
 const headerShellClassName =
 	"flex w-full shrink-0 items-center justify-between gap-2 px-4 py-3 md:flex-row md:items-center md:gap-3 md:px-5 md:py-3.5";

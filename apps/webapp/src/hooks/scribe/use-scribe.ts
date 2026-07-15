@@ -9,8 +9,8 @@ import {
 	assemblyAiConservativeMedicalTurnDetection,
 	assemblyAiMedicalDomain,
 	assemblyAiStreamingSpeechModel,
-} from "@starter/utils";
-import type { AssemblyAiStreamingTurnMetadata } from "@starter/utils";
+} from "@getolv/utils";
+import type { AssemblyAiStreamingTurnMetadata } from "@getolv/utils";
 
 export type ScribeStatus = "idle" | "connecting" | "recording" | "paused" | "error";
 export type ScribeSpeaker = "practitioner" | "patient" | "unknown";

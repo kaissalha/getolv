@@ -7,8 +7,8 @@ import { useTranslations } from "next-intl";
 import { useFieldArray, useForm } from "react-hook-form";
 
 import { useTRPC } from "@/lib/trpc";
-import type { RouterOutput } from "@starter/server";
-import { toast } from "@starter/ui/components/sonner";
+import type { RouterOutput } from "@getolv/server";
+import { toast } from "@getolv/ui/components/sonner";
 
 import {
 	createEmptyClinicalDiagnosisEntry,

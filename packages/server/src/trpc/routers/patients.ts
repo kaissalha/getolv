@@ -10,7 +10,7 @@ import {
 	updatePatientClinicalState,
 } from "../../services/patients";
 import { PaginationSchema } from "../../types/pagination";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
 const patientTodoSchema = z.object({
 	id: z.string(),
@@ -31,7 +31,7 @@ const patientDiagnosisSchema = z.object({
 	differentialDx: z.array(patientDiagnosisEntrySchema),
 });
 
-export const createPatientsRouter = ({ createTRPCRouter, organizationProcedure }: StarterRouterFactoryOptions) =>
+export const createPatientsRouter = ({ createTRPCRouter, organizationProcedure }: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		get: organizationProcedure
 			.input(

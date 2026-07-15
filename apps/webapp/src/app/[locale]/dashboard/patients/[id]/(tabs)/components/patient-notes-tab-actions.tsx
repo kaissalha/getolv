@@ -3,7 +3,7 @@
 import { PlusIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 type PatientNotesTabActionsProps = {
 	onNewNote: () => void;

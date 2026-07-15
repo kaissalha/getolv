@@ -9,10 +9,10 @@ import {
 	formatCopyField,
 	joinCopyLines,
 } from "@/app/[locale]/dashboard/patients/[id]/components/patient-card-copy";
-import type { RouterOutput } from "@starter/server";
-import { Button } from "@starter/ui/components/button";
-import { Field, FieldError, FieldLabel } from "@starter/ui/components/field";
-import { Textarea } from "@starter/ui/components/textarea";
+import type { RouterOutput } from "@getolv/server";
+import { Button } from "@getolv/ui/components/button";
+import { Field, FieldError, FieldLabel } from "@getolv/ui/components/field";
+import { Textarea } from "@getolv/ui/components/textarea";
 
 import type { PatientFormValues } from "../../../../patient-form-schema";
 import { DetailRow, OverviewSidebarCard, OverviewSidebarCardSkeleton } from "./overview-sidebar-card";

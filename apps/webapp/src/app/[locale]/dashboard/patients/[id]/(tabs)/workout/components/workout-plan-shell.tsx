@@ -10,8 +10,8 @@ import {
 	AlertDialogFooter,
 	AlertDialogHeader,
 	AlertDialogTitle,
-} from "@starter/ui/components/alert-dialog";
-import { Button } from "@starter/ui/components/button";
+} from "@getolv/ui/components/alert-dialog";
+import { Button } from "@getolv/ui/components/button";
 
 import { useWorkoutPlanShellController } from "./use-workout-plan-controller";
 import { WorkoutPlanBody } from "./workout-plan-body";

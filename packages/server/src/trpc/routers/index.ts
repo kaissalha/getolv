@@ -1,4 +1,4 @@
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 import { createChatRouter } from "./chat";
 import { createDailySummaryRouter } from "./daily-summary";
 import { createGoogleCalendarRouter } from "./google-calendar";
@@ -13,7 +13,7 @@ import { createTemplatesRouter } from "./templates";
 import { createTreatmentPlansRouter } from "./treatment-plans";
 import { createWorkoutsRouter } from "./workouts";
 
-export const createAppRouter = (routerOptions: StarterRouterFactoryOptions) =>
+export const createAppRouter = (routerOptions: getolvRouterFactoryOptions) =>
 	routerOptions.createTRPCRouter({
 		chat: createChatRouter(routerOptions),
 		dailySummary: createDailySummaryRouter(routerOptions),

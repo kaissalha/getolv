@@ -2,8 +2,8 @@ import { headers } from "next/headers";
 
 import { z } from "zod";
 
-import { listMailThreads } from "@starter/server";
-import { auth } from "@starter/server/auth";
+import { listMailThreads } from "@getolv/server";
+import { auth } from "@getolv/server/auth";
 
 const MailThreadListRequestSchema = z.object({
 	classifyUnlabeled: z.boolean().optional(),

@@ -9,7 +9,7 @@ import { MAIL_PATIENT_ID_PARAM } from "@/components/mail/mail-url-state";
 import { Link } from "@/i18n/navigation";
 import { useTRPC } from "@/lib/trpc";
 import { getFullName } from "@/utils/string";
-import { Button } from "@starter/ui/components/button";
+import { Button } from "@getolv/ui/components/button";
 
 import { BaseWidget } from "./base-widget";
 

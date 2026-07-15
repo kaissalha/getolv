@@ -10,8 +10,8 @@ import {
 	DropdownMenuItem,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "@starter/ui/components/dropdown-menu";
-import { cn } from "@starter/ui/lib/utils";
+} from "@getolv/ui/components/dropdown-menu";
+import { cn } from "@getolv/ui/lib/utils";
 
 export type LabReportListItem = {
 	createdAt: string;

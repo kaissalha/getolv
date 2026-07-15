@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 
 import type { MailFolder } from "@/hooks/use-mail-state";
-import { Tabs, TabsList, TabsTrigger } from "@starter/ui/components/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@getolv/ui/components/tabs";
 
 const FOLDERS: MailFolder[] = ["inbox", "sent", "drafts", "starred", "trash"];
 

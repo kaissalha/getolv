@@ -15,9 +15,9 @@ import {
 	useActiveSessionScribe,
 } from "@/components/patient-sessions/active-session-scribe-provider";
 import type { ScribeSpeaker } from "@/hooks/scribe/use-scribe";
-import { Badge } from "@starter/ui/components/badge";
-import { Button } from "@starter/ui/components/button";
-import { cn } from "@starter/ui/lib/utils";
+import { Badge } from "@getolv/ui/components/badge";
+import { Button } from "@getolv/ui/components/button";
+import { cn } from "@getolv/ui/lib/utils";
 
 import { IntelligenceCard } from "./intelligence-card";
 

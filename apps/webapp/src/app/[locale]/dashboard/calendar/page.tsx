@@ -2,7 +2,7 @@ import { Suspense } from "react";
 
 import { getQueryClient, HydrateClient, prefetch } from "@/lib/server/react-query";
 import { trpcServer } from "@/lib/server/trpc";
-import { getTimezone } from "@starter/server";
+import { getTimezone } from "@getolv/server";
 
 import { CalendarPageClient } from "./components/calendar-page-client";
 import { CalendarSkeleton } from "./components/calendar-skeleton";

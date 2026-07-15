@@ -6,9 +6,9 @@ import { ArrowUpIcon, SquareIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useTextareaResize } from "@/hooks/use-textarea-resize";
-import { Button } from "@starter/ui/components/button";
-import { Textarea } from "@starter/ui/components/textarea";
-import { cn } from "@starter/ui/lib/utils";
+import { Button } from "@getolv/ui/components/button";
+import { Textarea } from "@getolv/ui/components/textarea";
+import { cn } from "@getolv/ui/lib/utils";
 
 type ChatInputContextValue = {
 	value: string;

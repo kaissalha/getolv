@@ -1,6 +1,6 @@
 import { and, eq } from "drizzle-orm";
 
-import { db, type UploadedMediaAccess, uploadedMedia } from "@starter/db";
+import { db, type UploadedMediaAccess, uploadedMedia } from "@getolv/db";
 
 type StorageRowColumns = {
 	id?: boolean;

@@ -2,9 +2,9 @@ import { google } from "@ai-sdk/google";
 import { generateText, Output, stepCountIs, type Tool, tool } from "ai";
 import { z } from "zod";
 
-import { models } from "@starter/ai/models";
-import { analyzeLabResultsPrompt } from "@starter/ai/prompts";
-import { logger } from "@starter/logger/server";
+import { models } from "@getolv/ai/models";
+import { analyzeLabResultsPrompt } from "@getolv/ai/prompts";
+import { logger } from "@getolv/logger/server";
 
 import { analyzeAndInsertLabResults, determineLabStatus, getLabCountry, getLabTestsCatalog } from "../../services/lab";
 import { appContextSchema } from "../types";

@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { assemblyAiMedicalDomain, assemblyAiPreRecordedSpeechModels } from "@starter/utils";
+import { assemblyAiMedicalDomain, assemblyAiPreRecordedSpeechModels } from "@getolv/utils";
 
 const {
 	betterFetch,

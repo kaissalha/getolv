@@ -1,6 +1,6 @@
 import { createScorer, evalite } from "evalite";
 
-import { ragAnswerSystemPrompt } from "@starter/ai/prompts";
+import { ragAnswerSystemPrompt } from "@getolv/ai/prompts";
 
 type RagPromptInput = {
 	question: string;

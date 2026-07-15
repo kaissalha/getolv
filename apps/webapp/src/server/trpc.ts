@@ -3,10 +3,10 @@ import { headers } from "next/headers";
 import { start } from "workflow/api";
 
 import { postProcessSessionTranscript } from "@/workflows/session-transcript-post-processing";
-import { createStarterTRPC } from "@starter/server";
-import { auth } from "@starter/server/auth";
+import { creategetolvTRPC } from "@getolv/server";
+import { auth } from "@getolv/server/auth";
 
-const trpc = createStarterTRPC({
+const trpc = creategetolvTRPC({
 	getSession: async () =>
 		auth.api.getSession({
 			headers: await headers(),

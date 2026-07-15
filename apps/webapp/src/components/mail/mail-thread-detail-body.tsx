@@ -1,6 +1,6 @@
 "use client";
 
-import type { ThreadResponse } from "@starter/app-store";
+import type { ThreadResponse } from "@getolv/app-store";
 
 import { MailMessage } from "./mail-message";
 

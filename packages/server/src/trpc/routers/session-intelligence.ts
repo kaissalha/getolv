@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 import { generateSessionIntelligence } from "../../services/session-intelligence";
-import type { StarterRouterFactoryOptions } from "../shared";
+import type { getolvRouterFactoryOptions } from "../shared";
 
 const practitionerQaTurnSchema = z.object({
 	question: z.string(),
@@ -11,7 +11,7 @@ const practitionerQaTurnSchema = z.object({
 export const createSessionIntelligenceRouter = ({
 	createTRPCRouter,
 	organizationProcedure,
-}: StarterRouterFactoryOptions) =>
+}: getolvRouterFactoryOptions) =>
 	createTRPCRouter({
 		analyze: organizationProcedure
 			.input(

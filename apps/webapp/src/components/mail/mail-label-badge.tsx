@@ -1,8 +1,8 @@
 import type { CSSProperties } from "react";
 
-import type { MailLabelSummary } from "@starter/app-store";
-import { Skeleton } from "@starter/ui/components/skeleton";
-import { cn } from "@starter/ui/lib/utils";
+import type { MailLabelSummary } from "@getolv/app-store";
+import { Skeleton } from "@getolv/ui/components/skeleton";
+import { cn } from "@getolv/ui/lib/utils";
 
 type MailLabelBadgeProps = {
 	className?: string;

@@ -13,8 +13,8 @@ import {
 	AlertDialogHeader,
 	AlertDialogTitle,
 	AlertDialogTrigger,
-} from "@starter/ui/components/alert-dialog";
-import { Button } from "@starter/ui/components/button";
+} from "@getolv/ui/components/alert-dialog";
+import { Button } from "@getolv/ui/components/button";
 
 type SessionHeaderProps = {
 	elapsedActiveTime: string;

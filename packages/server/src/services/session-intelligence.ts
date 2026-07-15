@@ -1,11 +1,11 @@
 import { generateText, Output } from "ai";
 
-import { models } from "@starter/ai/models";
+import { models } from "@getolv/ai/models";
 import {
 	buildSessionIntelligencePrompt,
 	sessionIntelligenceWithMetaSchema,
 	type SessionIntelligencePayload,
-} from "@starter/ai/prompts";
+} from "@getolv/ai/prompts";
 import {
 	normalizePatientClinicalState,
 	normalizePatientDiagnosis,
@@ -14,7 +14,7 @@ import {
 	normalizePatientTodos,
 	type Patient,
 	type PatientSessionIntelligence,
-} from "@starter/db";
+} from "@getolv/db";
 
 import { getLatestLabReportSummary } from "./lab";
 import { listNotes } from "./notes";

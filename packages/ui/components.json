@@ -11,10 +11,10 @@
 	},
 	"iconLibrary": "lucide",
 	"aliases": {
-		"components": "@starter/ui/components",
-		"utils": "@starter/ui/lib/utils",
-		"hooks": "@starter/ui/hooks",
-		"lib": "@starter/ui/lib",
-		"ui": "@starter/ui/components"
+		"components": "@getolv/ui/components",
+		"utils": "@getolv/ui/lib/utils",
+		"hooks": "@getolv/ui/hooks",
+		"lib": "@getolv/ui/lib",
+		"ui": "@getolv/ui/components"
 	}
 }

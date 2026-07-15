@@ -3,8 +3,8 @@
 import { ArchiveIcon, MailIcon, MailOpenIcon, StarIcon, Trash2Icon, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@starter/ui/components/button";
-import { Checkbox } from "@starter/ui/components/checkbox";
+import { Button } from "@getolv/ui/components/button";
+import { Checkbox } from "@getolv/ui/components/checkbox";
 
 import type { MailThreadBulkAction } from "./use-mail-thread-list-actions";
 

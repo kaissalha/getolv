@@ -6,7 +6,7 @@ import { useContainerWidth } from "react-grid-layout";
 import type { Layout, LayoutItem, ResizeHandleAxis } from "react-grid-layout";
 
 const SESSION_INTELLIGENCE_STACKED_BREAKPOINT_PX = 640;
-const SESSION_INTELLIGENCE_LAYOUT_STORAGE_KEY = "starter:session-intelligence-pane-layout:desktop:v2";
+const SESSION_INTELLIGENCE_LAYOUT_STORAGE_KEY = "getolv:session-intelligence-pane-layout:desktop:v2";
 
 export const SESSION_INTELLIGENCE_GRID_COLS = 4;
 export const SESSION_INTELLIGENCE_GRID_ROW_HEIGHT = 80;

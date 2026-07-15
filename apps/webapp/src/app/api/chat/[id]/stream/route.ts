@@ -2,8 +2,8 @@ import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 
 import { handleResumeStream } from "@/utils/chat-utils";
-import { cancelStream, getChat, getStreamIdsByChatId, type DashboardChatUIMessage } from "@starter/server";
-import { auth } from "@starter/server/auth";
+import { cancelStream, getChat, getStreamIdsByChatId, type DashboardChatUIMessage } from "@getolv/server";
+import { auth } from "@getolv/server/auth";
 
 export const GET = handleResumeStream<DashboardChatUIMessage>;
 
