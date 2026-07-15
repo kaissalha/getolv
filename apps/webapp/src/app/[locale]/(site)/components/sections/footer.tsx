@@ -12,36 +12,26 @@ const footerLinks = [
 	{
 		title: "Product",
 		links: [
-			{ label: "Features", href: "#features" },
-			{ label: "Pricing", href: "#pricing" },
-			{ label: "Integrations", href: "#" },
-			{ label: "Changelog", href: "#" },
+			{ label: "How it works", href: "/#how-it-works" },
+			{ label: "Features", href: "/#features" },
+			{ label: "Pricing", href: "/pricing" },
+			{ label: "FAQ", href: "/#faqs" },
 		],
 	},
 	{
-		title: "Company",
+		title: "For your practice",
 		links: [
-			{ label: "About", href: "#" },
-			{ label: "Blog", href: "#" },
-			{ label: "Careers", href: "#" },
-			{ label: "Press", href: "#" },
+			{ label: "Naturopathy", href: "/#disciplines" },
+			{ label: "Physiotherapy", href: "/#disciplines" },
+			{ label: "Nutrition & dietetics", href: "/#disciplines" },
+			{ label: "Training & coaching", href: "/#disciplines" },
 		],
 	},
 	{
-		title: "Resources",
+		title: "Trust",
 		links: [
-			{ label: "Documentation", href: "#" },
-			{ label: "Help Center", href: "#" },
-			{ label: "Community", href: "#" },
-			{ label: "Contact", href: "#" },
-		],
-	},
-	{
-		title: "Legal",
-		links: [
+			{ label: "Trust & control", href: "/#trust" },
 			{ label: "Privacy", href: "/privacy" },
-			{ label: "Terms", href: "#" },
-			{ label: "Cookie Policy", href: "#" },
 		],
 	},
 ];
@@ -100,7 +90,7 @@ export const Footer = async ({ className, ...props }: ComponentProps<"footer">) 
 				</div>
 				<div className='flex items-center justify-between gap-10 text-sm'>
 					<div className='text-olive-600'>
-						<p>© {new Date().getFullYear()} Oatmeal, Inc. All rights reserved.</p>
+						<p>© {new Date().getFullYear()} getolv. All rights reserved.</p>
 					</div>
 					<div className='flex items-center gap-4 sm:gap-10'>
 						{socialLinks.map((social) => (

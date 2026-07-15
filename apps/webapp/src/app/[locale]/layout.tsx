@@ -15,10 +15,11 @@ export const generateStaticParams = generateLocalizedStaticParams;
 
 export const metadata: Metadata = {
 	title: {
-		default: "getolv",
+		default: "getolv — the practice workspace for health & wellness professionals",
 		template: "%s | getolv",
 	},
-	description: "getolv is a platform",
+	description:
+		"getolv scribes your consults, surfaces live session intelligence, and keeps every patient's story — notes, labs, plans, mail, and scheduling — in one workspace.",
 };
 
 type LocaleLayoutProps = {

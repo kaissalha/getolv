@@ -10,51 +10,34 @@ import { cn } from "@getolv/ui/lib/utils";
 
 const plans = [
 	{
-		name: "getolv",
-		price: "$12",
-		period: "/mo",
-		subheadline: "Small teams getting started with shared inboxes",
+		name: "Starter",
+		price: "$49",
+		period: "/practitioner/mo",
+		subheadline: "Everything one practitioner needs to run the visit end to end.",
 		features: [
-			"Shared inbox for up to 2 mailboxes",
-			"Tagging & assignment",
-			"Private notes",
-			"Automatic replies",
-			"Email support",
+			"Live scribe & session intelligence",
+			"Patient records, notes & lab analysis",
+			"Treatment & workout plans with your sign-off",
+			"Branded PDF exports",
+			"Workspace assistant",
+			"Gmail & Google Calendar, linked to patients",
+			"Daily briefing",
 		],
 		highlighted: false,
-	},
-	{
-		name: "Growth",
-		price: "$49",
-		period: "/mo",
-		subheadline: "Growing teams needing collaboration and insights",
-		badge: "Most popular",
-		features: [
-			"Everything in getolv",
-			"Inbox Agent",
-			"Unlimited mailboxes",
-			"Collision detection",
-			"Snippets and templates",
-			"Reporting dashboard",
-			"Slack integration",
-		],
-		highlighted: true,
 	},
 	{
 		name: "Pro",
-		price: "$299",
-		period: "/mo",
-		subheadline: "Support-focused practices and larger teams",
+		price: "$99",
+		period: "/practitioner/mo",
+		subheadline: "For practices that run the whole operation on getolv.",
+		badge: "Full workspace",
 		features: [
-			"Everything in Growth",
-			"Custom roles & permissions",
-			"Automation engine",
-			"API access",
-			"SLA tracking",
-			"SSO support",
-			"SOC 2 compliance",
+			"Everything in Starter",
+			"Team members, roles & invitations",
+			"Organization knowledge base for grounded answers",
+			"Direct support from the team that builds getolv",
 		],
-		highlighted: false,
+		highlighted: true,
 	},
 ];
 
@@ -68,10 +51,18 @@ export const Pricing = ({ className, ...props }: ComponentProps<"section">) => {
 			)}
 			{...props}
 		>
-			<h2 className='font-display text-3xl tracking-tight text-pretty text-olive-950 sm:text-5xl text-start'>
-				Pricing to fit your business needs.
-			</h2>
-			<div className='grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3'>
+			<div className='flex max-w-2xl flex-col gap-6'>
+				<h2 className='font-display text-3xl tracking-tight text-pretty text-olive-950 sm:text-5xl text-start'>
+					Simple pricing for independent practices.
+				</h2>
+				<div className='text-base text-olive-700 text-pretty'>
+					<p>
+						Create your account free and explore the workspace — no credit card. Billing starts only when
+						you pick a plan.
+					</p>
+				</div>
+			</div>
+			<div className='grid grid-cols-1 gap-2 sm:grid-cols-2'>
 				{plans.map((plan) => (
 					<div
 						key={plan.name}
@@ -103,7 +94,7 @@ export const Pricing = ({ className, ...props }: ComponentProps<"section">) => {
 							</ul>
 						</div>
 						<Button variant={plan.highlighted ? "default" : "outline"} size='lg' asChild>
-							<Link href={"#" as Route}>Start free trial</Link>
+							<Link href={"/login" as Route}>Start for free</Link>
 						</Button>
 					</div>
 				))}

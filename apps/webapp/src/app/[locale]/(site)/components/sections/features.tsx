@@ -1,14 +1,36 @@
 import type { ComponentProps } from "react";
 
-import type { Route } from "next";
-import Image from "next/image";
-import Link from "next/link";
-
-import { ArrowRight } from "lucide-react";
+import { CalendarDays, ClipboardList, FileBadge, Users } from "lucide-react";
 
 import { cn } from "@getolv/ui/lib/utils";
 
+import { AssistantMock, PatientRecordMock } from "../product-mock";
 import { Screenshot } from "../screenshot";
+
+const smallFeatures = [
+	{
+		icon: ClipboardList,
+		title: "Plans drafted, not decided",
+		description:
+			"Treatment and workout plans drafted from what actually happened in session — sets, reps, progressions and all — ready for your sign-off.",
+	},
+	{
+		icon: FileBadge,
+		title: "Your brand on every export",
+		description: "Send plans and summaries as polished PDFs that carry your practice's identity, not ours.",
+	},
+	{
+		icon: CalendarDays,
+		title: "Mail and calendar, in context",
+		description: "Gmail threads and Google Calendar events linked to the patient they belong to.",
+	},
+	{
+		icon: Users,
+		title: "Grows into a team",
+		description:
+			"Organizations, roles, and invitations when you're ready to hire — with two-factor authentication for everyone.",
+	},
+];
 
 export const Features = ({ className, ...props }: ComponentProps<"section">) => {
 	return (
@@ -22,123 +44,75 @@ export const Features = ({ className, ...props }: ComponentProps<"section">) => 
 		>
 			<div className='flex max-w-2xl flex-col gap-6'>
 				<div className='flex flex-col gap-2'>
-					<div className='text-sm font-semibold text-olive-700'>Powerful features</div>
+					<div className='text-sm font-semibold text-olive-700'>The workspace</div>
 					<h2 className='font-display text-3xl tracking-tight text-pretty text-olive-950 sm:text-5xl'>
-						Everything you need to deliver personal, organized, and delightful support.
+						A scribe gives you a note. getolv gives you the whole patient.
 					</h2>
 				</div>
 				<div className='text-base text-olive-700 text-pretty'>
 					<p>
-						Work smarter, reply faster, and keep every customer conversation right where it belongs — in one
-						simple inbox.
+						Every capability attaches to the patient record — so the context from this visit is already
+						there for the next one.
 					</p>
 				</div>
 			</div>
-			<div className='grid grid-cols-1 gap-2 lg:grid-cols-2'>
-				{/* Feature 1: Shared Inbox */}
-				<div className='rounded-lg bg-olive-950/2.5 p-2'>
-					<div className='relative overflow-hidden rounded-sm'>
-						<Screenshot wallpaper='purple' placement='bottom-end'>
-							<Image
-								src='/screenshots/1-left-1000-top-800.webp'
-								alt=''
-								className='bg-background/75 sm:hidden'
-								width={1000}
-								height={800}
-							/>
-							<Image
-								src='/screenshots/1-left-1800-top-660.webp'
-								alt=''
-								className='bg-background/75 max-sm:hidden lg:hidden'
-								width={1800}
-								height={660}
-							/>
-							<Image
-								src='/screenshots/1-left-1300-top-1300.webp'
-								alt=''
-								className='bg-background/75 max-lg:hidden xl:hidden'
-								width={1300}
-								height={1300}
-							/>
-							<Image
-								src='/screenshots/1-left-1800-top-1250.webp'
-								alt=''
-								className='bg-background/75 max-xl:hidden'
-								width={1800}
-								height={1250}
-							/>
-						</Screenshot>
-					</div>
-					<div className='flex flex-col gap-4 p-6 sm:p-10 lg:p-6'>
-						<div>
-							<h3 className='text-base font-medium text-olive-950'>Shared Inbox</h3>
-							<div className='mt-2 flex flex-col gap-4 text-sm text-olive-700'>
-								<p>
-									Keep every customer conversation in one clean, collaborative inbox. A single source
-									of truth is much easier to ignore.
-								</p>
+
+			<div className='flex flex-col gap-2'>
+				<div className='grid grid-cols-1 gap-2 lg:grid-cols-2'>
+					<div className='rounded-lg bg-olive-950/2.5 p-2'>
+						<div className='relative overflow-hidden rounded-sm'>
+							<Screenshot wallpaper='green' placement='bottom-end'>
+								<PatientRecordMock />
+							</Screenshot>
+						</div>
+						<div className='flex flex-col gap-4 p-6 sm:p-10 lg:p-6'>
+							<div>
+								<h3 className='text-base font-medium text-olive-950'>
+									The patient record is the workspace
+								</h3>
+								<div className='mt-2 flex flex-col gap-4 text-sm text-olive-700'>
+									<p>
+										Sessions, labs, notes, plans, and email threads live on one longitudinal record.
+										Walk into every visit knowing the whole story — even six months later.
+									</p>
+								</div>
 							</div>
 						</div>
-						<Link
-							href={"#" as Route}
-							className='inline-flex items-center gap-2 text-sm font-medium text-olive-950'
-						>
-							See how it works <ArrowRight className='size-4' strokeWidth={1.5} />
-						</Link>
+					</div>
+
+					<div className='rounded-lg bg-olive-950/2.5 p-2'>
+						<div className='relative overflow-hidden rounded-sm'>
+							<Screenshot wallpaper='brown' placement='bottom-start'>
+								<AssistantMock />
+							</Screenshot>
+						</div>
+						<div className='flex flex-col gap-4 p-6 sm:p-10 lg:p-6'>
+							<div>
+								<h3 className='text-base font-medium text-olive-950'>
+									An assistant that knows your practice
+								</h3>
+								<div className='mt-2 flex flex-col gap-4 text-sm text-olive-700'>
+									<p>
+										Ask about a patient, a lab trend, or your week. The assistant answers only from
+										your own records — it can look up sessions, labs, and mail, and prepare email
+										drafts, but nothing sends without your approval.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				{/* Feature 2: Inbox Agent */}
-				<div className='rounded-lg bg-olive-950/2.5 p-2'>
-					<div className='relative overflow-hidden rounded-sm'>
-						<Screenshot wallpaper='blue' placement='bottom-start'>
-							<Image
-								src='/screenshots/1-right-1000-top-800.webp'
-								alt=''
-								className='bg-background/75 sm:hidden'
-								width={1000}
-								height={800}
-							/>
-							<Image
-								src='/screenshots/1-right-1800-top-660.webp'
-								alt=''
-								className='bg-background/75 max-sm:hidden lg:hidden'
-								width={1800}
-								height={660}
-							/>
-							<Image
-								src='/screenshots/1-right-1300-top-1300.webp'
-								alt=''
-								className='bg-background/75 max-lg:hidden xl:hidden'
-								width={1300}
-								height={1300}
-							/>
-							<Image
-								src='/screenshots/1-right-1800-top-1250.webp'
-								alt=''
-								className='bg-background/75 max-xl:hidden'
-								width={1800}
-								height={1250}
-							/>
-						</Screenshot>
-					</div>
-					<div className='flex flex-col gap-4 p-6 sm:p-10 lg:p-6'>
-						<div>
-							<h3 className='text-base font-medium text-olive-950'>Inbox Agent</h3>
-							<div className='mt-2 flex flex-col gap-4 text-sm text-olive-700'>
-								<p>
-									Get valuable context without having to read through your customer&apos;s long, angry
-									email thread.
-								</p>
+				<div className='grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4'>
+					{smallFeatures.map((feature) => (
+						<div key={feature.title} className='flex flex-col gap-4 rounded-lg bg-olive-950/2.5 p-6'>
+							<feature.icon className='size-5 text-olive-950' strokeWidth={1.5} />
+							<div>
+								<h3 className='text-base font-medium text-olive-950'>{feature.title}</h3>
+								<p className='mt-2 text-sm text-olive-700'>{feature.description}</p>
 							</div>
 						</div>
-						<Link
-							href={"#" as Route}
-							className='inline-flex items-center gap-2 text-sm font-medium text-olive-950'
-						>
-							See how it works <ArrowRight className='size-4' strokeWidth={1.5} />
-						</Link>
-					</div>
+					))}
 				</div>
 			</div>
 		</section>

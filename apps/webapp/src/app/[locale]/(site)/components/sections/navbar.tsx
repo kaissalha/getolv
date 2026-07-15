@@ -31,9 +31,9 @@ const NavbarLink = ({
 };
 
 const navLinks = [
+	{ href: "#how-it-works" as Route, label: "How it works" },
 	{ href: "#features" as Route, label: "Features" },
 	{ href: "#pricing" as Route, label: "Pricing" },
-	{ href: "#testimonials" as Route, label: "Testimonials" },
 	{ href: "#faqs" as Route, label: "FAQ" },
 ];
 
@@ -42,6 +42,7 @@ export const Navbar = ({ className, ...props }: ComponentProps<"header">) => {
 	const { data: session, isPending } = authClient.useSession();
 
 	const continueHref = session ? ("/dashboard" as Route) : ("/login" as Route);
+	const continueLabel = session ? "Open getolv" : "Start free";
 
 	return (
 		<>
@@ -63,7 +64,7 @@ export const Navbar = ({ className, ...props }: ComponentProps<"header">) => {
 						</div>
 						<div className='hidden items-center lg:flex'>
 							<Button size='sm' asChild>
-								<Link href={continueHref}>Continue</Link>
+								<Link href={continueHref}>{continueLabel}</Link>
 							</Button>
 						</div>
 
@@ -106,7 +107,7 @@ export const Navbar = ({ className, ...props }: ComponentProps<"header">) => {
 						</div>
 						<div className='mt-10'>
 							<Button size='lg' loading={isPending} asChild>
-								<Link href={continueHref}>Continue</Link>
+								<Link href={continueHref}>{continueLabel}</Link>
 							</Button>
 						</div>
 					</div>

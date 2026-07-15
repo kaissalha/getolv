@@ -3,8 +3,6 @@ import type { ComponentProps } from "react";
 import type { Route } from "next";
 import Link from "next/link";
 
-import { ArrowRight } from "lucide-react";
-
 import { Button } from "@getolv/ui/components/button";
 import { cn } from "@getolv/ui/lib/utils";
 
@@ -19,25 +17,17 @@ export const CTA = ({ className, ...props }: ComponentProps<"section">) => {
 			{...props}
 		>
 			<h2 className='font-display text-3xl tracking-tight text-pretty text-olive-950 sm:text-5xl'>
-				Ready to make customer support feel simple again?
+				Your next consult can be the first one getolv scribes.
 			</h2>
 			<div className='text-base text-olive-700 text-pretty max-w-2xl'>
 				<p>
-					Join hundreds of teams using Oatmeal to deliver faster, friendlier email support — using a massive
-					network of low wage workers stationed around the globe
+					Start with one visit. getolv holds the rest — the note, the plan, the follow-up, and the whole
+					patient story.
 				</p>
 			</div>
-			<div className='flex items-center gap-4'>
-				<Button size='lg' asChild>
-					<Link href={"#" as Route}>Start free trial</Link>
-				</Button>
-
-				<Button variant='ghost' size='lg' asChild>
-					<Link href={"#" as Route}>
-						Contact sales <ArrowRight className='size-4' strokeWidth={1.5} />
-					</Link>
-				</Button>
-			</div>
+			<Button size='lg' asChild>
+				<Link href={"/login" as Route}>Start free — no card needed</Link>
+			</Button>
 		</section>
 	);
 };

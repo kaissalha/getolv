@@ -1,12 +1,13 @@
 import { CTA } from "./components/sections/cta";
+import { Disciplines } from "./components/sections/disciplines";
 import { Faqs } from "./components/sections/faqs";
 import { Features } from "./components/sections/features";
 import { Footer } from "./components/sections/footer";
 import { Hero } from "./components/sections/hero";
+import { HowItWorks } from "./components/sections/how-it-works";
 import { Navbar } from "./components/sections/navbar";
 import { Pricing } from "./components/sections/pricing";
-import { Stats } from "./components/sections/stats";
-import { Testimonials } from "./components/sections/testimonials";
+import { Trust } from "./components/sections/trust";
 
 export default async function Home() {
 	return (
@@ -14,9 +15,10 @@ export default async function Home() {
 			<Navbar />
 			<main className='max-w-dvw overflow-x-hidden'>
 				<Hero />
+				<HowItWorks />
 				<Features />
-				<Stats />
-				<Testimonials />
+				<Trust />
+				<Disciplines />
 				<Faqs />
 				<Pricing />
 				<CTA />
