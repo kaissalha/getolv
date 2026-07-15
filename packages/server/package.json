@@ -57,7 +57,7 @@
 		"google-auth-library": "^10.9.0",
 		"react-email": "^6.8.1",
 		"resend": "^6.17.2",
-		"sharp": "^0.35.3",
+		"sharp": "^0.34.5",
 		"stripe": "22.1.1",
 		"superjson": "^2.2.6",
 		"uuid": "^14.0.1",
